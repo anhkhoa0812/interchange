@@ -13,7 +13,7 @@
 <form style="width: 600px; margin-left: 100px; margin-top: 30px" th:object="${newSup}" action="/supplier/savechanges"
       method="post">
     <h1>Create a new supplier:</h1>
-    <input type="text" class="form-control" th:field="*{supplierID}" hidden="hidden"> <!-- we need this tag because we are using merge(), phân biệt việc đang thực thi là create hay update, nếu id đã tồn tại thì là update, nếu chưa thì create -->
+    <input type="text" class="form-control" th:field="*{supplierID}" hidden="hidden">
     <div class="mb-3">
         <label class="form-label">Supplier name: </label>
         <input type="text" class="form-control" th:field="*{supplierName}">

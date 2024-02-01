@@ -17,10 +17,10 @@
   </thead>
   <tbody>
   <tr class="table-success" th:each="sup : ${supList}">
-    <td class="table-success" th:text="${sup.supplierID}"></td>         <!-- chỉ cần Map.<tên-key> ~ Map.<tên-cột-của-table-trong-database> là lấy được value của key đó (cũng là cách duy nhất) -->
+    <td class="table-success" th:text="${sup.supplierID}"></td>
     <td class="table-success" th:text="${sup.supplierName}"></td>
 <!--    <td class="table-success" th:text="${pro.price}"></td>-->
-<!--    <td class="table-success" th:text="${pro.status_id}"></td> &lt;!&ndash; bắt buộc phải trùng với tên cột của table trong database &ndash;&gt;-->
+<!--    <td class="table-success" th:text="${pro.status_id}"></td> -->
 <!--    <td><a class="btn btn-success" th:href="@{/product/update(proID=${pro.id})}">Update</a></td>-->
 <!--    <td><a class="btn btn-success" th:href="@{/product/delete(proID=${pro.id})}">Delete</a></td>-->
   </tr>
