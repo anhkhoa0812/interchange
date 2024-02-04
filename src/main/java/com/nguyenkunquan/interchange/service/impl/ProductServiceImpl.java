@@ -17,6 +17,11 @@ public class ProductServiceImpl implements ProductService {
     ProductRepository productRepository;
 
     @Override
+    public Product getByID(int id) {
+        return productRepository.findById(id).get();
+    }
+
+    @Override
     public int save(Product product) {
         Product savedProduct = productRepository.save(product);
         return savedProduct.getProductId();
@@ -45,6 +50,21 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public List<Map<String, Object>> getDetailsList() {
         return productRepository.getDetailsList();
+    }
+
+    @Override
+    public void insertIsCustomized(int productID, boolean length, boolean width, boolean height) {
+        productRepository.insertIsCustomized(productID, length, width, height);
+    }
+
+    @Override
+    public Map<String, Object> getDetailByID(int id) {
+        return productRepository.getDetailByID(id);
+    }
+
+    @Override
+    public Map<String, Object> getIsCustomizedByID(int id) {
+        return productRepository.getIsCustomizedByID(id);
     }
 
 }

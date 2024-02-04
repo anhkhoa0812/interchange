@@ -44,19 +44,36 @@
             <option value="Tím">Tím</option>
         </select>
     </div>
-    <label class="form-label">Description: </label>
-    <input type="text" class="form-control" th:field="*{productDescription}">
+    <div class="mb-3">
+        <label class="form-label">Description: </label>
+        <input type="text" class="form-control" th:field="*{productDescription}">
+    </div>
     <div class="mb-3">
         <label class="form-label">Length: </label>
         <input type="number" class="form-control" th:field="*{productLength}">
+        <label class="form-label">Is customized? </label>
+        <select name="isCustomizedLength">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </select>
     </div>
     <div class="mb-3">
         <label class="form-label">Width: </label>
         <input type="number" class="form-control" th:field="*{productWidth}">
+        <label class="form-label">Is customized? </label>
+        <select name="isCustomizedWidth">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </select>
     </div>
     <div class="mb-3">
         <label class="form-label">Height: </label>
         <input type="number" class="form-control" th:field="*{productHeight}">
+        <label class="form-label">Is customized? </label>
+        <select name="isCustomizedHeight">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </select>
     </div>
     <div class="mb-3">
         <label class="form-label">Price: </label>

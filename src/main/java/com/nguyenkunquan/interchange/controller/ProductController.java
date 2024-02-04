@@ -32,10 +32,27 @@ public class ProductController {
         return "product/save";
     }
     @PostMapping("/savechanges")
-    public String saveChanges(@ModelAttribute Product product, @RequestParam int supID, @RequestParam float price) {
+    public String saveChanges(@ModelAttribute Product product, @RequestParam int supID, @RequestParam float price,
+                              @RequestParam boolean isCustomizedLength, @RequestParam boolean isCustomizedWidth, @RequestParam boolean isCustomizedHeight) {
         int id = productService.save(product);
         product.setProductId(id);
         productService.insertSupplierProduct(supID, product.getProductId(), price);
+        productService.insertIsCustomized(id, isCustomizedLength, isCustomizedWidth, isCustomizedHeight);
         return "redirect:list";
+    }
+
+    @GetMapping("/detail")
+    public String detail(@RequestParam int proID, Model model) {
+        model.addAttribute("proDetail", productService.getDetailByID(proID));
+        model.addAttribute("isCustomized", productService.getIsCustomizedByID(proID));
+        return "product/detail";
+    }
+    @GetMapping("/update")
+    public String update(@RequestParam int proID, Model model) {
+        model.addAttribute("pro", productService.getByID(proID));
+        model.addAttribute("supList", supplierService.getList());
+        model.addAttribute("materialList", productService.getMaterialProduct());
+        model.addAttribute("categoryList", productService.getCategoryProduct());
+        return "product/save";
     }
 }
