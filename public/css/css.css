@@ -3385,7 +3385,12 @@ header.noo-header .noo-topbar p {
 
 .stext_6 h3 {
     margin-bottom: 0;
-    font-size: 14px; text-align:center
+    font-size: 14px; text-align:center  
+}
+.stext_6 h2 {
+    margin-bottom: 0;
+    font-size: 35px; text-align:center;
+    line-height:50px
 }
 .sanpham24.sanpham2422{margin:20px 0}
 .stext_6 h3 a{color:#111} .stext_6 h3 a:hover{color:#e9c37a}
