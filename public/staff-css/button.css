@@ -1,0 +1,43 @@
+.display-flex{
+    display: flex;
+}
+
+.justify-content-right{
+    justify-content: right;
+}
+
+.display-button a{
+    margin: 0 10px !important;
+}
+
+.display-button button{
+    margin: 0 10px !important;
+}
+
+.display-button input{
+    margin: 0 10px !important;
+}
+
+.show-detail{
+  width: 150px;
+  justify-content: right;  
+}
+
+.upload-file input{
+    display: none;
+}
+
+.upload-file label{
+    height: 150px;
+    width: 96%;
+    border-radius: 6px;
+    border: 1px dashed #999;
+    vertical-align: middle;
+    font-size: 18px;
+    padding-top: 66px;
+}
+
+.upload-file label span:hover{
+    cursor: pointer;
+    color: #64CCC5;
+}

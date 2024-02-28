@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đăng ký</title>
+  <link rel="shortcut icon" type="image/png" href="./public/staff-images/logos/favicon.png" />
+  <link rel="stylesheet" href="./public/staff-css/styles.min.css" />
+  <link rel="stylesheet" href="./public/staff-css/login-registration.css" />
+  <link rel="stylesheet" href="./public/staff-css/content.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <div
+      class="position-relative overflow-hidden radial-gradient min-vh-100 d-flex align-items-center justify-content-center">
+      <div class="d-flex align-items-center justify-content-center w-100">
+        <div class="row justify-content-center w-100">
+          <div style="padding: 10px 0;" class="col-md-8 col-lg-6 col-xxl-3 registration-form">
+            <div class="card mb-0">
+              <div class="card-body">
+                <a  style="padding: 10px 0;"  href="./index.html" class="text-nowrap logo-img text-center d-block py-3 w-100">
+                  <img src="./public/staff-images/logos/dark-logo.svg" width="180" alt="" />
+                </a>
+                <!-- <p class="text-center">Your Social Campaigns</p> -->
+                <form method="#">
+                  <div class="mb-4">
+                    <label for="exampleFirstName1" class="form-label">Họ</label>
+                    <input type="text" class="form-control" id="exampleFirstName1" name="input_11" placeholder="Nhập họ"
+                      required oninvalid="this.setCustomValidity('Vui lòng nhập họ.')"
+                      oninput="this.setCustomValidity('')" />
+                  </div>
+                  <div class="mb-4">
+                    <label for="exampleLastName1" class="form-label">Tên*</label>
+                    <input type="text" class="form-control" id="exampleLastName1" name="input_11" placeholder="Nhập tên"
+                      required oninvalid="this.setCustomValidity('Vui lòng nhập tên.')"
+                      oninput="this.setCustomValidity('')" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputtext1" class="form-label">Tên tài khoản*</label>
+                    <input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp"
+                      name="input_2" placeholder="Nhập tên tài khoản" required
+                      oninvalid="this.setCustomValidity('Vui lòng nhập tên tài khoản.')"
+                      oninput="this.setCustomValidity('')" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      name="input_2" placeholder="Nhập email" />
+                  </div>
+                  <div class="mb-4">
+                    <label for="exampleInputPassword1" class="form-label">Mật khẩu*</label>
+                    <input type="password" class="password form-control" id="exampleInputPassword1" name="input_11"
+                      placeholder="Nhập mật khẩu" required oninvalid="this.setCustomValidity('Vui lòng nhập mật khẩu.')"
+                      oninput="this.setCustomValidity('')" />
+                    <i class='bx bx-hide registration-icon-1 eye-icon'></i>
+                  </div>
+                  <div class="mb-4">
+                    <label for="exampleInputConfirmPassword1" class="form-label">Nhập lại mật khẩu</label>
+                    <input type="password" class="confirmPassword form-control" id="exampleInputConfirmPassword1"
+                      name="input_11" placeholder="Nhập lại mật khẩu" required
+                      oninvalid="this.setCustomValidity('Vui lòng nhập lại mật khẩu.')"
+                      oninput="this.setCustomValidity('')" disabled/>
+                      <i class='bx bx-hide registration-icon-2 eye-icon'></i>
+                  </div>
+
+                  <div class="mb-4">
+                    <label for="exampleInputPhoneNumber1" class="form-label">Số điện thoại*</label>
+                    <input type="text" class="form-control" id="exampleInputPhoneNumber1" name="input_11"
+                      placeholder="Nhập số điện thoại" required
+                      oninvalid="this.setCustomValidity('Vui lòng nhập số điện thoại.')"
+                      oninput="this.setCustomValidity('')" />
+                  </div>
+                  <div class="mb-4">
+                    <label for="exampleBirthday1" class="form-label">Ngày sinh*</label>
+                    <input type="date" class="form-control" id="exampleBirthday1" name="input_4" required
+                      oninvalid="this.setCustomValidity('Vui lòng chọn ngày sinh.')"
+                      oninput="this.setCustomValidity('')" />
+                  </div>
+
+                  <div class="mb-4">
+                    <label for="exampleProvince1" class="form-label">Tỉnh*</label>
+                    <input type="text" class="form-control" id="exampleProvince1" name="input_11"
+                      placeholder="Nhập tỉnh" required oninvalid="this.setCustomValidity('Vui lòng nhập tỉnh.')"
+                      oninput="this.setCustomValidity('')" />
+                  </div>
+                  <div class="mb-4">
+                    <label for="exampleDistrict1" class="form-label">Quận*</label>
+                    <input type="text" class="form-control" id="exampleDistrict1" name="input_11"
+                      placeholder="Nhập quận" required oninvalid="this.setCustomValidity('Vui lòng nhập quận.')"
+                      oninput="this.setCustomValidity('')" />
+                  </div>
+                  <div class="mb-4">
+                    <label for="exampleWard1" class="form-label">Phường*</label>
+                    <input type="text" class="form-control" id="exampleWard1" name="input_11" placeholder="Nhập phường"
+                      required oninvalid="this.setCustomValidity('Vui lòng nhập phường.')"
+                      oninput="this.setCustomValidity('')" />
+                  </div>
+                  <div class="mb-4">
+                    <label for="exampleStreetNumber1" class="form-label">Số nhà, đường*</label>
+                    <input type="text" class="form-control" id="exampleStreetNumber1" name="input_11"
+                      placeholder="Nhập số nhà, đường" required
+                      oninvalid="this.setCustomValidity('Vui lòng nhập số nhà, đường.')"
+                      oninput="this.setCustomValidity('')" />
+                  </div>
+
+                  <input name="input_12" id="input_3_12" type="hidden" class="gform_hidden" value="">
+                  <!-- <a href="./index.html" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Đăng ký</a> -->
+                  <input type="submit" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2" value="Đăng ký" />
+
+                  <div class="gform_footer top_label">
+                    <input type="hidden" class="gform_hidden" name="is_submit_3" value="1">
+                    <input type="hidden" class="gform_hidden" name="gform_submit" value="3">
+                    <input type="hidden" class="gform_hidden" name="gform_unique_id" value="">
+                    <input type="hidden" class="gform_hidden" name="state_3"
+                      value="WyJbXSIsIjA1ZDQ0NzBmMDk3NDRmOWIyMDkzNjVhNTk2ZWE1MDdmIl0=">
+                    <input type="hidden" class="gform_hidden" name="gform_target_page_number_3"
+                      id="gform_target_page_number_3" value="0">
+                    <input type="hidden" class="gform_hidden" name="gform_source_page_number_3"
+                      id="gform_source_page_number_3" value="1">
+                    <input type="hidden" name="gform_field_values" value="">
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <p style="font-size: 14px !important;" class="fs-4 mb-0 fw-bold">Bạn đã có tài khoản?</p>
+                    <a class="text-primary fw-bold ms-2" href="./ui-dangnhap.html">Đăng nhập</a>
+                  </div>
+                  <!-- <div class="line"></div>
+                  <div class="form">
+                    <div class="media-options">
+                      <a href="#" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2 field facebook">
+                        <svg class="bx bxl-facebook facebook-icon" xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 320 512">
+                          <path
+                            d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                        </svg>
+                        <span>Login with Facebook</span>
+                      </a>
+                    </div>
+                    <div class="media-options">
+                      <a href="#" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2 field google">
+                        <img class="bx bxl-google google-icon" src="../assets/images/logos/google-icon.png" alt="">
+                        <span>Login with Google</span>
+                      </a>
+                    </div>
+                  </div> -->
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./public/staff-libs/jquery/dist/jquery.min.js"></script>
+  <script src="./public/staff-libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./public/staff-js/password.js"></script>
+</body>
+
+</html>

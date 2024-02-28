@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đăng nhập</title>
+  <link rel="shortcut icon" type="image/png" href="./public/staff-images/logos/favicon.png" />
+  <link rel="stylesheet" href="./public/staff-css/styles.min.css" />
+  <link rel="stylesheet" href="./public/staff-css/login-registration.css" />
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <div
+      class="position-relative overflow-hidden radial-gradient min-vh-100 d-flex align-items-center justify-content-center">
+      <div class="d-flex align-items-center justify-content-center w-100">
+        <div class="row justify-content-center w-100">
+          <div class="col-md-8 col-lg-6 col-xxl-3">
+            <div class="card mb-0">
+              <div class="card-body">
+                <a style="padding: 10px 0;" href="./home.html"
+                  class="text-nowrap logo-img text-center d-block py-3 w-100">
+                  <img src="./public/staff-images/logos/dark-logo.svg" width="180" alt="" />
+                </a>
+                <!-- <p class="text-center">Your Social Campaigns</p> -->
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Tên tài khoản</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      required oninvalid="this.setCustomValidity('Vui lòng nhập tên tài khoản.')"
+                      oninput="this.setCustomValidity('')">
+                  </div>
+                  <div class="mb-4">
+                    <label for="exampleInputPassword1" class="form-label">Mật khẩu</label>
+                    <input type="password" class="password form-control" id="exampleInputPassword1">
+                    <i class='bx bx-hide log-in eye-icon'></i>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-between mb-4">
+                    <div class="form-check">
+                      <input class="form-check-input primary" type="checkbox" value="" id="flexCheckChecked" checked>
+                      <label class="form-check-label text-dark" for="flexCheckChecked">
+                        Ghi nhớ đăng nhập
+                      </label>
+                    </div>
+                    <a class="text-primary fw-bold" href="#">Quên mật khẩu ?</a>
+                  </div>
+                  <!-- <a href="./index.html" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Đăng nhập</a> -->
+                  <input type="submit" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2" value="Đăng nhập" />
+                  <div class="d-flex align-items-center justify-content-center">
+                    <p style="font-size: 14px !important;" class="fs-4 mb-0 fw-bold">Bạn chưa có tài khoản?</p>
+                    <a class="text-primary fw-bold ms-2" href="./ui-dangky.html">Tạo tài khoản mới</a>
+                  </div>
+                  <!-- <div class="line"></div>
+                  <div class="form">
+                    <div class="media-options">
+                      <a href="#" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2 field facebook">
+                        <svg class="bx bxl-facebook facebook-icon" xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 320 512">
+                          <path
+                            d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                        </svg>
+                        <span>Login with Facebook</span>
+                      </a>
+                    </div>
+                    <div class="media-options">
+                      <a href="#" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2 field google">
+                        <img class="bx bxl-google google-icon" src="../assets/images/logos/google-icon.png" alt="">
+                        <span>Login with Google</span>
+                      </a>
+                    </div>
+                  </div> -->
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/password.js"></script> -->
+  <script src="./public/staff-libs/jquery/dist/jquery.min.js"></script>
+  <script src="./public/staff-libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./public/staff-js/password.js"></script>
+</body>
+
+</html>

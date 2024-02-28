@@ -1,0 +1,124 @@
+.no-shadow{
+    box-shadow: none;
+}
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 200px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #176B87;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #176B87;
+}
+
+.content-table tbody tr:hover{
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #176B87;
+}
+
+.content-table tbody tr td i{
+    font-size: 16px;
+    border-radius: 50%;
+    padding: 5px;
+    
+}
+
+.content-table tbody tr td i:hover{
+    background-color: #e3e3e3;
+}
+
+.content-table tbody tr .more_vert{
+    width: 10px;
+}
+
+.content-table tbody tr .link-view-account
+{
+    color: #176B87;
+    width: 100px;
+}
+
+.content-table tbody tr .show-name{
+    width: 300px;
+}
+
+.content-table tbody tr td button{
+    border:none;
+    background: none;
+}
+
+.content-table tbody tr td .delete-icon{
+    background: none;
+}
+
+.show-product thead tr th{
+    text-align: center;
+}
+
+.show-product thead tr {
+    border-right: #e3e3e3;
+}
+
+.show-product tfoot tr .text-aligh-center{
+    text-align: center;
+}
+
+.search-filter-bar {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-bottom: 20px;
+}
+
+.search-filter-bar form{
+
+    align-items: center;
+    padding: 0 10px;
+}
+
+
+.display-input-none-border td input{
+    outline: none;
+}
+
+.display-more-vert-menu{
+    width: 160px;
+    height: 83px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 7px;
+}
+
+.display-more-vert-menu div{
+    padding: 10px;
+}
+
+.display-more-vert-menu div:first-child{
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.display-more-vert-menu div:hover{
+    background-color: #f3f3f3;
+}
