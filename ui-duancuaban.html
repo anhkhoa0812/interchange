@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Quản lý báo giá</title>
+    <title>Dự án của bạn</title>
     <link rel="shortcut icon" type="image/png" href="./public/staff-images/logos/favicon.png" />
     <link rel="stylesheet" href="./public/staff-css/styles.min.css" />
     <link rel="stylesheet" href="./public/staff-css/side-bar.css">
@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./public/staff-css/content.css">
     <link rel="stylesheet" href="./public/staff-css/pagination.css">
     <link rel="stylesheet" href="./public/staff-css/filter-bar.css">
+    <link rel="stylesheet" href="./public/css/customer-project.css">
+    <link rel="stylesheet" href="./public/css/multi-process-bar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -147,6 +149,11 @@
                                             <i class="ti ti-mail fs-6"></i>
                                             <p class="mb-0 fs-3">Tài khoản</p>
                                         </a>
+                                        <a href="ui-duancuaban.html"
+                                            class="d-flex align-items-center gap-2 dropdown-item">
+                                            <i class="ti ti-mail fs-6"></i>
+                                            <p class="mb-0 fs-3">Dự án của bạn</p>
+                                        </a>
                                         <a href="./ui-dangnhap.html"
                                             class="btn btn-outline-primary mx-3 mt-2 d-block">Đăng xuất</a>
                                     </div>
@@ -157,74 +164,46 @@
                 </nav>
             </header>
             <!--  Header End -->
-            <!-- Sửa thành quản lý dự án, 1 dự án (trạng thái: cần xử lý, đang chờ admin, đang chờ khách hàng) có nhiều quotation (cần tạo báo giá, cần upload bản thiết kế)-->
+            <!-- Sửa thành quản lý dự án, 1 dự án (trạng thái: cần xử lý, đang chờ admin, đang chờ khách hàng) có nhiều quotation (Đã có báo giá chi tiết, cần upload bản thiết kế)-->
             <div class="container-fluid">
                 <div class="container-fluid">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title fw-semibold mb-4">DANH SÁCH DỰ ÁN</h5>
-                            <div>
-                                <form style="align-items: center;" class="display-flex justify-content-right"
-                                    action="#">
-                                    <div>Bộ lọc</div>
-                                    <select style="" class="btn" name="" id="">
-                                        <option value="">Hiển thị tất cả</option>
-                                        <option value="">Cần xử lý</option>
-                                        <option value="">Đang chờ khách hàng</option>
-                                        <option value="">Đang chờ admin</option>
-                                    </select>
-                                </form>
+                            <h5 class="card-title fw-semibold mb-4">DỰ ÁN CỦA BẠN</h5>
+                            <div class="card no-shadow">
+                                <div class="customer-project-display">
+                                    <div class="project-status status-have-response">Đã có thiết kế</div>
+                                    <div class="project-image"><img src="./public/image/0007-450x320.jpg" alt=""></div>
+                                    <di class="project-content">
+                                        <h5 class="card-title fw-semibold mb-4">DỰ ÁN 2</h5>
+                                        <div class="project-buttons">
+                                            <a class="btn btn-primary m-1" href="#">Xem thiết kế</a>
+                                            <a class="btn btn-primary m-1" href="#">Xem báo giá</a>
+                                        </div>
+                                    </di>
+                                </div>
                             </div>
                             <div class="card no-shadow">
-                                <table class="content-table">
-                                    <thead>
-                                        <tr>
-                                            <th>ID Dự án</th>
-                                            <th>ID Nhân viên</th>
-                                            <th>Ngày yêu cầu</th>
-                                            <th>Trạng thái</th>
-                                            <th class="show-detail"></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Pr1</td>
-                                            <td>St1</td>
-                                            <td>23/02/2024</td>
-                                            <td>Đang chờ admin</td>
-                                            <td class="show-detail">
-                                                <button type="button" class="btn btn-primary m-1 button-list">Xem chi
-                                                    tiết</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Pr2</td>
-                                            <td>St2</td>
-                                            <td>23/02/2024</td>
-                                            <td>Đang chờ khách hàng</td>
-                                            <td class="show-detail">
-                                                <button type="button" class="btn btn-primary m-1 button-list">Xem chi
-                                                    tiết</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Pr3</td>
-                                            <td>St3</td>
-                                            <td>23/02/2024</td>
-                                            <td>Cần xử lý</td>
-                                            <td class="show-detail">
-                                                <button type="button" class="btn btn-primary m-1 button-list">Xem chi
-                                                    tiết</button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="pagination">
-                                    <ul></ul>
+                                <div class="customer-project-display">
+                                    <div class="project-status status-done">Đã hoàn thành</div>
+                                    <div class="project-image"><img
+                                            src="./public/image/z3385549894247_0f119524aedd8b97e44dcd5706770c4f-450x320.jpg"
+                                            alt=""></div>
+                                    <di class="project-content">
+                                        <h5 class="card-title fw-semibold mb-4">DỰ ÁN 1</h5>
+                                        <div class="project-buttons">
+                                            <a class="btn btn-primary m-1" href="#">Xem thiết kế</a>
+                                            <a class="btn btn-primary m-1" href="#">Xem báo giá</a>
+                                        </div>
+                                    </di>
                                 </div>
-                                <div class="display-flex justify-content-right display-button">
-                                    <a class="btn btn-primary m-1" href="#">Quay lại</a>
-                                </div>
+
+                            </div>
+                            <div class="pagination">
+                                <ul></ul>
+                            </div>
+                            <div class="display-flex justify-content-right display-button">
+                                <a class="btn btn-primary m-1" href="#">Quay lại</a>
                             </div>
                         </div>
                     </div>
@@ -236,30 +215,37 @@
                         <div class="card-body">
                             <h5 class="card-title fw-semibold mb-4">CHI TIẾT DỰ ÁN</h5>
                             <div class="card no-shadow">
+                                <div class="multi-process-bar">
+                                    <div class="steps">
+                                        <span class="circle active">1</span>
+                                        <span class="circle">2</span>
+                                        <span class="circle">3</span>
+                                        <span class="circle">4</span>
+                                        <div class="progress-bar">
+                                            <span class="indicator"></span>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="show-content">
                                     <div class="content-inline">
                                         <div>ID Dự án:</div>
-                                        <div class="display-flex align-items-center justify-content-between">
-                                            <div>Tên dự án: </div>
-                                            <input style="width: 60%;" type="text" class="form-control">
-                                        </div>
+                                        <div>Tên dự án:</div>
                                     </div>
                                     <div class="content-inline">
                                         <div>Khách hàng:</div>
-                                        <div>Nhân viên phụ trách:</div>
+                                        <div class="display-flex">
+                                            <div>Trạng thái:</div>
+                                            <div>Đã có bảng vẽ</div>
+                                        </div>
                                     </div>
-                                    <div style="padding: 10px 0;" class="display-flex">
-                                        <div>Trạng thái:</div>
-                                        <div style="padding-left: 20px;">Cần được xử lý</div>
-                                    </div>
-                                    <div class="content-non-inline">Yêu cầu của khách hàng: <input class="form-control" type="text"></div>
+
+                                    <div class="content-non-inline">Yêu cầu của khách hàng:</div>
                                     <div class="content-non-inline">Danh sách báo giá:</div>
                                 </div>
                                 <table class="content-table">
                                     <thead>
                                         <tr>
                                             <th>ID Báo giá</th>
-                                            <th>Nhân viên phụ trách</th>
                                             <th>Ngày đăng ký</th>
                                             <th>Trạng thái</th>
                                             <th class="show-detail"></th>
@@ -268,9 +254,8 @@
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>St1</td>
                                             <td>23/06/2023</td>
-                                            <td>Cần bảng vẽ</td>
+                                            <td>Đã có bảng vẽ</td>
                                             <td class="show-detail">
                                                 <button type="button" class="btn btn-primary m-1 button-list">Xem chi
                                                     tiết</button>
@@ -278,9 +263,8 @@
                                         </tr>
                                         <tr>
                                             <td>2</td>
-                                            <td>St2</td>
                                             <td>23/07/2023</td>
-                                            <td>Cần tạo báo giá</td>
+                                            <td>Hoàn thành</td>
                                             <td class="show-detail">
                                                 <button type="button" class="btn btn-primary m-1 button-list">Xem chi
                                                     tiết</button>
@@ -288,19 +272,8 @@
                                         </tr>
                                         <tr>
                                             <td>3</td>
-                                            <td>St3</td>
                                             <td>23/08/2023</td>
-                                            <td>Cần lấy thông tin</td>
-                                            <td class="show-detail">
-                                                <button type="button" class="btn btn-primary m-1 button-list">Xem chi
-                                                    tiết</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>St4</td>
-                                            <td>23/08/2023</td>
-                                            <td>Không chấp thuận</td>
+                                            <td>Hoàn thành</td>
                                             <td class="show-detail">
                                                 <button type="button" class="btn btn-primary m-1 button-list">Xem chi
                                                     tiết</button>
@@ -308,11 +281,6 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="display-flex justify-content-right display-button">
-                                    <a class="btn btn-primary m-1" href="#">Lưu</a>
-                                    <a class="btn btn-primary m-1" href="#">Tạo báo giá mới</a>
-                                    <a class="btn btn-primary m-1" href="#">Quay lại</a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -327,14 +295,80 @@
                                 <div class="show-content">
                                     <div class="content-inline">
                                         <div>ID Dự án:</div>
-                                        <div>Tên dự án:
+                                        <div>Tên dự án:</div>
+                                    </div>
+                                    <div class="content-inline">
+                                        <div>Khách hàng:</div>
+                                        <div class="display-flex">
+                                            <div>Trạng thái:</div>
+                                            <div>Đã có báo giá chi tiết</div>
                                         </div>
                                     </div>
+
+                                    <div class="content-non-inline">Yêu cầu của khách hàng:</div>
+                                    <div class="content-non-inline">Danh sách báo giá:</div>
+                                </div>
+                                <table class="content-table">
+                                    <thead>
+                                        <tr>
+                                            <th>ID Báo giá</th>
+                                            <th>Ngày đăng ký</th>
+                                            <th>Trạng thái</th>
+                                            <th class="show-detail"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>23/06/2023</td>
+                                            <td>Đã có báo giá chi tiết</td>
+                                            <td class="show-detail">
+                                                <button type="button" class="btn btn-primary m-1 button-list">Xem chi
+                                                    tiết</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>23/07/2023</td>
+                                            <td>Hoàn thành</td>
+                                            <td class="show-detail">
+                                                <button type="button" class="btn btn-primary m-1 button-list">Xem chi
+                                                    tiết</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>23/08/2023</td>
+                                            <td>Hoàn thành</td>
+                                            <td class="show-detail">
+                                                <button type="button" class="btn btn-primary m-1 button-list">Xem chi
+                                                    tiết</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="container-fluid">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold mb-4">CHI TIẾT BÁO GIÁ</h5>
+                            <div class="card no-shadow">
+                                <div class="show-content">
+                                    <div class="content-inline">
+                                        <div>ID Dự án:</div>
+                                        <div>Tên dự án:</div>
+                                    </div>
                                     <div class="content-inline">
                                         <div>Khách hàng:</div>
-                                        <div>Nhân viên phụ trách:</div>
+                                        <div></div>
                                     </div>
-                                    <div class="content-non-inline">Trạng thái: Cần lấy thông tin</div>
+                                    
+                                    <div class="content-non-inline">Trạng thái: Đã có bảng vẽ</div>
                                     <div class="content-non-inline">Yêu cầu của khách hàng:</div>
                                     <div class="content-non-inline">Các sản phẩm có trong thiết kế:</div>
                                 </div>
@@ -458,186 +492,9 @@
                                     </tfoot>
                                 </table>
                                 <div class="display-flex justify-content-right display-button">
-                                    <a class="btn btn-primary m-1" href="#">Đã lấy thông tin</a>
-                                    <a class="btn btn-primary m-1" href="#">Quay lại</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="container-fluid">
-                <div class="container-fluid">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title fw-semibold mb-4">CHI TIẾT BÁO GIÁ</h5>
-                            <div class="card no-shadow">
-                                <div class="show-content">
-                                    <div class="content-inline">
-                                        <div>ID Dự án:</div>
-                                        <div>Tên dự án:</div>
-                                    </div>
-                                    <div class="content-inline">
-                                        <div>Khách hàng:</div>
-                                        <div>Nhân viên phụ trách:</div>
-                                    </div>
-                                    <div class="content-non-inline">Trạng thái: Cần bảng thiết kế</div>
-                                    <div class="content-non-inline">Yêu cầu của khách hàng:</div>
-                                    <div class="content-non-inline">Các sản phẩm có trong thiết kế:</div>
-                                </div>
-                                <form style="padding: 10px 0 0 0; align-items: center;" class="display-flex" action="">
-                                    <div>Nhà cung cấp</div>
-                                    <select name="" id="" class="btn">
-                                        <option value="">Interdecor</option>
-                                        <option value="">MSQN</option>
-                                    </select>
-                                </form>
-
-                                <table class="content-table show-product" id="manage-product-table-1">
-                                    <thead>
-                                        <tr>
-                                            <th class="display-column content-center" rowspan="2">Sản phẩm</th>
-                                            <th class="display-column content-center" rowspan="2">Mô tả</th>
-                                            <th class="display-column content-center" colspan="3">Kích thước</th>
-                                            <th class="display-column content-center" rowspan="2">Đơn vị</th>
-                                            <th class="display-column content-center" rowspan="2">Số lượng</th>
-                                            <th class="display-column content-center" rowspan="2">Đơn giá</th>
-                                            <th class="content-center" rowspan="2">Hình tham khảo</th>
-                                            <th class="content-center" rowspan="2"></th>
-                                        </tr>
-                                        <tr>
-                                            <th class="content-center">Dài</th>
-                                            <th class="content-center">Rộng</th>
-                                            <th class="content-center">Cao</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="display-input-none-border">
-                                            <td><input type="hidden" name="txtProductID"></td>
-                                            <td><input type="hidden" name="txtProductDescription"></td>
-                                            <td class="content-center"><input type="hidden" name="txtProductLength">
-                                            </td>
-                                            <td class="content-center"><input type="hidden" name="txtProductWidth" />
-                                            </td>
-                                            <td class="content-center"><input type="hidden" name="txtProductHeight">
-                                            </td>
-                                            <td class="content-center"><input type="hidden"
-                                                    name="txtProductMeasureUnit"></td>
-                                            <td class="content-center"><input type="hidden" name="txtProductQuantity">
-                                            </td>
-                                            <td class="content-center"><input type="hidden" name="txtProductUnitPrice">
-                                            </td>
-                                            <td class="content-center"><input type="hidden" name="txtProductTotalPrice">
-                                            </td>
-                                            <td class="content-center"><button class="delete-icon"><i
-                                                        style="font-size:12px" class="fa">&#xf00d;</i></button></td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="9"><select name="" id="" class="btn btn-primary m-1">
-                                                    <title>Chọn loại phòng</title>
-                                                    <option value="">Phòng ngủ</option>
-                                                    <option value="">Phòng khách</option>
-                                                    <option value="">Phòng bếp</option>
-                                                </select></td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-
-                                <form style="padding: 10px 0 0 0; align-items: center;" class="display-flex" action="">
-                                    <div>Nhà cung cấp</div>
-                                    <select name="" id="" class="btn">
-                                        <option value="">Interdecor</option>
-                                        <option value="">MSQN</option>
-                                    </select>
-                                </form>
-
-                                <table class="content-table show-product" id="manage-product-table-1">
-                                    <thead>
-                                        <tr>
-                                            <th class="display-column content-center" rowspan="2">Sản phẩm</th>
-                                            <th class="display-column content-center" rowspan="2">Mô tả</th>
-                                            <th class="display-column content-center" colspan="3">Kích thước</th>
-                                            <th class="display-column content-center" rowspan="2">Đơn vị</th>
-                                            <th class="display-column content-center" rowspan="2">Số lượng</th>
-                                            <th class="display-column content-center" rowspan="2">Đơn giá</th>
-                                            <th class="content-center" rowspan="2">Hình tham khảo</th>
-                                            <th class="content-center" rowspan="2"></th>
-                                        </tr>
-                                        <tr>
-                                            <th class="content-center">Dài</th>
-                                            <th class="content-center">Rộng</th>
-                                            <th class="content-center">Cao</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="display-input-none-border">
-                                            <td><input type="hidden" name="txtProductID"></td>
-                                            <td><input type="hidden" name="txtProductDescription"></td>
-                                            <td class="content-center"><input type="hidden" name="txtProductLength">
-                                            </td>
-                                            <td class="content-center"><input type="hidden" name="txtProductWidth" />
-                                            </td>
-                                            <td class="content-center"><input type="hidden" name="txtProductHeight">
-                                            </td>
-                                            <td class="content-center"><input type="hidden"
-                                                    name="txtProductMeasureUnit"></td>
-                                            <td class="content-center"><input type="hidden" name="txtProductQuantity">
-                                            </td>
-                                            <td class="content-center"><input type="hidden" name="txtProductUnitPrice">
-                                            </td>
-                                            <td class="content-center"><input type="hidden" name="txtProductTotalPrice">
-                                            </td>
-                                            <td class="content-center"><button class="delete-icon"><i
-                                                        style="font-size:12px" class="fa">&#xf00d;</i></button></td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="9"><select name="" id="" class="btn btn-primary m-1">
-                                                    <title>Chọn loại phòng</title>
-                                                    <option value="">Phòng ngủ</option>
-                                                    <option value="">Phòng khách</option>
-                                                    <option value="">Phòng bếp</option>
-                                                </select></td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                                <div class="display-flex justify-content-right display-button">
-                                    <a class="btn btn-primary m-1" href="#">Upload thiết kế</a>
-                                    <a class="btn btn-primary m-1" href="#">Quay lại</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="container-fluid">
-                    <div class="card display-form">
-                        <div class="card-body">
-                            <div class="display-center upload-file">
-                                <input type="file" id="file" />
-                                <label for="file">Kéo và thả file thiết kế hoặc <span>browser</span></label>
-                                <div style="padding-top: 15px;"
-                                    class="display-flex display-button justify-content-right">
-                                    <a class="btn btn-primary m-1" href="ui-quanlynhanvien.html">Quay lại</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="container-fluid">
-                    <div class="card display-form">
-                        <div class="card-body">
-                            <div class="display-center" style="text-align: center;">
-                                <h8 class="card-title fw-semibold mb-4">Thiết kế đã được gửi tới admin</h8>
-                                <div style="padding-top: 15px;"
-                                    class="display-flex display-button justify-content-center">
+                                    <a class="btn btn-primary m-1" href="#">Xem thiết kế</a>
+                                    <a class="btn btn-primary m-1" href="#">Chấp thuận</a>
+                                    <a class="btn btn-primary m-1" href="#">Yêu cầu chỉnh sửa</a>
                                     <a class="btn btn-primary m-1" href="#">Quay lại</a>
                                 </div>
                             </div>
@@ -660,7 +517,7 @@
                                         <div>Khách hàng:</div>
                                         <div>Nhân viên phụ trách:</div>
                                     </div>
-                                    <div class="content-non-inline">Trạng thái: Cần tạo báo giá</div>
+                                    <div class="content-non-inline">Trạng thái: Đã có báo giá chi tiết</div>
                                     <div class="content-non-inline">Thiết kế:</div>
                                     <div class="content-non-inline">Yêu cầu của khách hàng:</div>
                                     <div class="content-non-inline">Các sản phẩm có trong thiết kế:</div>
@@ -793,22 +650,9 @@
                                     </tfoot>
                                 </table>
                                 <div class="display-flex justify-content-right display-button">
-                                    <a class="btn btn-primary m-1" href="#">Gửi báo giá</a>
+                                    <a class="btn btn-primary m-1" href="#">Xem thiết kế</a>
                                     <a class="btn btn-primary m-1" href="#">Chấp thuận</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="container-fluid">
-                    <div class="card display-form">
-                        <div class="card-body">
-                            <div class="display-center" style="text-align: center;">
-                                <h8 class="card-title fw-semibold mb-4">Báo giá đã được gửi tới admin</h8>
-                                <div style="padding-top: 15px;"
-                                    class="display-flex display-button justify-content-center">
+                                    <a class="btn btn-primary m-1" href="#">Yêu cầu chỉnh sửa</a>
                                     <a class="btn btn-primary m-1" href="#">Quay lại</a>
                                 </div>
                             </div>
@@ -821,8 +665,8 @@
                     <div class="card display-form">
                         <div class="card-body">
                             <div class="display-center" style="text-align: center;">
-                                <h8 class="card-title fw-semibold mb-4">Báo giá gửi không thành công</h8>
-
+                                <h8 class="card-title fw-semibold mb-4">Yêu cầu của bạn đã gửi tới chúng tôi</h8>
+                                <div>Chúng tôi sẽ liên hệ đến bạn trong thời gian sớm nhất</div>
                                 <div style="padding-top: 15px;"
                                     class="display-flex display-button justify-content-center">
                                     <a class="btn btn-primary m-1" href="#">Quay lại</a>
@@ -833,7 +677,6 @@
                 </div>
             </div>
         </div>
-
         <script src="./public/staff-libs/jquery/dist/jquery.min.js"></script>
         <script src="./public/staff-libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="./public/staff-js/sidebarmenu.js"></script>

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./public/staff-css/content.css">
     <link rel="stylesheet" href="./public/staff-css/pagination.css">
     <link rel="stylesheet" href="./public/staff-css/filter-bar.css">
+    <link rel="stylesheet" href="./public/staff-css/post-content.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -53,37 +54,37 @@
                         <li class="nav-small-cap">
                             <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
                             <span class="hide-menu">Tác vụ</span>
-                          </li>
-                          <li class="sidebar-item">
+                        </li>
+                        <li class="sidebar-item">
                             <a class="sidebar-link" href="./ui-quanlysanpham.html" aria-expanded="false">
-                              <span class="hide-menu no-icon">Quản lý sản phẩm</span>
+                                <span class="hide-menu no-icon">Quản lý sản phẩm</span>
                             </a>
-                          </li>
-                          <li class="sidebar-item">
+                        </li>
+                        <li class="sidebar-item">
                             <a class="sidebar-link" href="./ui-quanlythietkenoithatmau.html" aria-expanded="false">
-                              <span class="hide-menu no-icon">Quản lý thiết kế mẫu</span>
+                                <span class="hide-menu no-icon">Quản lý thiết kế mẫu</span>
                             </a>
-                          </li>
-                          <li class="sidebar-item">
+                        </li>
+                        <li class="sidebar-item">
                             <a class="sidebar-link" href="./ui-quanlypheduyet.html" aria-expanded="false">
-                              <span class="hide-menu no-icon">Quản lý phê duyệt</span>
+                                <span class="hide-menu no-icon">Quản lý phê duyệt</span>
                             </a>
-                          </li>
-                          <li class="sidebar-item">
+                        </li>
+                        <li class="sidebar-item">
                             <a class="sidebar-link" href="./ui-quanlynguoidung.html" aria-expanded="false">
-                              <span class="hide-menu no-icon">Quản lý người dùng</span>
+                                <span class="hide-menu no-icon">Quản lý người dùng</span>
                             </a>
-                          </li>
-                          <li class="sidebar-item">
+                        </li>
+                        <li class="sidebar-item">
                             <a class="sidebar-link" href="./ui-quanlyduan.html" aria-expanded="false">
-                              <span class="hide-menu no-icon">Quản lý dự án</span>
+                                <span class="hide-menu no-icon">Quản lý dự án</span>
                             </a>
-                          </li>
-                          <li class="sidebar-item">
+                        </li>
+                        <li class="sidebar-item">
                             <a class="sidebar-link" href="./ui-quanlyblog.html" aria-expanded="false">
-                              <span class="hide-menu no-icon">Quản lý blog</span>
+                                <span class="hide-menu no-icon">Quản lý blog</span>
                             </a>
-                          </li>
+                        </li>
                         <li class="nav-small-cap">
                             <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
                             <span class="hide-menu">Rời</span>
@@ -161,48 +162,19 @@
                 <div class="container-fluid">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title fw-semibold mb-4">DANH SÁCH ThIẾT KẾ MẪU</h5>
+                            <h5 class="card-title fw-semibold mb-4">DANH SÁCH THIẾT KẾ MẪU</h5>
                             <div class="card no-shadow">
-                                <table class="content-table">
-                                    <thead>
-                                        <tr>
-                                            <th>ID Báo giá</th>
-                                            <th>ID Dự án</th>
-                                            <th>ID Nhân viên</th>
-                                            <th>Ngày yêu cầu</th>
-                                            <th class="show-detail"></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Thiết kế</td>
-                                            <td>Đang làm việc</td>
-                                            <td>Ngày yêu cầu</td>
-                                            <td class="show-detail">
-                                                <button type="button" class="btn btn-primary m-1 ">Xem chi tiết</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Tư vấn</td>
-                                            <td>Tạm nghỉ</td>
-                                            <td>Ngày yêu cầu</td>
-                                            <td class="show-detail">
-                                                <button type="button" class="btn btn-primary m-1">Xem chi tiết</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Tư vấn</td>
-                                            <td>Đã nghỉ</td>
-                                            <td>Ngày yêu cầu</td>
-                                            <td class="show-detail">
-                                                <button type="button" class="btn btn-primary m-1">Xem chi tiết</button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <button style="width: 220px; height: 50px; border-radius: 25px;" class="btn btn-primary m-1 display-flex align-items-center">
+                                    <span style="margin-right: 10px;" class="dp-container">
+                                        <i class="fa fa-plus"></i>
+                                    </span>
+                                    <span class="name">Thêm thiết kế mẫu mới</span>
+                                </button>
+                                <div class="post-content-section">
+                                    <div class="post-content-element">
+                                        
+                                    </div>
+                                </div>
                                 <div class="pagination">
                                     <ul></ul>
                                 </div>
@@ -265,7 +237,6 @@
                                             <th class="display-column" rowspan="2">Đơn giá</th>
                                             <th class="display-column" rowspan="2">Ghi chú</th>
                                             <th rowspan="2">Hình tham khảo</th>
-                                            <th class="display-column" rowspan="2">Thành tiền</th>
                                         </tr>
                                         <tr>
                                             <th>Dài</th>
@@ -284,39 +255,8 @@
                                             <td></td>
                                             <td></td>
                                             <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
                                         </tr>
                                     </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="9">Tổng</td>
-                                            <td class="text-aligh-center" colspan="1">15.000.000 đồng</td>
-                                        </tr>
-                                    </tfoot>
                                 </table>
                                 <div class="display-flex justify-content-right display-button">
                                     <a class="btn btn-primary m-1" href="#">Chỉnh sửa</a>
@@ -326,100 +266,7 @@
                         </div>
                     </div>
                 </div>
-            <!-- </div>
-            <div class="container-fluid">
-                <div class="container-fluid">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title fw-semibold mb-4">CHI TIẾT DỰ ÁN (của product)</h5>
-                            <div class="card no-shadow" id="manage-product-div">
-                                <div class="show-content">
-                                    <div class="content-inline">
-                                        <div>ID Dự án:</div>
-                                        <div>Tên dự án:</div>
-                                    </div>
-                                    <div class="content-inline">
-                                        <div>Khách hàng:</div>
-                                        <div>Nhân viên phụ trách:</div>
-                                    </div>
-                                    <div class="content-non-inline">Thiết kế được chọn:</div>
-
-                                </div>
-                                <form style="padding: 10px 0 0 0;" class="display-flex" action="">
-                                    <div class="display-choosen-supplier">
-                                        <div class="dropdown">
-                                            <div style="width: 200px;" class="input-box">Chọn nhà cung cấp</div>
-                                            <div class="list">
-                                                <div class="search-box">
-                                                    <input type="search" name="" id="search" placeholder="Filter option"
-                                                        onkeyup="search(this)" />
-                                                </div>
-                                                <input type="radio" name="drop1" id="id11" class="radio" />
-                                                <label for="id11">
-                                                    <span class="name">A-Z</span>
-                                                </label>
-
-                                                <input type="radio" name="drop1" id="id12" class="radio" value="" />
-                                                <label for="id12">
-                                                    <span class="name">Z-A</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                                
-                                <table class="content-table show-product" id="manage-product-table-1">
-                                    <thead>
-                                        <tr>
-                                            <th class="display-column" rowspan="2">Sản phẩm</th>
-                                            <th class="display-column" rowspan="2">Mô tả</th>
-                                            <th class="display-column" colspan="3">Kích thước</th>
-                                            <th class="display-column" rowspan="2">Đơn vị</th>
-                                            <th class="display-column" rowspan="2">Số lượng</th>
-                                            <th class="display-column" rowspan="2">Đơn giá</th>
-                                            <th rowspan="2">Hình tham khảo</th>
-                                            <th class="display-column" rowspan="2">Thành tiền</th>
-                                            <th rowspan="2"></th>
-                                        </tr>
-                                        <tr>
-                                            <th>Dài</th>
-                                            <th>Rộng</th>
-                                            <th>Cao</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="display-input-none-border">
-                                            <td><input type="hidden" name="txtProductID"></td>
-                                            <td><input type="hidden" name="txtProductDescription"></td>
-                                            <td><input type="hidden" name="txtProductLength"></td>
-                                            <td><input type="hidden" name="txtProductWidth"/></td>
-                                            <td><input type="hidden" name="txtProductHeight"></td>
-                                            <td><input type="hidden" name="txtProductMeasureUnit"></td>
-                                            <td><input type="hidden" name="txtProductQuantity"></td>
-                                            <td><input type="hidden" name="txtProductUnitPrice"></td>
-                                            <td></td>
-                                            <td><input type="hidden" name="txtProductTotalPrice"></td>
-                                            <td><button>Delete</button></td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="9">Tổng</td>
-                                            <td class="text-aligh-center" colspan="1">15.000.000 đồng</td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                                <button onclick="addNewRecord()" class="btn btn-primary m-1" name="add">+</button>
-                                <button onclick="addNewTable()" class="btn btn-primary m-1">Add table</button>
-                                <div class="display-flex justify-content-right display-button">
-                                    <a class="btn btn-primary m-1" href="#">Chỉnh sửa</a>
-                                    <a class="btn btn-primary m-1" href="#">Chấp thuận</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+            </div>
             <div class="container-fluid">
                 <div class="container-fluid">
                     <div class="card display-form">

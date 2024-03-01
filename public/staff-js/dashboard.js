@@ -6,8 +6,8 @@ $(function () {
   // =====================================
   var chart = {
     series: [
-      { name: "Earnings this month:", data: [355, 390, 300, 350, 390, 180, 355, 390] },
-      { name: "Expense this month:", data: [280, 250, 325, 215, 250, 310, 280, 250] },
+      { name: "Số lượng báo giá tháng này", data: [355, 390, 300, 350, 390, 180, 355, 390] },
+      { name: "Doanh thu hàng tháng", data: [280, 250, 325, 215, 250, 310, 280, 250] },
     ],
 
     chart: {
@@ -110,7 +110,7 @@ $(function () {
   // =====================================
   var breakup = {
     color: "#adb5bd",
-    series: [38, 40, 25],
+    series: [35, 40, 25],
     labels: ["2022", "2021", "2020"],
     chart: {
       width: 180,
