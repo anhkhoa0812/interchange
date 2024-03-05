@@ -1,0 +1,227 @@
+.filter-bar {
+    --font-size: 0.9em;
+    --icon-size: 18px;
+}
+
+.filter-bar .dropdown {
+    width: 120px;
+    height: fit-content;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.filter-bar .dropdown .input-box {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    outline: 0.3mm solid rgba(0, 0, 0, 0.15);
+    border-radius: 2mm;
+    padding: 10px 15px;
+    font-family: poppins;
+    font-size: var(--font-size);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.filter-bar .dropdown .input-box::before {
+    content: "expand_more";
+    font-family: "Material Icons";
+    position: absolute;
+    font-size: var(--icon-size);
+    top: 50%;
+    right: 15px;
+    transform: translate(0, -50%);
+    width: fit-content;
+    height: fit-content;
+}
+
+.filter-bar .dropdown .input-box.open::before {
+    content: "expand_less";
+}
+
+.filter-bar .dropdown .input-box:empty::after {
+    content: "Select Title";
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.filter-bar .dropdown .list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    background: white;
+    margin-top: 10px;
+    border-radius: 2mm;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    max-height: 0;
+    transition: 0.25s ease-out;
+}
+
+.filter-bar .dropdown .list input {
+    display: none;
+}
+
+.filter-bar .dropdown .list label {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: poppins;
+    font-size: var(--font-size);
+    padding: 10px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+}
+
+.filter-bar .dropdown .list label:hover {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.filter-bar .dropdown .list input:checked+label {
+    color: #64CCC5;
+    background: rgb(238, 245, 252);
+}
+
+input:checked+label::before {
+    content: "done";
+    font-family: "Material Icons";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(0, -50%);
+    font-size: var(--font-size);
+}
+
+.open {
+    outline: 0.7mm solid #64CCC5;
+}
+
+.search-box {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 8px;
+}
+
+.search-box input::placeholder{
+    font-size: var(--font-size);
+}
+
+#search {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 1mm;
+    border: none;
+    outline: 0.3mm solid rgba(0, 0, 0, 0.15);
+    font-family: poppins;
+}
+
+#search:focus {
+    outline: 0.5mm solid rgba(0, 0, 0, 0.35);
+}
+
+.display-choosen-supplier  {
+    --font-size: 0.9em;
+    --icon-size: 18px;
+    
+}
+
+.display-choosen-supplier  .dropdown {
+    width: 150px;
+    height: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.display-choosen-supplier  .dropdown .input-box {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    outline: 0.3mm solid rgba(0, 0, 0, 0.15);
+    border-radius: 2mm;
+    padding: 10px 15px;
+    font-family: poppins;
+    font-size: var(--font-size);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    background-color: #176B87;
+    color: #ffffff;
+}
+
+.display-choosen-supplier  .dropdown .input-box::before {
+    content: "expand_more";
+    font-family: "Material Icons";
+    position: absolute;
+    font-size: var(--icon-size);
+    top: 50%;
+    right: 15px;
+    transform: translate(0, -50%);
+    width: fit-content;
+    height: fit-content;
+}
+
+.display-choosen-supplier  .dropdown .input-box.open::before {
+    content: "expand_less";
+}
+
+.display-choosen-supplier  .dropdown .input-box:empty::after {
+    content: "Select Title";
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.display-choosen-supplier  .dropdown .list {
+    position: absolute;
+    top: 160%;
+    left: 0;
+    width: 133%;
+    height: fit-content;
+    background: #ffffff;
+    margin-top: 10px;
+    border-radius: 2mm;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    max-height: 0;
+    transition: 0.25s ease-out;
+}
+
+.display-choosen-supplier  .dropdown .list input {
+    display: none;
+}
+
+.display-choosen-supplier  .dropdown .list label {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: poppins;
+    font-size: var(--font-size);
+    padding: 10px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+}
+
+.display-choosen-supplier  .dropdown .list label:hover {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.display-choosen-supplier  .dropdown .list input:checked+label {
+    color: #64CCC5;
+    background: rgb(238, 245, 252);
+}

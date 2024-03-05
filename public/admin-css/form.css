@@ -1,0 +1,36 @@
+.display-feedback{
+    display: block;
+}
+
+.display-form{
+    width: 60%;
+}
+
+.input-field{
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.input-field div{
+    width: 25%;
+    padding: 0 10px;
+}
+
+.input-field input{
+    width: 68%;
+}
+
+.input-field select{
+    width: 68%;
+}
+
+.input-field i{
+    position: absolute;
+    right: 90px;
+    top: 74.2%;
+}
+
+.display-center{
+    text-align: center;
+}

@@ -53,37 +53,37 @@
                         <li class="nav-small-cap">
                             <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
                             <span class="hide-menu">Tác vụ</span>
-                          </li>
-                          <li class="sidebar-item">
+                        </li>
+                        <li class="sidebar-item">
                             <a class="sidebar-link" href="./ui-quanlysanpham.html" aria-expanded="false">
-                              <span class="hide-menu no-icon">Quản lý sản phẩm</span>
+                                <span class="hide-menu no-icon">Quản lý sản phẩm</span>
                             </a>
-                          </li>
-                          <li class="sidebar-item">
+                        </li>
+                        <li class="sidebar-item">
                             <a class="sidebar-link" href="./ui-quanlythietkenoithatmau.html" aria-expanded="false">
-                              <span class="hide-menu no-icon">Quản lý thiết kế mẫu</span>
+                                <span class="hide-menu no-icon">Quản lý thiết kế mẫu</span>
                             </a>
-                          </li>
-                          <li class="sidebar-item">
+                        </li>
+                        <li class="sidebar-item">
                             <a class="sidebar-link" href="./ui-quanlypheduyet.html" aria-expanded="false">
-                              <span class="hide-menu no-icon">Quản lý phê duyệt</span>
+                                <span class="hide-menu no-icon">Quản lý phê duyệt</span>
                             </a>
-                          </li>
-                          <li class="sidebar-item">
+                        </li>
+                        <li class="sidebar-item">
                             <a class="sidebar-link" href="./ui-quanlynguoidung.html" aria-expanded="false">
-                              <span class="hide-menu no-icon">Quản lý người dùng</span>
+                                <span class="hide-menu no-icon">Quản lý người dùng</span>
                             </a>
-                          </li>
-                          <li class="sidebar-item">
+                        </li>
+                        <li class="sidebar-item">
                             <a class="sidebar-link" href="./ui-quanlyduan.html" aria-expanded="false">
-                              <span class="hide-menu no-icon">Quản lý dự án</span>
+                                <span class="hide-menu no-icon">Quản lý dự án</span>
                             </a>
-                          </li>
-                          <li class="sidebar-item">
+                        </li>
+                        <li class="sidebar-item">
                             <a class="sidebar-link" href="./ui-quanlyblog.html" aria-expanded="false">
-                              <span class="hide-menu no-icon">Quản lý blog</span>
+                                <span class="hide-menu no-icon">Quản lý blog</span>
                             </a>
-                          </li>
+                        </li>
                         <li class="nav-small-cap">
                             <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
                             <span class="hide-menu">Rời</span>
@@ -157,182 +157,176 @@
                 </nav>
             </header>
             <!--  Header End -->
+            <!-- Sửa thành quản lý dự án, 1 dự án (trạng thái: cần xử lý, đang chờ admin, đang chờ khách hàng) có nhiều quotation (cần tạo báo giá, cần upload bản thiết kế)-->
             <div class="container-fluid">
                 <div class="container-fluid">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title fw-semibold mb-4">DANH SÁCH YÊU CẦU TƯ VẤN</h5>
-                            <div class="card no-shadow">
-                                <table class="content-table">
-                                    <thead>
-                                        <tr>
-                                            <th>ID Yêu cầu</th>
-                                            <th>ID Nhân viên</th>
-                                            <th>Ngày đăng ký</th>
-                                            <th>Trạng thái</th>
-                                            <th class="show-detail"></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>St1</td>
-                                            <td>23/01/2024</td>
-                                            <td>Đang được xử lý</td>
-                                            <td class="show-detail">
-                                                <button type="button" class="btn btn-primary m-1 button-list">Xem chi tiết</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>St2</td>
-                                            <td>23/01/2024</td>
-                                            <td>Chưa được xử lý</td>
-                                            <td class="show-detail">
-                                                <button type="button" class="btn btn-primary m-1 button-list">Xem chi tiết</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>St3</td>
-                                            <td>23/01/2024</td>
-                                            <td>Chưa được xử lý</td>
-                                            <td class="show-detail">
-                                                <button type="button" class="btn btn-primary m-1 button-list">Xem chi tiết</button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="pagination">
-                                    <ul></ul>
-                                </div>
-                                <div class="display-flex justify-content-right display-button">
-                                    <a class="btn btn-primary m-1" href="#">Quay lại</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="container-fluid">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title fw-semibold mb-4">CHI TIẾT YÊU CẦU TƯ VẤN</h5>
+                            <h5 class="card-title fw-semibold mb-4">CHI TIẾT BÁO GIÁ</h5>
                             <div class="card no-shadow">
                                 <div class="show-content">
-                                   
-                                    <div class="content-non-inline">ID Yêu cầu:</div>
+                                    <div class="content-inline">
+                                        <div>ID Dự án:</div>
+                                        <div>Tên dự án:</div>
+                                    </div>
                                     <div class="content-inline">
                                         <div>Khách hàng:</div>
-                                        <div>Số điện thoại:</div>
+                                        <div>Nhân viên phụ trách:</div>
                                     </div>
-                                    <div class="content-non-inline">Nhân viên phụ trách:</div>
-                                    <div class="content-non-inline">Loại phòng:</div>
-                                    <div class="content-non-inline">Thiết kế mẫu được chọn:</div>
+                                    <div class="content-non-inline">Trạng thái: Cần bảng thiết kế</div>
                                     <div class="content-non-inline">Yêu cầu của khách hàng:</div>
                                     <div class="content-non-inline">Các sản phẩm có trong thiết kế:</div>
                                 </div>
-                                <form style="padding: 10px 0 0 0;" class="display-flex" action="">
-                                    <div class="display-choosen-supplier">
-                                        <div class="dropdown">
-                                            <div style="width: 200px;" class="input-box">Chọn nhà cung cấp</div>
-                                            <div class="list">
-                                                <div class="search-box">
-                                                    <input type="search" name="" id="search" placeholder="Filter option"
-                                                        onkeyup="search(this)" />
-                                                </div>
-                                                <input type="radio" name="drop1" id="id11" class="radio" />
-                                                <label for="id11">
-                                                    <span class="name">A-Z</span>
-                                                </label>
-
-                                                <input type="radio" name="drop1" id="id12" class="radio" value="" />
-                                                <label for="id12">
-                                                    <span class="name">Z-A</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <form style="padding: 10px 0 0 0; align-items: center;" class="display-flex" action="">
+                                    <div>Nhà cung cấp</div>
+                                    <select name="" id="" class="btn">
+                                        <option value="">Interdecor</option>
+                                        <option value="">MSQN</option>
+                                    </select>
                                 </form>
-                                
+
                                 <table class="content-table show-product" id="manage-product-table-1">
                                     <thead>
                                         <tr>
-                                            <th class="display-column" rowspan="2">Sản phẩm</th>
-                                            <th class="display-column" rowspan="2">Mô tả</th>
-                                            <th class="display-column" colspan="3">Kích thước</th>
-                                            <th class="display-column" rowspan="2">Số lượng</th>
-                                            <th class="display-column" rowspan="2">Đơn giá</th>
-                                            <th rowspan="2">Hình tham khảo</th>
-                                            <th rowspan="2"></th>
+                                            <th class="display-column content-center" rowspan="2">Sản phẩm</th>
+                                            <th class="display-column content-center" rowspan="2">Mô tả</th>
+                                            <th class="display-column content-center" colspan="3">Kích thước</th>
+                                            <th class="display-column content-center" rowspan="2">Đơn vị</th>
+                                            <th class="display-column content-center" rowspan="2">Số lượng</th>
+                                            <th class="display-column content-center" rowspan="2">Đơn giá</th>
+                                            <th class="content-center" rowspan="2">Hình tham khảo</th>
+                                            <th class="content-center" rowspan="2"></th>
                                         </tr>
                                         <tr>
-                                            <th>Dài</th>
-                                            <th>Rộng</th>
-                                            <th>Cao</th>
+                                            <th class="content-center">Dài</th>
+                                            <th class="content-center">Rộng</th>
+                                            <th class="content-center">Cao</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr class="display-input-none-border">
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td><button class="delete-icon"><i style="font-size:12px" class="fa">&#xf00d;</i></button></td>
+                                            <td><input type="hidden" name="txtProductID"></td>
+                                            <td><input type="hidden" name="txtProductDescription"></td>
+                                            <td class="content-center"><input type="hidden" name="txtProductLength">
+                                            </td>
+                                            <td class="content-center"><input type="hidden" name="txtProductWidth" />
+                                            </td>
+                                            <td class="content-center"><input type="hidden" name="txtProductHeight">
+                                            </td>
+                                            <td class="content-center"><input type="hidden"
+                                                    name="txtProductMeasureUnit"></td>
+                                            <td class="content-center"><input type="hidden" name="txtProductQuantity">
+                                            </td>
+                                            <td class="content-center"><input type="hidden" name="txtProductUnitPrice">
+                                            </td>
+                                            <td class="content-center"><input type="hidden" name="txtProductTotalPrice">
+                                            </td>
+                                            <td class="content-center"><button class="delete-icon"><i
+                                                        style="font-size:12px" class="fa">&#xf00d;</i></button></td>
                                         </tr>
                                     </tbody>
                                     <tfoot>
                                         <tr>
-                                            <td><select name="" id="" class="btn btn-primary m-1">
-                                                <title>Chọn loại phòng</title>
-                                                <option value="">Phòng ngủ</option>
-                                                <option value="">Phòng khách</option>
-                                                <option value="">Phòng bếp</option>
-                                            </select></td>
-                                            <td colspan="6">Tổng sơ bộ</td>
-                                            <td class="text-aligh-center" colspan="1">15.000.000 đồng</td>
+                                            <td colspan="9"><select name="" id="" class="btn btn-primary m-1">
+                                                    <title>Chọn loại phòng</title>
+                                                    <option value="">Phòng ngủ</option>
+                                                    <option value="">Phòng khách</option>
+                                                    <option value="">Phòng bếp</option>
+                                                </select></td>
                                         </tr>
                                     </tfoot>
                                 </table>
-                                <!-- <button onclick="addNewRecord()" class="btn btn-primary m-1" name="add">+</button> -->
-                                <!-- <button onclick="addNewTable()" class="btn btn-primary m-1">Thêm loại phòng</button> -->
-                                <div class="display-flex justify-content-right display-button">
-                                    <a class="btn btn-primary m-1" href="#">Lưu</a>
-                                    <a class="btn btn-primary m-1" href="#">Chấp thuận</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="container-fluid">
-                    <div class="card display-form">
-                        <div class="card-body">
-                            <div class="display-center" style="text-align: center;">
-                                <h8 class="card-title fw-semibold mb-4">Đồng ý chỉnh sửa?</h8>
-                                <div style="padding-top: 15px;"
-                                    class="display-flex display-button justify-content-center">
-                                    <input class="btn btn-primary m-1" type="submit" value="Có">
-                                    <a class="btn btn-primary m-1" href="#">Không</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="container-fluid">
-                    <div class="card display-form">
-                        <div class="card-body">
-                            <div class="display-center" style="text-align: center;">
-                                <h8 class="card-title fw-semibold mb-4">Yêu cầu tư vấn đã được gửi tới admin</h8>
 
+                                <form style="padding: 10px 0 0 0; align-items: center;" class="display-flex" action="">
+                                    <div>Nhà cung cấp</div>
+                                    <select name="" id="" class="btn">
+                                        <option value="">Interdecor</option>
+                                        <option value="">MSQN</option>
+                                    </select>
+                                </form>
+
+                                <table class="content-table show-product" id="manage-product-table-1">
+                                    <thead>
+                                        <tr>
+                                            <th class="display-column content-center" rowspan="2">Sản phẩm</th>
+                                            <th class="display-column content-center" rowspan="2">Mô tả</th>
+                                            <th class="display-column content-center" colspan="3">Kích thước</th>
+                                            <th class="display-column content-center" rowspan="2">Đơn vị</th>
+                                            <th class="display-column content-center" rowspan="2">Số lượng</th>
+                                            <th class="display-column content-center" rowspan="2">Đơn giá</th>
+                                            <th class="content-center" rowspan="2">Hình tham khảo</th>
+                                            <th class="content-center" rowspan="2"></th>
+                                        </tr>
+                                        <tr>
+                                            <th class="content-center">Dài</th>
+                                            <th class="content-center">Rộng</th>
+                                            <th class="content-center">Cao</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="display-input-none-border">
+                                            <td><input type="hidden" name="txtProductID"></td>
+                                            <td><input type="hidden" name="txtProductDescription"></td>
+                                            <td class="content-center"><input type="hidden" name="txtProductLength">
+                                            </td>
+                                            <td class="content-center"><input type="hidden" name="txtProductWidth" />
+                                            </td>
+                                            <td class="content-center"><input type="hidden" name="txtProductHeight">
+                                            </td>
+                                            <td class="content-center"><input type="hidden"
+                                                    name="txtProductMeasureUnit"></td>
+                                            <td class="content-center"><input type="hidden" name="txtProductQuantity">
+                                            </td>
+                                            <td class="content-center"><input type="hidden" name="txtProductUnitPrice">
+                                            </td>
+                                            <td class="content-center"><input type="hidden" name="txtProductTotalPrice">
+                                            </td>
+                                            <td class="content-center"><button class="delete-icon"><i
+                                                        style="font-size:12px" class="fa">&#xf00d;</i></button></td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="9"><select name="" id="" class="btn btn-primary m-1">
+                                                    <title>Chọn loại phòng</title>
+                                                    <option value="">Phòng ngủ</option>
+                                                    <option value="">Phòng khách</option>
+                                                    <option value="">Phòng bếp</option>
+                                                </select></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                <div class="display-flex justify-content-right display-button">
+                                    <a class="btn btn-primary m-1" href="#">Upload thiết kế</a>
+                                    <a class="btn btn-primary m-1" href="./ui-thongtinduan.html">Quay lại</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="container-fluid">
+                    <div class="card display-form">
+                        <div class="card-body">
+                            <div class="display-center upload-file">
+                                <input type="file" id="file" />
+                                <label for="file">Kéo và thả file thiết kế hoặc <span>browser</span></label>
+                                <div style="padding-top: 15px;"
+                                    class="display-flex display-button justify-content-right">
+                                    <a class="btn btn-primary m-1" href="ui-quanlynhanvien.html">Quay lại</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="container-fluid">
+                    <div class="card display-form">
+                        <div class="card-body">
+                            <div class="display-center" style="text-align: center;">
+                                <h8 class="card-title fw-semibold mb-4">Thiết kế đã được gửi tới admin</h8>
                                 <div style="padding-top: 15px;"
                                     class="display-flex display-button justify-content-center">
                                     <a class="btn btn-primary m-1" href="#">Quay lại</a>
@@ -342,6 +336,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
 
         <script src="./public/staff-libs/jquery/dist/jquery.min.js"></script>
@@ -351,7 +346,7 @@
         <script src="./public/staff-libs/simplebar/dist/simplebar.js"></script>
         <script src="./public/staff-js/pagination.js"></script>
         <script src="./public/staff-js/filter.js"></script>
-        <!-- <script src="./public/staff-js/handle-record.js"></script> -->
+        <script src="./public/staff-js/handle-record.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
