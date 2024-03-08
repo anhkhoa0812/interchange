@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px 0;
+  margin: 20px 0;
   position: relative;
 }
 
@@ -25,12 +25,12 @@
 
 .multi-process-bar .progress-line{
   position: absolute;
-  top: 14%;
+  top: 11.5%;
   height: 4px;
   width: 85%;
   background-color: #dfe5ef;
   margin: 0 50px;
-  /* z-index: 1; */
+  left: 45px;
 }
 
 .multi-process-bar .progress-line .indicator{
