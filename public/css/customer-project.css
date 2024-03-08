@@ -6,7 +6,6 @@
     margin: 20px 0;
     display: flex;
     align-items: end;
-    background: ;
 }
 
 .customer-project-display .project-image{
@@ -45,6 +44,7 @@
     color: #f6f9fc;
     position: absolute;
     top: 15%;
+    align-content: start;
     right: 100px;
     padding: 5px 10px;
     border-radius: 5px;

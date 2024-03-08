@@ -25,9 +25,9 @@
 
 .multi-process-bar .progress-line{
   position: absolute;
-  top: 10%;
+  top: 14%;
   height: 4px;
-  width: 90%;
+  width: 85%;
   background-color: #dfe5ef;
   margin: 0 50px;
   /* z-index: 1; */
@@ -36,7 +36,7 @@
 .multi-process-bar .progress-line .indicator{
   position: absolute;
   height: 100%;
-  width: 28%;
+  width: 100%;
   background-color: #176B87;
   
 }

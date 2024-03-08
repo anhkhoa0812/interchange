@@ -1628,7 +1628,7 @@ ul.product_list_widget {
 }
 
 .float-icon-hotline ul li .fa {
-    background-color: #ed1c24;
+    background-color: #176B87;
     display: block;
     width: 40px;
     height: 40px;
@@ -1804,7 +1804,7 @@ ul.product_list_widget {
 }
 
 #info-scroll li {
-    background-color: #b60000;
+    background-color: #176B87;
     border-radius: 0 25px 25px 0;
     color: #fff;
     display: block;
@@ -3881,7 +3881,7 @@ p.by{width:120px; text-align:center; background: #222222; padding: 8px 15px; col
   bottom: 0px;
   height: 2px;
   width: 50px;
-  background-color: #e9c37a;
+  background-color: #64CCC5;
 }
 
 .lienquan .sec-title{text-align:left}
@@ -4577,7 +4577,7 @@ p {
 }
 
 ul#menu-main-menu li a:hover {
-    color: #111
+    color: #DAFFFB;
 }
 
 .hott2 {
@@ -5267,9 +5267,9 @@ ul#menu-main-menu .sub-menu li {
 }
 
 ul#menu-main-menu .sub-menu li a:hover {
-    border-left: #ffd119 4px solid;
+    border-left: #176B87 4px solid;
     transition: all .5s ease-in-out;
-    color: #222
+    color: #222;
 }
 
 .main_title,
@@ -5618,7 +5618,7 @@ ul#menu-main-menu {
     width: 100%;
     margin-top: 0;
     border: none;
-	background:#e9c37a;
+	background:#176B87;
 }
 
 .menu-main-menu-container{
@@ -5982,7 +5982,7 @@ h2.s5_mod_h3 {
     width: 100%;
     z-index: 999;
     margin: 0 auto;
-	background:#e9c37a
+	background:#176B87;
 }
 
 #menu-main-menu {
