@@ -7,6 +7,7 @@
     <link href="public/css/css.css" rel="stylesheet" />
     <link href="public/css/style.css" rel="stylesheet" />
     <meta name='robots' content='max-image-preview:large' />
+    <title>Dự án của bạn</title>
     <link rel='stylesheet' href='public/css/style.min.css' type='text/css' media='all' />
     <link rel='stylesheet' href='public/css/classic-themes.min.css' type='text/css' media='all' />
     <link rel='stylesheet' href='public/css/style-2.css' type='text/css' media='all' />
@@ -26,6 +27,9 @@
     <link rel="stylesheet" href="./public/css/customer-project.css">
     <link rel="stylesheet" href="./public/css/pagination.css">
     <link rel="stylesheet" href="./public/css/button.css">
+    <link rel="stylesheet" href="./public/css/multi-process-bar.css">
+    <link rel="stylesheet" href="./public/css/content.css">
+    <link rel="stylesheet" href="./public/css/table-for-list.css">
     <link rel='stylesheet' href='public/plugins/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
@@ -339,9 +343,9 @@
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page"><a
                                         href="dang-ky.html" style="margin-right: 15px">TÀI KHOẢN</a></li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page"><a
-                                        href="ui-danhsachduancuaban.html" style="margin-right: 15px">DỰ ÁN CỦA BẠN</a></li>
+                                        href="ui-duancuaban.html" style="margin-right: 15px">DỰ ÁN CỦA BẠN</a></li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page"><a
-                                        href="trang-chu.html" style="margin-right: 15px">ĐĂNG XUẤT</a></li>
+                                        href="dang-ky.html" style="margin-right: 15px">ĐĂNG XUẤT</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -359,7 +363,8 @@
                     <li itemprop="itemListElement" itemscope="" itemtype="">
                         <a itemprop="item" href="" title="Biên Hòa Decor">Trang chủ</a> »
                     </li>
-                    <li itemprop="itemListElement" itemscope="" itemtype=""><span itemprop="name">Dự án của bạn</span></li>
+                    <li itemprop="itemListElement" itemscope="" itemtype=""><span itemprop="name">Dự án của bạn</span>
+                    </li>
                     <div class="clear"></div>
                 </ul>
             </div>
@@ -379,48 +384,163 @@
                                         <div class="uvc-main-heading ult-responsive"
                                             data-ultimate-target=".uvc-heading.ultimate-heading-921865b67d315d601 h3"
                                             data-responsive-json-new="{&quot;font-size&quot;:&quot;&quot;,&quot;line-height&quot;:&quot;&quot;}">
-                                            <h3 style="font-weight:normal;">Dự án của bạn</h3>
+                                            <h3 style="font-weight:normal;">CHI TIẾT BÁO GIÁ</h3>
                                         </div>
                                         <div class="uvc-heading-spacer line_only"
                                             style="margin-top:7px;margin-bottom:12px;height:2px;"><span
                                                 class="uvc-headings-line"
                                                 style="border-style: solid; border-bottom-width: 2px; border-color:#176B87; width: 50px; float: left;"></span>
                                         </div>
-                                    </div>
-                                    <div class="card-body">
                                         <div class="card no-shadow">
-                                            <div class="customer-project-display">
-                                                <div class="project-status status-have-response">Đã thiết kế</div>
-                                                <div class="project-image"><img src="./public/image/0007-450x320.jpg"
-                                                        alt=""></div>
-                                                <div class="project-content">
-                                                    <h5 class="card-title fw-semibold mb-4">DỰ ÁN 2</h5>
-                                                    <div class="project-buttons">
-                                                        <a class="btn btn-primary m-1" href="#">Xem thiết kế</a>
-                                                        <a class="btn btn-primary m-1" href="#">Xem báo giá</a>
-                                                    </div>
+                                            <div class="show-content">
+                                                <div class="content-inline">
+                                                    <div>ID Dự án:</div>
+                                                    <div>Tên dự án:</div>
                                                 </div>
+                                                <div class="content-inline">
+                                                    <div>Khách hàng:</div>
+                                                    <div>Nhân viên phụ trách:</div>
+                                                </div>
+                                                <div class="content-non-inline">Trạng thái: Đã có báo giá chi tiết</div>
+                                                <div class="content-non-inline">Thiết kế:</div>
+                                                <div class="content-non-inline">Yêu cầu của khách hàng:</div>
+                                                <div class="content-non-inline">Các sản phẩm có trong thiết kế:</div>
+                                            </div>
+                                            <form style="padding: 10px 0 0 0; align-items: center;" class="display-flex" action="">
+                                                <div>Nhà cung cấp</div>
+                                                <select name="" id="" class="btn">
+                                                    <option value="">Interdecor</option>
+                                                    <option value="">MSQN</option>
+                                                </select>
+                                            </form>
+            
+                                            <table class="content-table show-product" id="manage-product-table-1">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="display-column content-center" rowspan="2">Sản phẩm</th>
+                                                        <th class="display-column content-center" rowspan="2">Mô tả</th>
+                                                        <th class="display-column content-center" colspan="3">Kích thước</th>
+                                                        <th class="display-column content-center" rowspan="2">Đơn vị</th>
+                                                        <th class="display-column content-center" rowspan="2">Số lượng</th>
+                                                        <th class="display-column content-center" rowspan="2">Đơn giá</th>
+                                                        <th class="content-center" rowspan="2">Hình tham khảo</th>
+                                                        <th class="display-column content-center" rowspan="2">Thành tiền</th>
+                                                        <th rowspan="2"></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="content-center">Dài</th>
+                                                        <th class="content-center">Rộng</th>
+                                                        <th class="content-center">Cao</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="display-input-none-border">
+                                                        <td><input type="hidden" name="txtProductID"></td>
+                                                        <td><input type="hidden" name="txtProductDescription"></td>
+                                                        <td class="content-center"><input type="hidden" name="txtProductLength">
+                                                        </td>
+                                                        <td class="content-center"><input type="hidden" name="txtProductWidth" />
+                                                        </td>
+                                                        <td class="content-center"><input type="hidden" name="txtProductHeight">
+                                                        </td>
+                                                        <td class="content-center"><input type="hidden"
+                                                                name="txtProductMeasureUnit"></td>
+                                                        <td class="content-center"><input type="hidden" name="txtProductQuantity">
+                                                        </td>
+                                                        <td class="content-center"><input type="hidden" name="txtProductUnitPrice">
+                                                        </td>
+                                                        <td></td>
+                                                        <td class="content-center"><input type="hidden" name="txtProductTotalPrice">
+                                                        </td>
+                                                        <td class="content-center"><button class="delete-icon"><i
+                                                                    style="font-size:12px" class="fa">&#xf00d;</i></button></td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <td><select name="" id="" class="btn btn-primary m-1">
+                                                                <title>Chọn loại phòng</title>
+                                                                <option value="">Phòng ngủ</option>
+                                                                <option value="">Phòng khách</option>
+                                                                <option value="">Phòng bếp</option>
+                                                            </select></td>
+                                                        <td colspan="8">Tổng </td>
+                                                        <td class="text-aligh-center" colspan="1">15.990.000 đồng</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+            
+                                            <form style="padding: 10px 0 0 0; align-items: center;" class="display-flex" action="">
+                                                <div>Nhà cung cấp</div>
+                                                <select name="" id="" class="btn">
+                                                    <option value="">Interdecor</option>
+                                                    <option value="">MSQN</option>
+                                                </select>
+                                            </form>
+            
+                                            <table class="content-table show-product" id="manage-product-table-1">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="display-column content-center" rowspan="2">Sản phẩm</th>
+                                                        <th class="display-column content-center" rowspan="2">Mô tả</th>
+                                                        <th class="display-column content-center" colspan="3">Kích thước</th>
+                                                        <th class="display-column content-center" rowspan="2">Đơn vị</th>
+                                                        <th class="display-column content-center" rowspan="2">Số lượng</th>
+                                                        <th class="display-column content-center" rowspan="2">Đơn giá</th>
+                                                        <th class="content-center" rowspan="2">Hình tham khảo</th>
+                                                        <th class="display-column content-center" rowspan="2">Thành tiền</th>
+                                                        <th rowspan="2"></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="content-center">Dài</th>
+                                                        <th class="content-center">Rộng</th>
+                                                        <th class="content-center">Cao</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="display-input-none-border">
+                                                        <td><input type="hidden" name="txtProductID"></td>
+                                                        <td><input type="hidden" name="txtProductDescription"></td>
+                                                        <td class="content-center"><input type="hidden" name="txtProductLength">
+                                                        </td>
+                                                        <td class="content-center"><input type="hidden" name="txtProductWidth" />
+                                                        </td>
+                                                        <td class="content-center"><input type="hidden" name="txtProductHeight">
+                                                        </td>
+                                                        <td class="content-center"><input type="hidden"
+                                                                name="txtProductMeasureUnit"></td>
+                                                        <td class="content-center"><input type="hidden" name="txtProductQuantity">
+                                                        </td>
+                                                        <td class="content-center"><input type="hidden" name="txtProductUnitPrice">
+                                                        </td>
+                                                        <td></td>
+                                                        <td class="content-center"><input type="hidden" name="txtProductTotalPrice">
+                                                        </td>
+                                                        <td class="content-center"><button class="delete-icon"><i
+                                                                    style="font-size:12px" class="fa">&#xf00d;</i></button></td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <td><select name="" id="" class="btn btn-primary m-1">
+                                                                <title>Chọn loại phòng</title>
+                                                                <option value="">Phòng ngủ</option>
+                                                                <option value="">Phòng khách</option>
+                                                                <option value="">Phòng bếp</option>
+                                                            </select></td>
+                                                        <td colspan="8">Tổng </td>
+                                                        <td class="text-aligh-center" colspan="1">15.990.000 đồng</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                            <div style="justify-content: right;" class="display-flex justify-content-right display-button">
+                                                <a class="btn btn-primary m-1" href="#">Chấp thuận</a>
+                                                <a class="btn btn-primary m-1" href="#">Yêu cầu chỉnh sửa</a>
+                                                <a class="btn btn-primary m-1" href="#">Quay lại</a>
                                             </div>
                                         </div>
-                                        <div class="card no-shadow">
-                                            <div class="customer-project-display">
-                                                <div class="project-status status-done">Đã hoàn thành</div>
-                                                <div class="project-image"><img
-                                                        src="./public/image/z3385549894247_0f119524aedd8b97e44dcd5706770c4f-450x320.jpg"
-                                                        alt=""></div>
-                                                <div class="project-content">
-                                                    <h5 class="card-title fw-semibold mb-4">DỰ ÁN 1</h5>
-                                                    <div class="project-buttons">
-                                                        <a class="btn btn-primary m-1" href="#">Xem thiết kế</a>
-                                                        <a class="btn btn-primary m-1" href="#">Xem báo giá</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pagination">
-                                            <ul></ul>
-                                        </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -428,6 +548,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    </div>
     </div>
     </div>
     <div class="footer">

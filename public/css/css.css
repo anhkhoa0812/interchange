@@ -17,7 +17,7 @@ table {
 }
 img, fieldset {
 	border: 0;
-}
+} 
 abbr, acronym {
 	text-decoration: none;
 }
@@ -3371,7 +3371,7 @@ header.noo-header .noo-topbar p {
 }
 .stext_6:hover{background:none}
 .wrap_service_6:hover .service-icon-6 {
-    color: #fd972e;
+    color: #176B87;
     background: #09162a;
 
 }
@@ -3393,7 +3393,7 @@ header.noo-header .noo-topbar p {
     line-height:50px
 }
 .sanpham24.sanpham2422{margin:20px 0}
-.stext_6 h3 a{color:#111} .stext_6 h3 a:hover{color:#e9c37a}
+.stext_6 h3 a{color:#111} .stext_6 h3 a:hover{color:#64CCC5}
 .owl-item .item figure:hover::before, .sanpham24.sanpham2422 figure:hover::before{
 	border: 10px solid hsla(0, 0%, 100%, 0.6);
 	transition: all .4s;
@@ -6760,8 +6760,8 @@ a.design:hover {
 .wp-pagenavi a:hover,
 .wp-pagenavi span.current,
 .wp-pagenavi span:hover {
-    background: #e9c37a;
-    color: #111111
+    background: #176B87;
+    color: aliceblue;
 }
 
 .phantrang .wp-pagenavi a,

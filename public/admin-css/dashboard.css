@@ -1,0 +1,23 @@
+.product-service{
+    
+    display: flex;
+}
+.favourite-design {
+    --margin-left-right: 5px;
+}
+
+.favourite-design .interior-design{
+    display: flex;
+}
+
+.favourite-design .interior-design .col-sm-6.col-xl-3:first-child{
+    margin-right: var(--margin-left-right);
+}
+
+.favourite-design .interior-design .col-sm-6.col-xl-3:not(:first-child){
+    margin: 0 var(--margin-left-right);
+}
+
+.favourite-design .interior-design .col-sm-6.col-xl-3:last-child{
+    margin-right: none;
+}

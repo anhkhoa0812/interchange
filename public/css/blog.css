@@ -1,0 +1,34 @@
+.blog-title{
+    text-align: center;
+    height: 100px;
+}
+.blog-title h1{
+    height: 200px;
+    font-size: 42px;
+    line-height: 1.1;
+}
+.blog-dash{
+    display: flex;
+    justify-content: center;
+}
+
+.blog-content {
+    width: 1150px;
+}
+
+.blog-content .date{
+    text-align: right;
+    font-size: 20px;
+}
+.blog-content .content{
+    text-align: justify;
+    font-size: 18px;
+    margin: 10px 5px;
+    width: 100%;
+}
+.blog-content img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    padding: 10px 0;
+}

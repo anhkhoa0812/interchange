@@ -57,11 +57,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
 
     <script type="text/javascript">function setREVStartSize(e) {
-        try {
-            var i = jQuery(window).width(), t = 9999, r = 0, n = 0, l = 0, f = 0, s = 0, h = 0;
-            if (e.responsiveLevels && (jQuery.each(e.responsiveLevels, function (e, f) { f > i && (t = r = f, l = e), i > f && f > r && (r = f, n = e) }), t > r && (l = n)), f = e.gridheight[l] || e.gridheight[0] || e.gridheight, s = e.gridwidth[l] || e.gridwidth[0] || e.gridwidth, h = i / s, h = h > 1 ? 1 : h, f = Math.round(h * f), "fullscreen" == e.sliderLayout) { var u = (e.c.width(), jQuery(window).height()); if (void 0 != e.fullScreenOffsetContainer) { var c = e.fullScreenOffsetContainer.split(","); if (c) jQuery.each(c, function (e, i) { u = jQuery(i).length > 0 ? u - jQuery(i).outerHeight(!0) : u }), e.fullScreenOffset.split("%").length > 1 && void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 ? u -= jQuery(window).height() * parseInt(e.fullScreenOffset, 0) / 100 : void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 && (u -= parseInt(e.fullScreenOffset, 0)) } f = u } else void 0 != e.minHeight && f < e.minHeight && (f = e.minHeight); e.c.closest(".rev_slider_wrapper").css({ height: f })
-        } catch (d) { console.log("Failure at Presize of Slider:" + d) }
-    };
+            try {
+                var i = jQuery(window).width(), t = 9999, r = 0, n = 0, l = 0, f = 0, s = 0, h = 0;
+                if (e.responsiveLevels && (jQuery.each(e.responsiveLevels, function (e, f) { f > i && (t = r = f, l = e), i > f && f > r && (r = f, n = e) }), t > r && (l = n)), f = e.gridheight[l] || e.gridheight[0] || e.gridheight, s = e.gridwidth[l] || e.gridwidth[0] || e.gridwidth, h = i / s, h = h > 1 ? 1 : h, f = Math.round(h * f), "fullscreen" == e.sliderLayout) { var u = (e.c.width(), jQuery(window).height()); if (void 0 != e.fullScreenOffsetContainer) { var c = e.fullScreenOffsetContainer.split(","); if (c) jQuery.each(c, function (e, i) { u = jQuery(i).length > 0 ? u - jQuery(i).outerHeight(!0) : u }), e.fullScreenOffset.split("%").length > 1 && void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 ? u -= jQuery(window).height() * parseInt(e.fullScreenOffset, 0) / 100 : void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 && (u -= parseInt(e.fullScreenOffset, 0)) } f = u } else void 0 != e.minHeight && f < e.minHeight && (f = e.minHeight); e.c.closest(".rev_slider_wrapper").css({ height: f })
+            } catch (d) { console.log("Failure at Presize of Slider:" + d) }
+        };
     </script>
     <style type="text/css" data-type="vc_shortcodes-custom-css">
         .vc_custom_1690673792736 {
@@ -154,21 +154,15 @@
 
 <body data-rsssl=1 class="template-front">
 
-<div id="header" class="header">
-    <div class="content">
-        <div style="float: right;">
-            <a href="dang-ky.html" style="margin-right: 15px">Đăng ký </a>
-            <a href="dang-nhap.html">Đăng nhập </a>
-        </div>
-    </div>
-    <div class="content">
-        <div class="bentrai">
-            <h1 id="site_title" class="has-logo"><a href="index.html">Biên Hòa Decor</a></h1>
-        </div>
-        <div class="widget_text widget widget_custom_html menuchinh" id="custom_html-2">
-            <div class="textwidget custom-html-widget">
-                <ul class="tp_wrap_topicons">
-                    <li>
+    <div id="header" class="header">
+        <div class="content">
+            <div class="bentrai">
+                <h1 id="site_title" class="has-logo"><a href="trang-chu.html">Biên Hòa Decor</a></h1>
+            </div>
+            <div class="widget_text widget widget_custom_html menuchinh" id="custom_html-2">
+                <div class="textwidget custom-html-widget">
+                    <ul class="tp_wrap_topicons">
+                        <li>
                             <span class="tp_topinfo tp_phone ">
                                 <a href="tel:0903208113" title="0903 208 113">
                                     <span class="top_ifonicon">
@@ -184,8 +178,8 @@
                                     </span>
                                 </a>
                             </span>
-                    </li>
-                    <li>
+                        </li>
+                        <li>
                             <span class="tp_topinfo tp_phone ">
                                 <a href="tel:0827267777" title="0827 267 777">
                                     <span class="top_ifonicon">
@@ -201,8 +195,8 @@
                                     </span>
                                 </a>
                             </span>
-                    </li>
-                    <li class="anmobi">
+                        </li>
+                        <li class="anmobi">
                             <span class="tp_topinfo tp_phone ">
                                 <a href="mailto:decorbienhoa@gmail.com" title="decorbienhoa@gmail.com">
                                     <span class="top_ifonicon">
@@ -218,277 +212,6 @@
                                     </span>
                                 </a>
                             </span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="clear">
-        </div>
-    </div>
-    <div class="clear">
-    </div>
-</div>
-<div class="bigmenu">
-    <div class="container">
-        <div class="widget widget_nav_menu menuchinh" id="nav_menu-2">
-            <div class="menu-main-menu-container">
-                <ul id="menu-main-menu" class="menu">
-                    <li
-                            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home">
-                        <a href="index.html">Trang chủ</a>
-                    </li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                        <a href="gioi-thieu.html">Giới thiệu</a>
-                    </li>
-
-                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children">
-                        <a href="">Thiết Kế Nội Thất</a>
-                        <ul class="sub-menu">
-                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="tknt-tat-ca-thiet-ke.html">Tất cả thiết kế</a></li>
-                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="tknt-tu-bep.html">Tủ bếp</a></li>
-                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="tknt-phong-ngu.html">Phòng ngủ</a></li>
-                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="tknt-phong-khach.html">Phòng khách</a></li>
-                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="tknt-phong-tho.html">Phòng thờ</a></li>
-                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="tknt-phong-giai-tri.html">Phòng giải trí</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children">
-                        <a href="">Thi công thực tế</a>
-                        <ul class="sub-menu">
-                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="tctt-biet-thu.html">Biệt
-                                    thự</a></li>
-                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="tctt-can-ho.html">Căn
-                                    hộ</a></li>
-                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="tctt-nha-pho.html">Nhà
-                                    phố</a></li>
-                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="tctt-shop-store.html">Shop
-                                    store</a></li>
-                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="tctt-van-phong.html">Văn
-                                    phòng</a></li>
-                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
-                                    href="tctt-spa.html">Spa</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children">
-                        <a href="">Sản phẩm</a>
-                        <ul class="sub-menu">
-                            <li class="menu-item menu-item-type-post_type menu-item-object-post"><a href="sp-tam-op-tuong-PVC.html">Tấm ốp
-                                    tường PVC</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-post"><a href="sp-san-nhua.html">Sàn
-                                    nhựa</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-post"><a href="sp-san-go.html">Sàn
-                                    gỗ</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-post"><a href="sp-lam-nhua.html">Lam
-                                    nhựa</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-post"><a href="sp-cua-nhua-go-composite.html">Cửa nhựa
-                                    gỗ Composite</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-post"><a href="sp-rem-vai-2-lop.html">Rèm vải
-                                    2 lớp</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-post"><a href="sp-rem-all.html">Rèm cầu
-                                    vồng, rèm Roman, rèm sáo lá, rèm cuốn</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-post"><a href="sp-da-tu-nhien.html">Đá tự
-                                    nhiên</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-post"><a href="sp-da-nhan-tao.html">Đá nhân
-                                    tạo</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-post"><a href="sp-da-solid-surface.html">Đá Solid
-                                    Surface</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-post"><a href="sp-da-nhan-tao-vicostone.html">Đá nhân
-                                    tạo Vicostone</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
-                        <a href="#">Báo giá</a>
-                        <ul class="sub-menu">
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="bao-gia-thiet-ke.html">Báo giá
-                                    thiết kế</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="bao-gia-thi-cong.html">Báo giá
-                                    thi công</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children">
-                        <a href="phong-ngu-dep.html">Tư vấn</a>
-                    </li>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="lien-he.html">Liên hệ</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="bigbread subbanner">
-    <div class="container">
-        <div class="caption">
-            <h1 class="headline">Đăng ký</h1>
-        </div>
-        <div id="breadcrumbs">
-            <ul itemscope="" itemtype="">
-                <li itemprop="itemListElement" itemscope="" itemtype="">
-                    <a itemprop="item" href="" title="Biên Hòa Decor">Trang chủ</a> »
-                </li>
-                <li itemprop="itemListElement" itemscope="" itemtype=""><span itemprop="name">Đăng ký</span></li>
-                <div class="clear"></div>
-            </ul>
-        </div>
-    </div>
-</div>
-<div class="khungtrang1">
-    <div class="container" style="margin-top: 30px">
-        <div id="post-88" class="post_box top">
-            <div class="post_content">
-                <div class="vc_row wpb_row vc_row-fluid vc_custom_1599629333435">
-                    <div class="wpb_column vc_column_container">
-                        <div class="vc_column-inner">
-                            <div class="wpb_wrapper">
-                                <div id="ultimate-heading-921865b67d315d601" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-921865b67d315d601 uvc-7573 " data-hspacer="line_only" data-halign="left" style="text-align:left">
-                                    <div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-921865b67d315d601 h3" data-responsive-json-new="{&quot;font-size&quot;:&quot;&quot;,&quot;line-height&quot;:&quot;&quot;}">
-                                        <h3 style="font-weight:normal;">Đăng Ký</h3>
-                                    </div>
-                                    <div class="uvc-heading-spacer line_only" style="margin-top:7px;margin-bottom:12px;height:2px;"><span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 2px; border-color: rgb(233, 195, 122); width: 50px; float: left;"></span></div>
-                                </div>
-
-                                <div class="gf_browser_chrome gform_wrapper" id="gform_wrapper_3">
-                                    <form method="post" enctype="multipart/form-data" target="gform_ajax_frame_3" id="gform_3" action="">
-                                        <div class="gform_body">
-                                            <ul id="gform_fields_3" class="gform_fields top_label description_below">
-                                                <li id="field_3_8" class="gfield gform_hidden">
-                                                    <input name="input_8" id="input_3_8" type="hidden" class="gform_hidden" value="">
-                                                </li>
-                                                <li class="gfield gfap_placeholder gf_left_half">
-                                                    <label class="gfield_label">Tên tài khoản</label>
-                                                    <div class="ginput_container"><input name="input_2" type="text" value="" class="large" tabindex="11" placeholder="Tên tài khoản*"></div>
-                                                </li>
-                                                <li class="gfield gfap_placeholder gf_right_half">
-                                                    <label class="gfield_label">Email</label>
-                                                    <div class="ginput_container"><input name="input_2" type="text" value="" class="large" tabindex="11" placeholder="Email*"></div>
-                                                </li>
-                                                <li class="gfield gfap_placeholder gf_left_half">
-                                                    <label class="gfield_label">Mật khẩu</label>
-                                                    <div class="ginput_container"><input name="input_11" type="password" value="" class="large" tabindex="12" placeholder="Mật khẩu*"></div>
-                                                </li>
-                                                <li class="gfield gfap_placeholder gf_right_half">
-                                                    <label class="gfield_label">Nhập lại mật khẩu</label>
-                                                    <div class="ginput_container"><input name="input_11" type="password" value="" class="large" tabindex="12" placeholder="Nhập lại mật khẩu*"></div>
-                                                </li>
-                                                <li id="field_3_11" class="gfield gfap_placeholder gf_left_half">
-                                                    <!-- <label class="gfield_label" for="input_3_11">Điện thoại</label> -->
-                                                    <label class="gfield_label">Điện thoại<span class="Điện thoại">*</span></label>
-                                                    <div class="ginput_container"><input name="input_11" id="input_3_11" type="text" value="" class="large" tabindex="12" placeholder="Điện thoại*"></div>
-                                                </li>
-                                                <li id="field_3_4" class="gfield gfap_placeholder gf_right_half gfield_contains_required">
-                                                    <!-- <label class="gfield_label" for="input_3_4">Điện thoại<span class="Điện thoại">*</span></label> -->
-                                                    <label class="gfield_label">Ngày sinh</label>
-                                                    <div class="ginput_container"><input name="input_4" id="input_3_4" type="date" value="" class="large" tabindex="14" placeholder="Ngày sinh*"></div>
-                                                </li>
-                                                <li class="gfield gfap_placeholder gf_left_half">
-                                                    <label class="gfield_label">Họ</label>
-                                                    <div class="ginput_container"><input name="input_11" type="text" value="" class="large" tabindex="12" placeholder="Họ*"></div>
-                                                </li>
-                                                <li class="gfield gfap_placeholder gf_right_half">
-                                                    <label class="gfield_label">Tên</label>
-                                                    <div class="ginput_container"><input name="input_11" type="text" value="" class="large" tabindex="12" placeholder="Tên*"></div>
-                                                </li>
-                                                <li class="gfield gfap_placeholder gf_left_half">
-                                                    <label class="gfield_label">Tỉnh</label>
-                                                    <div class="ginput_container"><input name="input_11" type="password" value="" class="large" tabindex="12" placeholder="Tỉnh*"></div>
-                                                </li>
-                                                <li class="gfield gfap_placeholder gf_right_half">
-                                                    <label class="gfield_label">Quận</label>
-                                                    <div class="ginput_container"><input name="input_11" type="password" value="" class="large" tabindex="12" placeholder="Quận*"></div>
-                                                </li>
-                                                <li class="gfield gfap_placeholder gf_left_half">
-                                                    <label class="gfield_label">Phường</label>
-                                                    <div class="ginput_container"><input name="input_11" type="password" value="" class="large" tabindex="12" placeholder="Phường*"></div>
-                                                </li>
-                                                <li class="gfield gfap_placeholder gf_right_half">
-                                                    <label class="gfield_label">Địa chỉ và đường</label>
-                                                    <div class="ginput_container"><input name="input_11" type="password" value="" class="large" tabindex="12" placeholder="Địa chỉ và đường*"></div>                                              
-                                                <li id="field_3_12" class="gfield gform_hidden"><input name="input_12" id="input_3_12" type="hidden" class="gform_hidden" value=""></li>
-                                            </ul>
-                                        </div>
-                                        <div class="gform_footer top_label">
-                                            <div class="vc_btn3-container vc_btn3-center vc_custom_1688199835100">
-                                                <a class="vc_general vc_btn3 vc_btn3-size-lg vc_btn3-shape-rounded vc_btn3-style-3d vc_btn3-color-orange" href="" title="">Đăng Ký</a>
-                                            </div>
-                                            <input type="hidden" class="gform_hidden" name="is_submit_3" value="1">
-                                            <input type="hidden" class="gform_hidden" name="gform_submit" value="3">
-                                            <input type="hidden" class="gform_hidden" name="gform_unique_id" value="">
-                                            <input type="hidden" class="gform_hidden" name="state_3" value="WyJbXSIsIjA1ZDQ0NzBmMDk3NDRmOWIyMDkzNjVhNTk2ZWE1MDdmIl0=">
-                                            <input type="hidden" class="gform_hidden" name="gform_target_page_number_3" id="gform_target_page_number_3" value="0">
-                                            <input type="hidden" class="gform_hidden" name="gform_source_page_number_3" id="gform_source_page_number_3" value="1">
-                                            <input type="hidden" name="gform_field_values" value="">
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="footer">
-    <div class="menufooter">
-        <div class="content">
-            <div class="widget_text widget widget_custom_html" id="custom_html-5">
-                <div class="textwidget custom-html-widget">
-                    <div class="social">
-                        <a target="_blank" href="https://www.facebook.com/nguyenminh.phuc.921230/about" rel="noopener"><i class="fa fa-facebook"
-                                aria-hidden="true"></i></a>
-                        <a target="_blank" href="https://www.youtube.com/@giaolang" rel="noopener"><i class="fa fa-youtube"
-                                aria-hidden="true"></i></a>
-                    </div>
-                    <p>
-                        Thời gian mở cửa: 7:00 - 17:00 từ thứ 2 đến thứ 7.
-                    </p>
-                    <p>Có vị trí đỗ xe ô tô, máy bay trực thăng.</p>
-                    <p>© 2019-2024 - <a href="">Thiết kế Nội thất Interchange</a>. All rights reserved. </p>
-                </div>
-            </div>
-            <div class="widget widget_nav_menu" id="nav_menu-4">
-                <p class="widget_title">THIẾT KẾ NỘI THẤT</p>
-                <div class="menu-footer-2-container">
-                    <ul id="menu-footer-2" class="menu">
-                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="tknt-tat-ca-thiet-ke.html">Tất cả thiết kế</a></li>
-                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="tknt-tu-bep.html">Tủ bếp</a></li>
-                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="tknt-phong-ngu.html">Phòng ngủ</a></li>
-                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="tknt-phong-khach.html">Phòng khách</a></li>
-                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="tknt-phong-tho.html">Phòng thờ</a></li>
-                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="tknt-phong-giai-tri.html">Phòng giải trí</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="widget widget_nav_menu" id="nav_menu-3">
-                <p class="widget_title">Menu</p>
-                <div class="menu-footer-1-container">
-                    <ul id="menu-footer-1" class="menu">
-                        <li
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1387 current_page_item">
-                            <a href="home.html" aria-current="page">Trang chủ</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="tknt-tat-ca-thiet-ke.html">Thiết kế nội thất</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="gioi-thieu.html">Giới
-                                thiệu</a></li>
-                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="tctt-biet-thu.html">Thi công
-                                thực tế</a></li>
-                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="sp-san-nhua.html">Sản
-                                phẩm</a></li>
-                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="phong-ngu-dep.html">Tư vấn
-                                thiết kế</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="lien-he.html">Liên hệ</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="widget_text widget widget_custom_html" id="custom_html-4">
-                <p class="widget_title">Liên hệ</p>
-                <div class="textwidget custom-html-widget">
-                    <ul class="contact-list">
-                        <li>Công ty: <span>Nhà văn hóa sinh viên, Dĩ An, Bình Dương.</span>
-                        </li>
-                        <li>Xưởng: <span>Đại học FPT campus HCM, Khu công nghệ cao, Thủ Đức.</span></li>
-                        <li>Hotline tư vấn: <span><a href="tel:0903208113">070 742 715</a></span></li>
-                        <li>Hotline bảo hành & bảo trì: <span><a href="tel:0703742715">070 374 2715</a></span></li>
-                        <li>Email: <span><a href="mailto:decorbienhoa@gmail.com">interchange@gmail.com</a></span>
                         </li>
                     </ul>
                 </div>
@@ -496,42 +219,393 @@
             <div class="clear">
             </div>
         </div>
+        <div class="clear">
+        </div>
     </div>
-    <div class="clear">
+    <div class="bigmenu">
+        <div class="container">
+            <div class="widget widget_nav_menu menuchinh" id="nav_menu-2">
+                <div class="menu-main-menu-container">
+                    <ul id="menu-main-menu" class="menu">
+                        <li
+                            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home">
+                            <a href=trang-chu.html>Trang chủ</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="gioi-thieu.html">Giới thiệu</a>
+                        </li>
+
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children">
+                            <a href="tknt-tat-ca-thiet-ke.html">Thiết Kế Nội Thất</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                                        href="tknt-tat-ca-thiet-ke.html">Tất cả thiết kế</a></li>
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                                        href="tknt-tu-bep.html">Tủ bếp</a></li>
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                                        href="tknt-phong-ngu.html">Phòng ngủ</a></li>
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                                        href="tknt-phong-khach.html">Phòng khách</a></li>
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                                        href="tknt-phong-tho.html">Phòng thờ</a></li>
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                                        href="tknt-phong-giai-tri.html">Phòng giải trí</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children">
+                            <a href="daht-tat-ca-du-an.html">Dự Án Hoàn Thiện</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                                        href="daht-tat-ca-du-an.html">Tất cả dự án</a></li>
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                                        href="daht-tu-bep.html">Tủ bếp</a></li>
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                                        href="daht-phong-ngu.html">Phòng ngủ</a></li>
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                                        href="daht-phong-khach.html">Phòng khách</a></li>
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                                        href="daht-phong-tho.html">Phòng thờ</a></li>
+                                <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                                        href="daht-phong-giai-tri.html">Phòng giải trí</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children">
+                            <a href="sp-san-go.html">Sản phẩm</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-post"><a
+                                        href="sp-tam-op-tuong-PVC.html">Tấm ốp
+                                        tường PVC</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-post"><a
+                                        href="sp-san-nhua.html">Sàn
+                                        nhựa</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-post"><a
+                                        href="sp-san-go.html">Sàn
+                                        gỗ</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-post"><a
+                                        href="sp-lam-nhua.html">Lam
+                                        nhựa</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-post"><a
+                                        href="sp-cua-nhua-go-composite.html">Cửa nhựa
+                                        gỗ Composite</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-post"><a
+                                        href="sp-rem-vai-2-lop.html">Rèm vải
+                                        2 lớp</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-post"><a
+                                        href="sp-rem-all.html">Rèm cầu
+                                        vồng, rèm Roman, rèm sáo lá, rèm cuốn</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-post"><a
+                                        href="sp-da-tu-nhien.html">Đá tự
+                                        nhiên</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-post"><a
+                                        href="sp-da-nhan-tao.html">Đá nhân
+                                        tạo</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-post"><a
+                                        href="sp-da-solid-surface.html">Đá Solid
+                                        Surface</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-post"><a
+                                        href="sp-da-nhan-tao-vicostone.html">Đá nhân
+                                        tạo Vicostone</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                            <a href="bao-gia-thi-cong.html">Báo giá</a>
+                        </li>
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children">
+                            <a href="tin-tuc.html">Tin tức</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="tu-van.html">Tư
+                                vấn</a></li>
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children">
+                            <a href="dang-nhap.html">TÀI KHOẢN</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a
+                                        href="dang-nhap.html">Đăng nhập </a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page"><a
+                                        href="dang-ky.html" style="margin-right: 15px">Đăng ký </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="copy">
-        <div class="widget_text widget widget_custom_html" id="custom_html-6">
-            <div class="textwidget custom-html-widget">
-                <div class="footer-bottom-image">
-                    <div class="image">
-                        <img src="public/image/4.jpg" alt="">
+    <div class="bigbread subbanner">
+        <div class="container">
+            <div class="caption">
+                <h1 class="headline">Đăng ký</h1>
+            </div>
+            <div id="breadcrumbs">
+                <ul itemscope="" itemtype="">
+                    <li itemprop="itemListElement" itemscope="" itemtype="">
+                        <a itemprop="item" href="" title="Biên Hòa Decor">Trang chủ</a> »
+                    </li>
+                    <li itemprop="itemListElement" itemscope="" itemtype=""><span itemprop="name">Đăng ký</span></li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="khungtrang1">
+        <div class="container" style="margin-top: 30px">
+            <div id="post-88" class="post_box top">
+                <div class="post_content">
+                    <div class="vc_row wpb_row vc_row-fluid vc_custom_1599629333435">
+                        <div class="wpb_column vc_column_container">
+                            <div class="vc_column-inner">
+                                <div class="wpb_wrapper">
+                                    <div id="ultimate-heading-921865b67d315d601"
+                                        class="uvc-heading ult-adjust-bottom-margin ultimate-heading-921865b67d315d601 uvc-7573 "
+                                        data-hspacer="line_only" data-halign="left" style="text-align:left">
+                                        <div class="uvc-main-heading ult-responsive"
+                                            data-ultimate-target=".uvc-heading.ultimate-heading-921865b67d315d601 h3"
+                                            data-responsive-json-new="{&quot;font-size&quot;:&quot;&quot;,&quot;line-height&quot;:&quot;&quot;}">
+                                            <h3 style="font-weight:normal;">Đăng Ký</h3>
+                                        </div>
+                                        <div class="uvc-heading-spacer line_only"
+                                            style="margin-top:7px;margin-bottom:12px;height:2px;"><span
+                                                class="uvc-headings-line"
+                                                style="border-style: solid; border-bottom-width: 2px; border-color: #176B87; width: 50px; float: left;"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="gf_browser_chrome gform_wrapper" id="gform_wrapper_3">
+                                        <form method="post" enctype="multipart/form-data" target="gform_ajax_frame_3"
+                                            id="gform_3" action="">
+                                            <div class="gform_body">
+                                                <ul id="gform_fields_3"
+                                                    class="gform_fields top_label description_below">
+                                                    <li id="field_3_8" class="gfield gform_hidden">
+                                                        <input name="input_8" id="input_3_8" type="hidden"
+                                                            class="gform_hidden" value="">
+                                                    </li>
+                                                    <li class="gfield gfap_placeholder gf_left_half">
+                                                        <label class="gfield_label">Tên tài khoản</label>
+                                                        <div class="ginput_container"><input name="input_2" type="text"
+                                                                value="" class="large" tabindex="11"
+                                                                placeholder="Tên tài khoản*"></div>
+                                                    </li>
+                                                    <li class="gfield gfap_placeholder gf_right_half">
+                                                        <label class="gfield_label">Email</label>
+                                                        <div class="ginput_container"><input name="input_2" type="text"
+                                                                value="" class="large" tabindex="11"
+                                                                placeholder="Email*"></div>
+                                                    </li>
+                                                    <li class="gfield gfap_placeholder gf_left_half">
+                                                        <label class="gfield_label">Mật khẩu</label>
+                                                        <div class="ginput_container"><input name="input_11"
+                                                                type="password" value="" class="large" tabindex="12"
+                                                                placeholder="Mật khẩu*"></div>
+                                                    </li>
+                                                    <li class="gfield gfap_placeholder gf_right_half">
+                                                        <label class="gfield_label">Nhập lại mật khẩu</label>
+                                                        <div class="ginput_container"><input name="input_11"
+                                                                type="password" value="" class="large" tabindex="12"
+                                                                placeholder="Nhập lại mật khẩu*"></div>
+                                                    </li>
+                                                    <li id="field_3_11" class="gfield gfap_placeholder gf_left_half">
+                                                        <!-- <label class="gfield_label" for="input_3_11">Điện thoại</label> -->
+                                                        <label class="gfield_label">Điện thoại<span
+                                                                class="Điện thoại">*</span></label>
+                                                        <div class="ginput_container"><input name="input_11"
+                                                                id="input_3_11" type="text" value="" class="large"
+                                                                tabindex="12" placeholder="Điện thoại*"></div>
+                                                    </li>
+                                                    <li id="field_3_4"
+                                                        class="gfield gfap_placeholder gf_right_half gfield_contains_required">
+                                                        <!-- <label class="gfield_label" for="input_3_4">Điện thoại<span class="Điện thoại">*</span></label> -->
+                                                        <label class="gfield_label">Ngày sinh</label>
+                                                        <div class="ginput_container"><input name="input_4"
+                                                                id="input_3_4" type="date" value="" class="large"
+                                                                tabindex="14" placeholder="Ngày sinh*"></div>
+                                                    </li>
+                                                    <li class="gfield gfap_placeholder gf_left_half">
+                                                        <label class="gfield_label">Họ</label>
+                                                        <div class="ginput_container"><input name="input_11" type="text"
+                                                                value="" class="large" tabindex="12" placeholder="Họ*">
+                                                        </div>
+                                                    </li>
+                                                    <li class="gfield gfap_placeholder gf_right_half">
+                                                        <label class="gfield_label">Tên</label>
+                                                        <div class="ginput_container"><input name="input_11" type="text"
+                                                                value="" class="large" tabindex="12" placeholder="Tên*">
+                                                        </div>
+                                                    </li>
+                                                    <li class="gfield gfap_placeholder gf_left_half">
+                                                        <label class="gfield_label">Tỉnh</label>
+                                                        <div class="ginput_container"><input name="input_11"
+                                                                type="password" value="" class="large" tabindex="12"
+                                                                placeholder="Tỉnh*"></div>
+                                                    </li>
+                                                    <li class="gfield gfap_placeholder gf_right_half">
+                                                        <label class="gfield_label">Quận</label>
+                                                        <div class="ginput_container"><input name="input_11"
+                                                                type="password" value="" class="large" tabindex="12"
+                                                                placeholder="Quận*"></div>
+                                                    </li>
+                                                    <li class="gfield gfap_placeholder gf_left_half">
+                                                        <label class="gfield_label">Phường</label>
+                                                        <div class="ginput_container"><input name="input_11"
+                                                                type="password" value="" class="large" tabindex="12"
+                                                                placeholder="Phường*"></div>
+                                                    </li>
+                                                    <li class="gfield gfap_placeholder gf_right_half">
+                                                        <label class="gfield_label">Địa chỉ và đường</label>
+                                                        <div class="ginput_container"><input name="input_11"
+                                                                type="password" value="" class="large" tabindex="12"
+                                                                placeholder="Địa chỉ và đường*"></div>
+                                                    <li id="field_3_12" class="gfield gform_hidden"><input
+                                                            name="input_12" id="input_3_12" type="hidden"
+                                                            class="gform_hidden" value=""></li>
+                                                </ul>
+                                            </div>
+                                            <div class="gform_footer top_label">
+                                                <div class="vc_btn3-container vc_btn3-center vc_custom_1688199835100">
+                                                    <a class="vc_general vc_btn3 vc_btn3-size-lg vc_btn3-shape-rounded vc_btn3-style-3d vc_btn3-color-orange"
+                                                        href="" title="">Đăng Ký</a>
+                                                </div>
+                                                <input type="hidden" class="gform_hidden" name="is_submit_3" value="1">
+                                                <input type="hidden" class="gform_hidden" name="gform_submit" value="3">
+                                                <input type="hidden" class="gform_hidden" name="gform_unique_id"
+                                                    value="">
+                                                <input type="hidden" class="gform_hidden" name="state_3"
+                                                    value="WyJbXSIsIjA1ZDQ0NzBmMDk3NDRmOWIyMDkzNjVhNTk2ZWE1MDdmIl0=">
+                                                <input type="hidden" class="gform_hidden"
+                                                    name="gform_target_page_number_3" id="gform_target_page_number_3"
+                                                    value="0">
+                                                <input type="hidden" class="gform_hidden"
+                                                    name="gform_source_page_number_3" id="gform_source_page_number_3"
+                                                    value="1">
+                                                <input type="hidden" name="gform_field_values" value="">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<link rel="stylesheet" type="text/css" href="public/css/flaticon.css">
-<a class="back-to sc" title='Lên đầu trang'><i class="fa fa-angle-double-up"></i></a>
-<script type="text/javascript">
-    jQuery().ready(function () {
-        jQuery(document).scroll(function () {
-            if (jQuery(this).scrollTop() > 200) {
-                jQuery('.sc').fadeIn("slow");
+    </div>
+    <div class="footer">
+        <div class="menufooter">
+            <div class="content">
+                <div class="widget_text widget widget_custom_html" id="custom_html-5">
+                    <div class="textwidget custom-html-widget">
+                        <div class="social">
+                            <a target="_blank" href="https://www.facebook.com/nguyenminh.phuc.921230/about"
+                                rel="noopener"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/@giaolang" rel="noopener"><i
+                                    class="fa fa-youtube" aria-hidden="true"></i></a>
+                        </div>
+                        <p>
+                            Thời gian mở cửa: 7:00 - 17:00 từ thứ 2 đến thứ 7.
+                        </p>
+                        <p>Có vị trí đỗ xe ô tô, máy bay trực thăng.</p>
+                        <p>© 2019-2024 - <a href="">Thiết kế Nội thất Interchange</a>. All rights reserved. </p>
+                    </div>
+                </div>
+                <div class="widget widget_nav_menu" id="nav_menu-4">
+                    <p class="widget_title">THIẾT KẾ NỘI THẤT</p>
+                    <div class="menu-footer-2-container">
+                        <ul id="menu-footer-2" class="menu">
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                                    href="tknt-tat-ca-thiet-ke.html">Tất cả thiết kế</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                                    href="tknt-tu-bep.html">Tủ bếp</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                                    href="tknt-phong-ngu.html">Phòng ngủ</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                                    href="tknt-phong-khach.html">Phòng khách</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                                    href="tknt-phong-tho.html">Phòng thờ</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                                    href="tknt-phong-giai-tri.html">Phòng giải trí</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="widget widget_nav_menu" id="nav_menu-3">
+                    <p class="widget_title">Menu</p>
+                    <div class="menu-footer-1-container">
+                        <ul id="menu-footer-1" class="menu">
+                            <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1387 current_page_item">
+                                <a href="trang-chu.html" aria-current="page">Trang chủ</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a
+                                    href="tknt-tat-ca-thiet-ke.html">Thiết kế nội thất</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a
+                                    href="gioi-thieu.html">Giới
+                                    thiệu</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                                    href="tctt-biet-thu.html">Thi công
+                                    thực tế</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                                    href="sp-san-nhua.html">Sản
+                                    phẩm</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category"><a
+                                    href="phong-ngu-dep.html">Tư vấn
+                                    thiết kế</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a
+                                    href="lien-he.html">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="widget_text widget widget_custom_html" id="custom_html-4">
+                    <p class="widget_title">Liên hệ</p>
+                    <div class="textwidget custom-html-widget">
+                        <ul class="contact-list">
+                            <li>Công ty: <span>Nhà văn hóa sinh viên, Dĩ An, Bình Dương.</span>
+                            </li>
+                            <li>Xưởng: <span>Đại học FPT campus HCM, Khu công nghệ cao, Thủ Đức.</span></li>
+                            <li>Hotline tư vấn: <span><a href="tel:0903208113">070 742 715</a></span></li>
+                            <li>Hotline bảo hành & bảo trì: <span><a href="tel:0703742715">070 374 2715</a></span></li>
+                            <li>Email: <span><a href="mailto:decorbienhoa@gmail.com">interchange@gmail.com</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="copy">
+            <div class="widget_text widget widget_custom_html" id="custom_html-6">
+                <div class="textwidget custom-html-widget">
+                    <div class="footer-bottom-image">
+                        <div class="image">
+                            <img src="public/image/4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" type="text/css" href="public/css/flaticon.css">
+    <a class="back-to sc" title='Lên đầu trang'><i class="fa fa-angle-double-up"></i></a>
+    <script type="text/javascript">
+        jQuery().ready(function () {
+            jQuery(document).scroll(function () {
+                if (jQuery(this).scrollTop() > 200) {
+                    jQuery('.sc').fadeIn("slow");
 
-            }
+                }
+            });
+
+            jQuery('.sc').click(function () {
+                jQuery('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+            });
+
         });
 
-        jQuery('.sc').click(function () {
-            jQuery('body,html').animate({
-                scrollTop: 0
-            }, 800);
-        });
-
-    });
-
-</script>
-<script type=" text/javascript">
+    </script>
+    <script type=" text/javascript">
     jQuery(document).ready(function(){
 
         if (jQuery('select#cmfdp-0').val()=="Bán - chuyển nhượng") {
@@ -560,616 +634,617 @@
     });
 
 </script>
-<script src="public/js/owl.carousel.js" type="text/javascript"></script>
-<link rel="stylesheet" href="public/css/animate.css" type="text/css" />
-<script type="text/javascript" src="public/js/wow.min.js"></script>
-<script>
-    wow = new WOW(
-        {
-            animateClass: 'animated',
-            offset: 100,
-            callback: function (box) {
+    <script src="public/js/owl.carousel.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="public/css/animate.css" type="text/css" />
+    <script type="text/javascript" src="public/js/wow.min.js"></script>
+    <script>
+        wow = new WOW(
+            {
+                animateClass: 'animated',
+                offset: 100,
+                callback: function (box) {
 
+                }
             }
-        }
-    );
-    wow.init();
+        );
+        wow.init();
 
-</script>
-<button type="button" aria-controls="rmp-container-1546" aria-label="Menu Trigger" id="rmp_menu_trigger-1546"
+    </script>
+    <button type="button" aria-controls="rmp-container-1546" aria-label="Menu Trigger" id="rmp_menu_trigger-1546"
         class="rmp_menu_trigger rmp-menu-trigger-boring">
         <span class="rmp-trigger-box">
             <span class="responsive-menu-pro-inner"></span>
         </span>
-</button>
-<div id="rmp-container-1546" class="rmp-container rmp-container rmp-slide-left">
-    <div id="rmp-menu-wrap-1546" class="rmp-menu-wrap">
-        <ul id="rmp-menu-1546" class="rmp-menu" role="menubar" aria-label="Default Menu">
-            <li id="rmp-menu-item-3891"
-                class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home rmp-menu-item rmp-menu-top-level-item"
-                role="none">
-                <a href="" class="rmp-menu-item-link" role="menuitem"><i class="fa fa-home"></i> <span
-                        class="hidemobi">Trang chủ</span></a>
-            </li>
-            <li id="rmp-menu-item-30"
-                class=" menu-item menu-item-type-post_type menu-item-object-page rmp-menu-item rmp-menu-top-level-item"
-                role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Giới thiệu</a></li>
-            <li id="rmp-menu-item-3888"
-                class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-top-level-item"
-                role="none">
-                <a href="" class="rmp-menu-item-link" role="menuitem">
-                    Combo nội thất
-                    <div class="rmp-menu-subarrow">▼</div>
-                </a>
-                <ul aria-label="Combo nội thất" role="menu" data-depth="2" class="rmp-submenu rmp-submenu-depth-1">
-                    <li id="rmp-menu-item-3865"
-                        class=" menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children rmp-menu-item rmp-menu-item-current-parent rmp-menu-item-has-children rmp-menu-sub-level-item"
-                        role="none">
-                        <a href="" class="rmp-menu-item-link" role="menuitem">
-                            Combo nội thất phòng ngủ
-                            <div class="rmp-menu-subarrow">▼</div>
-                        </a>
-                        <ul aria-label="Combo nội thất phòng ngủ" role="menu" data-depth="3"
-                            class="rmp-submenu rmp-submenu-depth-2">
-                            <li id="rmp-menu-item-3866"
-                                class=" menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent rmp-menu-item rmp-menu-item-current-parent rmp-menu-sub-level-item"
-                                role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Combo nội thất
-                                1PN</a></li>
-                            <li id="rmp-menu-item-3867"
-                                class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
-                                role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Combo nội thất
-                                2PN</a></li>
-                            <li id="rmp-menu-item-3868"
-                                class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
-                                role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Combo nội thất
-                                3PN</a></li>
-                            <li id="rmp-menu-item-3869"
-                                class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
-                                role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Combo nội thất
-                                4PN</a></li>
-                        </ul>
-                    </li>
-                    <li id="rmp-menu-item-3863"
-                        class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Combo nội thất nhà bếp</a>
-                    </li>
-                    <li id="rmp-menu-item-3864"
-                        class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="h" class="rmp-menu-item-link" role="menuitem">Combo nội thất phòng
-                        khách</a></li>
-                    <li id="rmp-menu-item-3870"
-                        class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Combo nội thất phòng trẻ
-                        em</a></li>
-                </ul>
-            </li>
-            <li id="rmp-menu-item-3337"
-                class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-top-level-item"
-                role="none">
-                <a href="" class="rmp-menu-item-link" role="menuitem">
-                    Thiết Kế 3D
-                    <div class="rmp-menu-subarrow">▼</div>
-                </a>
-                <ul aria-label="Thiết Kế 3D" role="menu" data-depth="2" class="rmp-submenu rmp-submenu-depth-1">
-                    <li id="rmp-menu-item-3339"
-                        class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Dự án căn hộ</a></li>
-                    <li id="rmp-menu-item-3343"
-                        class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Dự án văn phòng</a></li>
-                    <li id="rmp-menu-item-3340"
-                        class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Dự án nhà phố</a></li>
-                    <li id="rmp-menu-item-3341"
-                        class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Dự án shop &amp; store</a>
-                    </li>
-                    <li id="rmp-menu-item-3338"
-                        class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Dự án biệt thự</a></li>
-                    <li id="rmp-menu-item-3342"
-                        class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="  class=" rmp-menu-item-link" role="menuitem">Dự án spa</a></li>
-                </ul>
-            </li>
-            <li id="rmp-menu-item-1535"
-                class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-top-level-item"
-                role="none">
-                <a href="" class="rmp-menu-item-link" role="menuitem">
-                    Thi công thực tế
-                    <div class="rmp-menu-subarrow">▼</div>
-                </a>
-                <ul aria-label="Thi công thực tế" role="menu" data-depth="2"
-                    class="rmp-submenu rmp-submenu-depth-1">
-                    <li id="rmp-menu-item-1536"
-                        class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Biệt thự</a></li>
-                    <li id="rmp-menu-item-1537"
-                        class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Căn hộ</a></li>
-                    <li id="rmp-menu-item-1538"
-                        class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Nhà phố</a></li>
-                    <li id="rmp-menu-item-2664"
-                        class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Shop &amp; store</a></li>
-                    <li id="rmp-menu-item-2666"
-                        class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Văn phòng</a></li>
-                    <li id="rmp-menu-item-2665"
-                        class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Spa</a></li>
-                </ul>
-            </li>
-            <li id="rmp-menu-item-2320"
-                class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-top-level-item"
-                role="none">
-                <a href="" class="rmp-menu-item-link" role="menuitem">
-                    Sản phẩm
-                    <div class="rmp-menu-subarrow">▼</div>
-                </a>
-                <ul aria-label="Sản phẩm" role="menu" data-depth="2" class="rmp-submenu rmp-submenu-depth-1">
-                    <li id="rmp-menu-item-2321"
-                        class=" menu-item menu-item-type-post_type menu-item-object-post rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Tấm ốp tường PVC</a></li>
-                    <li id="rmp-menu-item-2322"
-                        class=" menu-item menu-item-type-post_type menu-item-object-post rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Sàn nhựa</a></li>
-                    <li id="rmp-menu-item-2323"
-                        class=" menu-item menu-item-type-post_type menu-item-object-post rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Sàn gỗ</a></li>
-                    <li id="rmp-menu-item-2326"
-                        class=" menu-item menu-item-type-post_type menu-item-object-post rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Lam nhựa</a></li>
-                    <li id="rmp-menu-item-2331"
-                        class=" menu-item menu-item-type-post_type menu-item-object-post rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Cửa nhựa gỗ Composite</a>
-                    </li>
-                    <li id="rmp-menu-item-2325"
-                        class=" menu-item menu-item-type-post_type menu-item-object-post rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Rèm vải 2 lớp</a></li>
-                    <li id="rmp-menu-item-2324"
-                        class=" menu-item menu-item-type-post_type menu-item-object-post rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Rèm cầu vồng, rèm Roman,
-                        rèm sáo lá, rèm cuốn</a></li>
-                    <li id="rmp-menu-item-2327"
-                        class=" menu-item menu-item-type-post_type menu-item-object-post rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Đá tự nhiên</a></li>
-                    <li id="rmp-menu-item-2330"
-                        class=" menu-item menu-item-type-post_type menu-item-object-post rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Đá nhân tạo</a></li>
-                    <li id="rmp-menu-item-2329"
-                        class=" menu-item menu-item-type-post_type menu-item-object-post rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Đá Solid Surface</a></li>
-                    <li id="rmp-menu-item-2328"
-                        class=" menu-item menu-item-type-post_type menu-item-object-post rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Đá nhân tạo Vicostone</a>
-                    </li>
-                </ul>
-            </li>
-            <li id="rmp-menu-item-3409"
-                class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-top-level-item"
-                role="none">
-                <a href="#" class="rmp-menu-item-link" role="menuitem">
-                    Báo giá
-                    <div class="rmp-menu-subarrow">▼</div>
-                </a>
-                <ul aria-label="Báo giá" role="menu" data-depth="2" class="rmp-submenu rmp-submenu-depth-1">
-                    <li id="rmp-menu-item-3411"
-                        class=" menu-item menu-item-type-post_type menu-item-object-page rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Báo giá thiết kế</a></li>
-                    <li id="rmp-menu-item-3410"
-                        class=" menu-item menu-item-type-post_type menu-item-object-page rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Báo giá thi công</a></li>
-                    <li id="rmp-menu-item-3668"
-                        class=" menu-item menu-item-type-post_type menu-item-object-page rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Báo giá Lam Sóng Nhựa
-                        2024</a></li>
-                </ul>
-            </li>
-            <li id="rmp-menu-item-38"
-                class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-top-level-item"
-                role="none">
-                <a href="" class="rmp-menu-item-link" role="menuitem">
-                    Tư vấn
-                    <div class="rmp-menu-subarrow">▼</div>
-                </a>
-                <ul aria-label="Tư vấn" role="menu" data-depth="2" class="rmp-submenu rmp-submenu-depth-1">
-                    <li id="rmp-menu-item-533"
-                        class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Bộ sưu tập</a></li>
-                    <li id="rmp-menu-item-534"
-                        class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Phòng ngủ đẹp</a></li>
-                    <li id="rmp-menu-item-535"
-                        class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Phòng khách đẹp</a></li>
-                    <li id="rmp-menu-item-536"
-                        class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
-                        role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Bếp đẹp</a></li>
-                </ul>
-            </li>
-            <li id="rmp-menu-item-92"
-                class=" menu-item menu-item-type-post_type menu-item-object-page rmp-menu-item rmp-menu-top-level-item"
-                role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Liên hệ</a></li>
-        </ul>
+    </button>
+    <div id="rmp-container-1546" class="rmp-container rmp-container rmp-slide-left">
+        <div id="rmp-menu-wrap-1546" class="rmp-menu-wrap">
+            <ul id="rmp-menu-1546" class="rmp-menu" role="menubar" aria-label="Default Menu">
+                <li id="rmp-menu-item-3891"
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home rmp-menu-item rmp-menu-top-level-item"
+                    role="none">
+                    <a href="" class="rmp-menu-item-link" role="menuitem"><i class="fa fa-home"></i> <span
+                            class="hidemobi">Trang chủ</span></a>
+                </li>
+                <li id="rmp-menu-item-30"
+                    class=" menu-item menu-item-type-post_type menu-item-object-page rmp-menu-item rmp-menu-top-level-item"
+                    role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Giới thiệu</a></li>
+                <li id="rmp-menu-item-3888"
+                    class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-top-level-item"
+                    role="none">
+                    <a href="" class="rmp-menu-item-link" role="menuitem">
+                        Combo nội thất
+                        <div class="rmp-menu-subarrow">▼</div>
+                    </a>
+                    <ul aria-label="Combo nội thất" role="menu" data-depth="2" class="rmp-submenu rmp-submenu-depth-1">
+                        <li id="rmp-menu-item-3865"
+                            class=" menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children rmp-menu-item rmp-menu-item-current-parent rmp-menu-item-has-children rmp-menu-sub-level-item"
+                            role="none">
+                            <a href="" class="rmp-menu-item-link" role="menuitem">
+                                Combo nội thất phòng ngủ
+                                <div class="rmp-menu-subarrow">▼</div>
+                            </a>
+                            <ul aria-label="Combo nội thất phòng ngủ" role="menu" data-depth="3"
+                                class="rmp-submenu rmp-submenu-depth-2">
+                                <li id="rmp-menu-item-3866"
+                                    class=" menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent rmp-menu-item rmp-menu-item-current-parent rmp-menu-sub-level-item"
+                                    role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Combo nội thất
+                                        1PN</a></li>
+                                <li id="rmp-menu-item-3867"
+                                    class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
+                                    role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Combo nội thất
+                                        2PN</a></li>
+                                <li id="rmp-menu-item-3868"
+                                    class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
+                                    role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Combo nội thất
+                                        3PN</a></li>
+                                <li id="rmp-menu-item-3869"
+                                    class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
+                                    role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Combo nội thất
+                                        4PN</a></li>
+                            </ul>
+                        </li>
+                        <li id="rmp-menu-item-3863"
+                            class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Combo nội thất nhà bếp</a>
+                        </li>
+                        <li id="rmp-menu-item-3864"
+                            class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="h" class="rmp-menu-item-link" role="menuitem">Combo nội thất phòng
+                                khách</a></li>
+                        <li id="rmp-menu-item-3870"
+                            class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Combo nội thất phòng trẻ
+                                em</a></li>
+                    </ul>
+                </li>
+                <li id="rmp-menu-item-3337"
+                    class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-top-level-item"
+                    role="none">
+                    <a href="" class="rmp-menu-item-link" role="menuitem">
+                        Thiết Kế 3D
+                        <div class="rmp-menu-subarrow">▼</div>
+                    </a>
+                    <ul aria-label="Thiết Kế 3D" role="menu" data-depth="2" class="rmp-submenu rmp-submenu-depth-1">
+                        <li id="rmp-menu-item-3339"
+                            class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Dự án căn hộ</a></li>
+                        <li id="rmp-menu-item-3343"
+                            class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Dự án văn phòng</a></li>
+                        <li id="rmp-menu-item-3340"
+                            class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Dự án nhà phố</a></li>
+                        <li id="rmp-menu-item-3341"
+                            class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Dự án shop &amp; store</a>
+                        </li>
+                        <li id="rmp-menu-item-3338"
+                            class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Dự án biệt thự</a></li>
+                        <li id="rmp-menu-item-3342"
+                            class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="  class=" rmp-menu-item-link" role="menuitem">Dự án spa</a></li>
+                    </ul>
+                </li>
+                <li id="rmp-menu-item-1535"
+                    class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-top-level-item"
+                    role="none">
+                    <a href="" class="rmp-menu-item-link" role="menuitem">
+                        Thi công thực tế
+                        <div class="rmp-menu-subarrow">▼</div>
+                    </a>
+                    <ul aria-label="Thi công thực tế" role="menu" data-depth="2"
+                        class="rmp-submenu rmp-submenu-depth-1">
+                        <li id="rmp-menu-item-1536"
+                            class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Biệt thự</a></li>
+                        <li id="rmp-menu-item-1537"
+                            class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Căn hộ</a></li>
+                        <li id="rmp-menu-item-1538"
+                            class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Nhà phố</a></li>
+                        <li id="rmp-menu-item-2664"
+                            class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Shop &amp; store</a></li>
+                        <li id="rmp-menu-item-2666"
+                            class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Văn phòng</a></li>
+                        <li id="rmp-menu-item-2665"
+                            class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Spa</a></li>
+                    </ul>
+                </li>
+                <li id="rmp-menu-item-2320"
+                    class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-top-level-item"
+                    role="none">
+                    <a href="" class="rmp-menu-item-link" role="menuitem">
+                        Sản phẩm
+                        <div class="rmp-menu-subarrow">▼</div>
+                    </a>
+                    <ul aria-label="Sản phẩm" role="menu" data-depth="2" class="rmp-submenu rmp-submenu-depth-1">
+                        <li id="rmp-menu-item-2321"
+                            class=" menu-item menu-item-type-post_type menu-item-object-post rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Tấm ốp tường PVC</a></li>
+                        <li id="rmp-menu-item-2322"
+                            class=" menu-item menu-item-type-post_type menu-item-object-post rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Sàn nhựa</a></li>
+                        <li id="rmp-menu-item-2323"
+                            class=" menu-item menu-item-type-post_type menu-item-object-post rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Sàn gỗ</a></li>
+                        <li id="rmp-menu-item-2326"
+                            class=" menu-item menu-item-type-post_type menu-item-object-post rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Lam nhựa</a></li>
+                        <li id="rmp-menu-item-2331"
+                            class=" menu-item menu-item-type-post_type menu-item-object-post rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Cửa nhựa gỗ Composite</a>
+                        </li>
+                        <li id="rmp-menu-item-2325"
+                            class=" menu-item menu-item-type-post_type menu-item-object-post rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Rèm vải 2 lớp</a></li>
+                        <li id="rmp-menu-item-2324"
+                            class=" menu-item menu-item-type-post_type menu-item-object-post rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Rèm cầu vồng, rèm Roman,
+                                rèm sáo lá, rèm cuốn</a></li>
+                        <li id="rmp-menu-item-2327"
+                            class=" menu-item menu-item-type-post_type menu-item-object-post rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Đá tự nhiên</a></li>
+                        <li id="rmp-menu-item-2330"
+                            class=" menu-item menu-item-type-post_type menu-item-object-post rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Đá nhân tạo</a></li>
+                        <li id="rmp-menu-item-2329"
+                            class=" menu-item menu-item-type-post_type menu-item-object-post rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Đá Solid Surface</a></li>
+                        <li id="rmp-menu-item-2328"
+                            class=" menu-item menu-item-type-post_type menu-item-object-post rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Đá nhân tạo Vicostone</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="rmp-menu-item-3409"
+                    class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-top-level-item"
+                    role="none">
+                    <a href="#" class="rmp-menu-item-link" role="menuitem">
+                        Báo giá
+                        <div class="rmp-menu-subarrow">▼</div>
+                    </a>
+                    <ul aria-label="Báo giá" role="menu" data-depth="2" class="rmp-submenu rmp-submenu-depth-1">
+                        <li id="rmp-menu-item-3411"
+                            class=" menu-item menu-item-type-post_type menu-item-object-page rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Báo giá thiết kế</a></li>
+                        <li id="rmp-menu-item-3410"
+                            class=" menu-item menu-item-type-post_type menu-item-object-page rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Báo giá thi công</a></li>
+                        <li id="rmp-menu-item-3668"
+                            class=" menu-item menu-item-type-post_type menu-item-object-page rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Báo giá Lam Sóng Nhựa
+                                2024</a></li>
+                    </ul>
+                </li>
+                <li id="rmp-menu-item-38"
+                    class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children rmp-menu-item rmp-menu-item-has-children rmp-menu-top-level-item"
+                    role="none">
+                    <a href="" class="rmp-menu-item-link" role="menuitem">
+                        Tư vấn
+                        <div class="rmp-menu-subarrow">▼</div>
+                    </a>
+                    <ul aria-label="Tư vấn" role="menu" data-depth="2" class="rmp-submenu rmp-submenu-depth-1">
+                        <li id="rmp-menu-item-533"
+                            class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Bộ sưu tập</a></li>
+                        <li id="rmp-menu-item-534"
+                            class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Phòng ngủ đẹp</a></li>
+                        <li id="rmp-menu-item-535"
+                            class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Phòng khách đẹp</a></li>
+                        <li id="rmp-menu-item-536"
+                            class=" menu-item menu-item-type-taxonomy menu-item-object-category rmp-menu-item rmp-menu-sub-level-item"
+                            role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Bếp đẹp</a></li>
+                    </ul>
+                </li>
+                <li id="rmp-menu-item-92"
+                    class=" menu-item menu-item-type-post_type menu-item-object-page rmp-menu-item rmp-menu-top-level-item"
+                    role="none"><a href="" class="rmp-menu-item-link" role="menuitem">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div id="rmp-menu-additional-content-1546" class="rmp-menu-additional-content">
+            <a href="tel:0903208113">Hotline: 0903.208.113</a>
+        </div>
     </div>
-    <div id="rmp-menu-additional-content-1546" class="rmp-menu-additional-content">
-        <a href="tel:0903208113">Hotline: 0903.208.113</a>
-    </div>
-</div>
-<script type="text/javascript">
-    function revslider_showDoubleJqueryError(sliderID) {
-        var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
-        errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
-        errorMessage += "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
-        errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
-        errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
-        jQuery(sliderID).show().html(errorMessage);
-    }
-</script>
-<link rel='stylesheet' id='vc_animate-css-css' href='public/css/animate.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='ult-background-style-css' href='public/css/background-style.min.css' type='text/css'
-      media='all' />
-<link rel='stylesheet' id='fonts-vc-css' href='public/css/fonts.css' type='text/css' media='all' />
-<link rel='stylesheet' id='custom-responsive-vc-css' href='public/css/custom_responsive.css' type='text/css'
-      media='all' />
-<style id='fastgallery-vc-custom-style-inline-css' type='text/css'>
-    #gallery-1 {
-        margin: auto;
-    }
+    <script type="text/javascript">
+        function revslider_showDoubleJqueryError(sliderID) {
+            var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
+            errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
+            errorMessage += "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
+            errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
+            errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
+            jQuery(sliderID).show().html(errorMessage);
+        }
+    </script>
+    <link rel='stylesheet' id='vc_animate-css-css' href='public/css/animate.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='ult-background-style-css' href='public/css/background-style.min.css' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='fonts-vc-css' href='public/css/fonts.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='custom-responsive-vc-css' href='public/css/custom_responsive.css' type='text/css'
+        media='all' />
+    <style id='fastgallery-vc-custom-style-inline-css' type='text/css'>
+        #gallery-1 {
+            margin: auto;
+        }
 
-    #gallery-1 .fg-gallery-item {
-        float: left;
-        margin-top: 10px;
-        text-align: center;
-        width: 20%;
-    }
+        #gallery-1 .fg-gallery-item {
+            float: left;
+            margin-top: 10px;
+            text-align: center;
+            width: 20%;
+        }
 
-    #gallery-1 .fg-gallery-caption {
-        margin-left: 0;
-    }
+        #gallery-1 .fg-gallery-caption {
+            margin-left: 0;
+        }
 
-    #gallery-1.fastgallery .fg-gallery-caption,
-    #gallery-1.fastgallery .fg-gallery-caption:hover {
-        background-color: #2D99AE;
-    }
+        #gallery-1.fastgallery .fg-gallery-caption,
+        #gallery-1.fastgallery .fg-gallery-caption:hover {
+            background-color: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.gallery .fastgallery-gallery-icon .fg_zoom a,
-    #gallery-1.fastgallery.gallery .fastgallery-gallery-icon .fg_zoom a:hover {
-        color: #2D99AE;
-    }
+        #gallery-1.fastgallery.gallery .fastgallery-gallery-icon .fg_zoom a,
+        #gallery-1.fastgallery.gallery .fastgallery-gallery-icon .fg_zoom a:hover {
+            color: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fg_style1 .fg-gallery-caption {
-        color: #000000;
-    }
+        #gallery-1.fastgallery.fg_style1 .fg-gallery-caption {
+            color: #000000;
+        }
 
-    #gallery-1.fastgallery.gallery.fg_style2 .fastgallery-gallery-icon .fg_zoom a {
-        background: rgba(0, 0, 0, 0.3);
-    }
+        #gallery-1.fastgallery.gallery.fg_style2 .fastgallery-gallery-icon .fg_zoom a {
+            background: rgba(0, 0, 0, 0.3);
+        }
 
-    #gallery-1.fastgallery.fg_style2 .fg-gallery-caption {
-        color: #000000;
-    }
+        #gallery-1.fastgallery.fg_style2 .fg-gallery-caption {
+            color: #000000;
+        }
 
-    #gallery-1.fastgallery.gallery.fg_style3 .fg_zoom,
-    #gallery-1.fastgallery.gallery.fg_style3 .fg_zoom:hover {
-        background: #2D99AE;
-    }
+        #gallery-1.fastgallery.gallery.fg_style3 .fg_zoom,
+        #gallery-1.fastgallery.gallery.fg_style3 .fg_zoom:hover {
+            background: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fg_style3 .fg-gallery-caption {
-        color: #000000;
-    }
+        #gallery-1.fastgallery.fg_style3 .fg-gallery-caption {
+            color: #000000;
+        }
 
-    #gallery-1.fastgallery.fg_style4 .fg-gallery-caption,
-    #gallery-1.fastgallery.gallery.fg_style4 .fastgallery-gallery-icon .fg_zoom a,
-    #gallery-1.fastgallery.gallery.fg_style4 .fastgallery-gallery-icon .fg_zoom a:hover {
-        color: #000000;
-    }
+        #gallery-1.fastgallery.fg_style4 .fg-gallery-caption,
+        #gallery-1.fastgallery.gallery.fg_style4 .fastgallery-gallery-icon .fg_zoom a,
+        #gallery-1.fastgallery.gallery.fg_style4 .fastgallery-gallery-icon .fg_zoom a:hover {
+            color: #000000;
+        }
 
-    #gallery-1.fastgallery.gallery.fg_style4 .fastgallery-gallery-icon .fg_zoom a,
-    #gallery-1.fastgallery.gallery.fg_style4 .fastgallery-gallery-icon .fg_zoom a:hover {
-        background: #2D99AE;
-    }
+        #gallery-1.fastgallery.gallery.fg_style4 .fastgallery-gallery-icon .fg_zoom a,
+        #gallery-1.fastgallery.gallery.fg_style4 .fastgallery-gallery-icon .fg_zoom a:hover {
+            background: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.gallery.fg_style5 .fastgallery-gallery-icon .fg_zoom a,
-    #gallery-1.fastgallery.gallery.fg_style5 .fastgallery-gallery-icon .fg_zoom a:hover {
-        color: #000000;
-        background-color: #2D99AE;
-    }
+        #gallery-1.fastgallery.gallery.fg_style5 .fastgallery-gallery-icon .fg_zoom a,
+        #gallery-1.fastgallery.gallery.fg_style5 .fastgallery-gallery-icon .fg_zoom a:hover {
+            color: #000000;
+            background-color: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.gallery.fg_style6 .fastgallery-gallery-icon .fg_zoom a,
-    #gallery-1.fastgallery.gallery.fg_style6 .fastgallery-gallery-icon .fg_zoom a:hover {
-        color: #000000;
-        background: #2D99AE;
-    }
+        #gallery-1.fastgallery.gallery.fg_style6 .fastgallery-gallery-icon .fg_zoom a,
+        #gallery-1.fastgallery.gallery.fg_style6 .fastgallery-gallery-icon .fg_zoom a:hover {
+            color: #000000;
+            background: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fg_style6 .fg-gallery-caption {
-        color: #000000;
-    }
+        #gallery-1.fastgallery.fg_style6 .fg-gallery-caption {
+            color: #000000;
+        }
 
-    #gallery-1.fastgallery.gallery.fg_style7 .fastgallery-gallery-icon .fg_zoom a,
-    #gallery-1.fastgallery.gallery.fg_style7 .fastgallery-gallery-icon .fg_zoom a:hover {
-        color: #000000;
-        background: #2D99AE;
-    }
+        #gallery-1.fastgallery.gallery.fg_style7 .fastgallery-gallery-icon .fg_zoom a,
+        #gallery-1.fastgallery.gallery.fg_style7 .fastgallery-gallery-icon .fg_zoom a:hover {
+            color: #000000;
+            background: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fg_style7 .fg-gallery-caption {
-        color: #000000;
-    }
+        #gallery-1.fastgallery.fg_style7 .fg-gallery-caption {
+            color: #000000;
+        }
 
-    #gallery-1.fastgallery.gallery.fg_style8 .fastgallery-gallery-icon .fg_zoom a,
-    #gallery-1.fastgallery.gallery.fg_style8 .fastgallery-gallery-icon .fg_zoom a:hover {
-        color: #000000;
-        background: #2D99AE;
-    }
+        #gallery-1.fastgallery.gallery.fg_style8 .fastgallery-gallery-icon .fg_zoom a,
+        #gallery-1.fastgallery.gallery.fg_style8 .fastgallery-gallery-icon .fg_zoom a:hover {
+            color: #000000;
+            background: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fg_style8 .fg-gallery-caption {
-        color: #000000;
-    }
+        #gallery-1.fastgallery.fg_style8 .fg-gallery-caption {
+            color: #000000;
+        }
 
-    #gallery-1.fastgallery.gallery.fg_style9 .fastgallery-gallery-icon .fg_zoom a,
-    #gallery-1.fastgallery.gallery.fg_style9 .fastgallery-gallery-icon .fg_zoom a:hover {
-        color: #000000;
-        background: #2D99AE;
-    }
+        #gallery-1.fastgallery.gallery.fg_style9 .fastgallery-gallery-icon .fg_zoom a,
+        #gallery-1.fastgallery.gallery.fg_style9 .fastgallery-gallery-icon .fg_zoom a:hover {
+            color: #000000;
+            background: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fg_style9 .fg-gallery-caption {
-        color: #000000;
-    }
+        #gallery-1.fastgallery.fg_style9 .fg-gallery-caption {
+            color: #000000;
+        }
 
-    #gallery-1.fastgallery.gallery.fg_style10 .fastgallery-gallery-icon .fg_zoom a,
-    #gallery-1.fastgallery.gallery.fg_style10 .fastgallery-gallery-icon .fg_zoom a:hover {
-        color: #000000;
-        background: #2D99AE;
-    }
+        #gallery-1.fastgallery.gallery.fg_style10 .fastgallery-gallery-icon .fg_zoom a,
+        #gallery-1.fastgallery.gallery.fg_style10 .fastgallery-gallery-icon .fg_zoom a:hover {
+            color: #000000;
+            background: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fg_style10 .fg-gallery-caption {
-        color: #000000;
-    }
+        #gallery-1.fastgallery.fg_style10 .fg-gallery-caption {
+            color: #000000;
+        }
 
-    #gallery-1.fastgallery.fg_style11 .fg-gallery-caption {
-        color: #000000;
-    }
+        #gallery-1.fastgallery.fg_style11 .fg-gallery-caption {
+            color: #000000;
+        }
 
-    #gallery-1.fastgallery.fg_style11 .fastgallery-gallery-icon .fg_zoom a,
-    #gallery-1.fastgallery.fg_style11 .fastgallery-gallery-icon .fg_zoom a:hover {
-        color: #2D99AE;
-        background: rgba(0, 0, 0, 0.3);
-    }
+        #gallery-1.fastgallery.fg_style11 .fastgallery-gallery-icon .fg_zoom a,
+        #gallery-1.fastgallery.fg_style11 .fastgallery-gallery-icon .fg_zoom a:hover {
+            color: #2D99AE;
+            background: rgba(0, 0, 0, 0.3);
+        }
 
-    #gallery-1.fastgallery.fg_style12 .fg-gallery-caption {
-        color: #000000;
-    }
+        #gallery-1.fastgallery.fg_style12 .fg-gallery-caption {
+            color: #000000;
+        }
 
-    #gallery-1.fastgallery.fg_style12 .fastgallery-gallery-icon .fg_zoom a,
-    #gallery-1.fastgallery.fg_style12 .fastgallery-gallery-icon .fg_zoom a:hover {
-        color: #2D99AE;
-        background: rgba(0, 0, 0, 0.3);
-    }
+        #gallery-1.fastgallery.fg_style12 .fastgallery-gallery-icon .fg_zoom a,
+        #gallery-1.fastgallery.fg_style12 .fastgallery-gallery-icon .fg_zoom a:hover {
+            color: #2D99AE;
+            background: rgba(0, 0, 0, 0.3);
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style1 .fotorama__thumb-border {
-        border-color: #2D99AE;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style1 .fotorama__thumb-border {
+            border-color: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style1 .fotorama__html>div {
-        background: #2D99AE;
-        color: #000000;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style1 .fotorama__html>div {
+            background: #2D99AE;
+            color: #000000;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style2 .fotorama__thumb-border {
-        border-color: #2D99AE;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style2 .fotorama__thumb-border {
+            border-color: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style2 .fotorama__html>div {
-        background: #2D99AE;
-        color: #000000;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style2 .fotorama__html>div {
+            background: #2D99AE;
+            color: #000000;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style3 .fotorama__thumb-border {
-        border-color: #2D99AE;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style3 .fotorama__thumb-border {
+            border-color: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style3 .fotorama__html>div {
-        color: #000000;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style3 .fotorama__html>div {
+            color: #000000;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style4 .fotorama__thumb-border {
-        border-color: #2D99AE;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style4 .fotorama__thumb-border {
+            border-color: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style4 .fotorama__html>div {
-        color: #000000;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style4 .fotorama__html>div {
+            color: #000000;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style5 .fotorama__thumb-border {
-        border-color: #2D99AE;
-        background: #2D99AE;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style5 .fotorama__thumb-border {
+            border-color: #2D99AE;
+            background: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style5 .fotorama__html>div {
-        color: #000000;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style5 .fotorama__html>div {
+            color: #000000;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style6 .fotorama__thumb-border {
-        border-color: #2D99AE;
-        background: #2D99AE;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style6 .fotorama__thumb-border {
+            border-color: #2D99AE;
+            background: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style6 .fotorama__html>div {
-        color: #000000;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style6 .fotorama__html>div {
+            color: #000000;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style7 .fotorama__thumb-border {
-        border-color: #2D99AE;
-        background: #2D99AE;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style7 .fotorama__thumb-border {
+            border-color: #2D99AE;
+            background: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style7 .fotorama__html>div {
-        color: #000000;
-        background: #2D99AE;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style7 .fotorama__html>div {
+            color: #000000;
+            background: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style8 .fotorama__thumb-border {
-        border-color: #2D99AE;
-        background: #2D99AE;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style8 .fotorama__thumb-border {
+            border-color: #2D99AE;
+            background: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style8 .fotorama__html>div {
-        color: #000000;
-        background: #2D99AE;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style8 .fotorama__html>div {
+            color: #000000;
+            background: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style9 .fotorama__thumb-border {
-        border-color: #2D99AE;
-        background: #2D99AE;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style9 .fotorama__thumb-border {
+            border-color: #2D99AE;
+            background: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style9 .fotorama__html>div {
-        color: #000000;
-        background: #2D99AE;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style9 .fotorama__html>div {
+            color: #000000;
+            background: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style10 .fotorama__thumb-border {
-        border-color: #2D99AE;
-        background: #2D99AE;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style10 .fotorama__thumb-border {
+            border-color: #2D99AE;
+            background: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style10 .fotorama__html>div {
-        color: #000000;
-        background: #2D99AE;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style10 .fotorama__html>div {
+            color: #000000;
+            background: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style11 .fotorama__thumb-border {
-        border-color: #2D99AE;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style11 .fotorama__thumb-border {
+            border-color: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style11 .fotorama__html>div {
-        background: #2D99AE;
-        color: #000000;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style11 .fotorama__html>div {
+            background: #2D99AE;
+            color: #000000;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style12 .fotorama__thumb-border {
-        border-color: #2D99AE;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style12 .fotorama__thumb-border {
+            border-color: #2D99AE;
+        }
 
-    #gallery-1.fastgallery.fotorama.fg_style12 .fotorama__html>div {
-        background: #2D99AE;
-        color: #000000;
-    }
+        #gallery-1.fastgallery.fotorama.fg_style12 .fotorama__html>div {
+            background: #2D99AE;
+            color: #000000;
+        }
 
-    #gallery-1.fastgallery.fg_thumbs_one .fg-gallery-item {
-        display: none;
-    }
+        #gallery-1.fastgallery.fg_thumbs_one .fg-gallery-item {
+            display: none;
+        }
 
-    #gallery-1.fastgallery.fg_thumbs_one .fg-gallery-item:first-child {
-        display: block;
-    }
+        #gallery-1.fastgallery.fg_thumbs_one .fg-gallery-item:first-child {
+            display: block;
+        }
 
-    #gallery-1.fastgallery.fg_thumbs_one {
-        width: auto !important;
-    }
+        #gallery-1.fastgallery.fg_thumbs_one {
+            width: auto !important;
+        }
 
-    #gallery-1.fastgallery .icon-plus:before {
-        content: "\e6ee" !important;
-    }
-</style>
-<script type='text/javascript' src='public/js/imagesloaded.min.js' id='imagesloaded-js'></script>
-<script type='text/javascript' src='public/js/masonry.min.js' id='masonry-js'></script>
-<script type='text/javascript' src='public/js/jquery.masonry.min.js' id='jquery-masonry-js'></script>
-<script type='text/javascript' src='public/js/core.min.js' id='jquery-ui-core-js'></script>
-<script type='text/javascript' id='popup-maker-site-js-extra'>
-    /* <![CDATA[ */
-    var pum_vars = { "version": "1.18.1", "pm_dir_url": "https:\/\/bienhoadecor.com\/wp-content\/plugins\/popup-maker\/", "ajaxurl": "https:\/\/bienhoadecor.com\/wp-admin\/admin-ajax.php", "restapi": "https:\/\/bienhoadecor.com\/wp-json\/pum\/v1", "rest_nonce": null, "default_theme": "3412", "debug_mode": "", "disable_tracking": "", "home_url": "\/", "message_position": "top", "core_sub_forms_enabled": "1", "popups": [], "cookie_domain": "", "analytics_route": "analytics", "analytics_api": "https:\/\/bienhoadecor.com\/wp-json\/pum\/v1" };
-    var pum_sub_vars = { "ajaxurl": "https:\/\/bienhoadecor.com\/wp-admin\/admin-ajax.php", "message_position": "top" };
-    var pum_popups = { "pum-3832": { "triggers": [{ "type": "click_open", "settings": { "cookie_name": "", "extra_selectors": ".btnAddToCart", "do_default": true } }], "cookies": [], "disable_on_mobile": false, "disable_on_tablet": false, "atc_promotion": null, "explain": null, "type_section": null, "theme_id": "3412", "size": "small", "responsive_min_width": "320px", "responsive_max_width": "90%", "custom_width": "640px", "custom_height_auto": false, "custom_height": "380px", "scrollable_content": false, "animation_type": "fade", "animation_speed": "350", "animation_origin": "center top", "open_sound": "beep-up.mp3", "custom_sound": "", "location": "center top", "position_top": "100", "position_bottom": "0", "position_left": "0", "position_right": "0", "position_from_trigger": false, "position_fixed": false, "overlay_disabled": false, "stackable": false, "disable_reposition": false, "zindex": "1999999999", "close_button_delay": "0", "fi_promotion": null, "close_on_form_submission": false, "close_on_form_submission_delay": "0", "close_on_overlay_click": false, "close_on_esc_press": false, "close_on_f4_press": false, "disable_form_reopen": false, "disable_accessibility": false, "theme_slug": "default-theme", "id": 3832, "slug": "bao-gia-combo" }, "pum-3421": { "triggers": [{ "type": "click_open", "settings": { "cookie_name": "", "extra_selectors": ".baogia22, .ult_price_action_button", "do_default": true } }, { "type": "auto_open", "settings": { "cookie_name": ["pum-3421"], "delay": "25000" } }], "cookies": [{ "event": "on_popup_close", "settings": { "name": "pum-3421", "key": "", "session": true, "path": true, "time": "1 month" } }], "disable_on_mobile": false, "disable_on_tablet": false, "atc_promotion": null, "explain": null, "type_section": null, "theme_id": "3412", "size": "small", "responsive_min_width": "320px", "responsive_max_width": "90%", "custom_width": "640px", "custom_height_auto": false, "custom_height": "380px", "scrollable_content": false, "animation_type": "fade", "animation_speed": "350", "animation_origin": "center top", "open_sound": "beep-up.mp3", "custom_sound": "", "location": "center top", "position_top": "100", "position_bottom": "0", "position_left": "0", "position_right": "0", "position_from_trigger": false, "position_fixed": false, "overlay_disabled": false, "stackable": false, "disable_reposition": false, "zindex": "1999999999", "close_button_delay": "0", "fi_promotion": null, "close_on_form_submission": false, "close_on_form_submission_delay": "0", "close_on_overlay_click": false, "close_on_esc_press": false, "close_on_f4_press": false, "disable_form_reopen": false, "disable_accessibility": false, "theme_slug": "default-theme", "id": 3421, "slug": "bao-gia" } };
-    /* ]]> */
-</script>
-<script type='text/javascript' src='public/js/pum-site-scripts.js' id='popup-maker-site-js'></script>
-<script type='text/javascript' src='public/js/js_composer_front.min.js' id='wpb_composer_front_js-js'></script>
-<script type='text/javascript' src='public/js/vc-waypoints.min.js' id='vc_waypoints-js'></script>
-<script type='text/javascript' src='public/js/ultimate_bg.min.js' id='ultimate-row-bg-js'></script>
-<script type='text/javascript' src='public/js/frontend.js' id='fastgallery-frontend-script-js'></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
-<ul id="info-scroll" class="lsn clearfix clicktel">
-    <li class="clearfix clicktel"><a id="tel_cta" class="clearfix clicktel" href="tel:+84903208113">
-        <span class="text222 clicktel">HOTLINE <small class="clicktel">0903 208 113</small></span>
-        <span class="icon clicktel"><img style="margin-top: 1px;" src="public/image/phone-ico.png" alt=""
-                                         class="clicktel"></span>
-    </a>
-    </li>
-</ul>
-<div id="call_now_widget-2" class="footer-widget widget widget_call_now_widget clr">
-    <div class="float-icon-hotline">
-        <ul>
-            <li class="hotline_float_icon"><a href="//zalo.me/0903208113" target="_blank" rel="noopener nofollow"><i
-                    class="fa fa-zalo animated infinite tada"></i><span>Nhắn tin qua Zalo</span></a></li>
-            <li class="hotline_float_icon"><a href="javascript:void(0)" rel="noopener nofollow"><i
-                    class="fa fa-envelope dchi baogia22 animated infinite tada"></i><span>Đăng ký báo
+        #gallery-1.fastgallery .icon-plus:before {
+            content: "\e6ee" !important;
+        }
+    </style>
+    <script type='text/javascript' src='public/js/imagesloaded.min.js' id='imagesloaded-js'></script>
+    <script type='text/javascript' src='public/js/masonry.min.js' id='masonry-js'></script>
+    <script type='text/javascript' src='public/js/jquery.masonry.min.js' id='jquery-masonry-js'></script>
+    <script type='text/javascript' src='public/js/core.min.js' id='jquery-ui-core-js'></script>
+    <script type='text/javascript' id='popup-maker-site-js-extra'>
+        /* <![CDATA[ */
+        var pum_vars = { "version": "1.18.1", "pm_dir_url": "https:\/\/bienhoadecor.com\/wp-content\/plugins\/popup-maker\/", "ajaxurl": "https:\/\/bienhoadecor.com\/wp-admin\/admin-ajax.php", "restapi": "https:\/\/bienhoadecor.com\/wp-json\/pum\/v1", "rest_nonce": null, "default_theme": "3412", "debug_mode": "", "disable_tracking": "", "home_url": "\/", "message_position": "top", "core_sub_forms_enabled": "1", "popups": [], "cookie_domain": "", "analytics_route": "analytics", "analytics_api": "https:\/\/bienhoadecor.com\/wp-json\/pum\/v1" };
+        var pum_sub_vars = { "ajaxurl": "https:\/\/bienhoadecor.com\/wp-admin\/admin-ajax.php", "message_position": "top" };
+        var pum_popups = { "pum-3832": { "triggers": [{ "type": "click_open", "settings": { "cookie_name": "", "extra_selectors": ".btnAddToCart", "do_default": true } }], "cookies": [], "disable_on_mobile": false, "disable_on_tablet": false, "atc_promotion": null, "explain": null, "type_section": null, "theme_id": "3412", "size": "small", "responsive_min_width": "320px", "responsive_max_width": "90%", "custom_width": "640px", "custom_height_auto": false, "custom_height": "380px", "scrollable_content": false, "animation_type": "fade", "animation_speed": "350", "animation_origin": "center top", "open_sound": "beep-up.mp3", "custom_sound": "", "location": "center top", "position_top": "100", "position_bottom": "0", "position_left": "0", "position_right": "0", "position_from_trigger": false, "position_fixed": false, "overlay_disabled": false, "stackable": false, "disable_reposition": false, "zindex": "1999999999", "close_button_delay": "0", "fi_promotion": null, "close_on_form_submission": false, "close_on_form_submission_delay": "0", "close_on_overlay_click": false, "close_on_esc_press": false, "close_on_f4_press": false, "disable_form_reopen": false, "disable_accessibility": false, "theme_slug": "default-theme", "id": 3832, "slug": "bao-gia-combo" }, "pum-3421": { "triggers": [{ "type": "click_open", "settings": { "cookie_name": "", "extra_selectors": ".baogia22, .ult_price_action_button", "do_default": true } }, { "type": "auto_open", "settings": { "cookie_name": ["pum-3421"], "delay": "25000" } }], "cookies": [{ "event": "on_popup_close", "settings": { "name": "pum-3421", "key": "", "session": true, "path": true, "time": "1 month" } }], "disable_on_mobile": false, "disable_on_tablet": false, "atc_promotion": null, "explain": null, "type_section": null, "theme_id": "3412", "size": "small", "responsive_min_width": "320px", "responsive_max_width": "90%", "custom_width": "640px", "custom_height_auto": false, "custom_height": "380px", "scrollable_content": false, "animation_type": "fade", "animation_speed": "350", "animation_origin": "center top", "open_sound": "beep-up.mp3", "custom_sound": "", "location": "center top", "position_top": "100", "position_bottom": "0", "position_left": "0", "position_right": "0", "position_from_trigger": false, "position_fixed": false, "overlay_disabled": false, "stackable": false, "disable_reposition": false, "zindex": "1999999999", "close_button_delay": "0", "fi_promotion": null, "close_on_form_submission": false, "close_on_form_submission_delay": "0", "close_on_overlay_click": false, "close_on_esc_press": false, "close_on_f4_press": false, "disable_form_reopen": false, "disable_accessibility": false, "theme_slug": "default-theme", "id": 3421, "slug": "bao-gia" } };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='public/js/pum-site-scripts.js' id='popup-maker-site-js'></script>
+    <script type='text/javascript' src='public/js/js_composer_front.min.js' id='wpb_composer_front_js-js'></script>
+    <script type='text/javascript' src='public/js/vc-waypoints.min.js' id='vc_waypoints-js'></script>
+    <script type='text/javascript' src='public/js/ultimate_bg.min.js' id='ultimate-row-bg-js'></script>
+    <script type='text/javascript' src='public/js/frontend.js' id='fastgallery-frontend-script-js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <ul id="info-scroll" class="lsn clearfix clicktel">
+        <li class="clearfix clicktel"><a id="tel_cta" class="clearfix clicktel" href="tel:+84903208113">
+                <span class="text222 clicktel">HOTLINE <small class="clicktel">0903 208 113</small></span>
+                <span class="icon clicktel"><img style="margin-top: 1px;" src="public/image/phone-ico.png" alt=""
+                        class="clicktel"></span>
+            </a>
+        </li>
+    </ul>
+    <div id="call_now_widget-2" class="footer-widget widget widget_call_now_widget clr">
+        <div class="float-icon-hotline">
+            <ul>
+                <li class="hotline_float_icon"><a href="//zalo.me/0903208113" target="_blank" rel="noopener nofollow"><i
+                            class="fa fa-zalo animated infinite tada"></i><span>Nhắn tin qua Zalo</span></a></li>
+                <li class="hotline_float_icon"><a href="javascript:void(0)" rel="noopener nofollow"><i
+                            class="fa fa-envelope dchi baogia22 animated infinite tada"></i><span>Đăng ký báo
                             giá</span></a></li>
-        </ul>
+            </ul>
+        </div>
     </div>
-</div>
 
-<style>
-    .chay23::after {
-        content: "";
-        border-top: 1px solid #CCC;
-        display: block;
-        width: 10%;
-        margin: 0 auto;
-        padding-top: 10px;
-    }
+    <style>
+        .chay23::after {
+            content: "";
+            border-top: 1px solid #CCC;
+            display: block;
+            width: 10%;
+            margin: 0 auto;
+            padding-top: 10px;
+        }
 
-    .popmake #gform_3 input#gform_submit_button_3 {
-        margin: 0 auto;
-        border-radius: 15px;
-        display: block
-    }
+        .popmake #gform_3 input#gform_submit_button_3 {
+            margin: 0 auto;
+            border-radius: 15px;
+            display: block
+        }
 
-    .baogia .ult_pricing_table .ult_price_features ul li,
-    .lamsong ul li {
-        border-bottom: 1px dashed #999;
-        line-height: 2em;
-        margin-left: 30px;
-        margin-right: 30px;
-    }
+        .baogia .ult_pricing_table .ult_price_features ul li,
+        .lamsong ul li {
+            border-bottom: 1px dashed #999;
+            line-height: 2em;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
 
-    figure {
-        margin: 0
-    }
+        figure {
+            margin: 0
+        }
 
-    .bigmenu {
-        position: relative;
-        width: 100%;
-        z-index: 999;
-        margin: 0 auto;
-        background: #2D99AE;
-        min-height: 52px;
-        float: none
-    }
+        .bigmenu {
+            position: relative;
+            width: 100%;
+            z-index: 999;
+            margin: 0 auto;
+            background: #2D99AE;
+            min-height: 52px;
+            float: none
+        }
 
-    .lamsong img {
-        border: 2px #eee solid;
-        border-radius: 15px
-    }
+        .lamsong img {
+            border: 2px #eee solid;
+            border-radius: 15px
+        }
 
-    ul#menu-main-menu {
-        height: auto;
-        display: block;
-        width: 100%;
-        margin-top: 0;
-        border: 0;
-        background: #2D99AE;
-        position: relative;
-        min-height: 50px;
-        float: none
-    }
+        ul#menu-main-menu {
+            height: auto;
+            display: block;
+            width: 100%;
+            margin-top: 0;
+            border: 0;
+            background: #2D99AE;
+            position: relative;
+            min-height: 50px;
+            float: none
+        }
 
-    ul#menu-main-menu li {
-        margin-bottom: 0
-    }
-</style>
+        ul#menu-main-menu li {
+            margin-bottom: 0
+        }
+    </style>
 
 </body>
+
 </html>
