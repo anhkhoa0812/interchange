@@ -1,23 +1,104 @@
-.product-service{
-    
+.product-service {
+
     display: flex;
 }
+
 .favourite-design {
     --margin-left-right: 5px;
 }
 
-.favourite-design .interior-design{
+.favourite-design .interior-design {
     display: flex;
 }
 
-.favourite-design .interior-design .col-sm-6.col-xl-3:first-child{
+.favourite-design .interior-design .col-sm-6.col-xl-4:first-child {
     margin-right: var(--margin-left-right);
 }
-
-.favourite-design .interior-design .col-sm-6.col-xl-3:not(:first-child){
+.favourite-design .interior-design .col-sm-6.col-xl-4:last-child {
+    margin-right: none;
+}
+.favourite-design .interior-design .col-sm-6.col-xl-4:not(:first-child) {
     margin: 0 var(--margin-left-right);
 }
+.fontsize-title{
+    font-size: 1.5rem;
+}
+.card-body .padding-in-box{
+    padding: 1rem ;
+}
+.p-4.quotation-status {
+    padding: 0 !important;
+}
 
-.favourite-design .interior-design .col-sm-6.col-xl-3:last-child{
-    margin-right: none;
+.p-4.quotation-status h5.status {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    color: aliceblue;
+}
+
+.p-4 .danger {
+    background-color: #fa896b;
+}
+
+.p-4 .warning {
+    background-color: #ffae1f;
+}
+.p-4 .warning-2 {
+    background-color: #F9F9FD;
+}
+.p-4 .in-process {
+    background-color: #64CCC5;
+}
+
+.p-4 .done {
+    background-color: #176B87;
+    
+}
+
+.p-4 .row .col-8 h4 {
+    padding: 0 1.5rem;
+}
+
+.col-8 h4 {
+    font-size: 1.2rem;
+}
+
+.col-8 .padding-space {
+    padding: 0.5rem 0;
+}
+
+.col-8 .padding-space:first-child {
+    padding-top: 0;
+}
+
+.col-8 .padding-space:last-child {
+    padding-bottom: 0;
+}
+
+.bg-supplier-1 {
+    background-color: #04364A !important;
+}
+
+.bg-supplier-2 {
+    background-color: #176B87 !important;
+}
+
+.bg-supplier-3 {
+    background-color: #64CCC5 !important;
+}
+
+.quotation-process{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quotation-process svg{
+    width: 0.5rem;
+}
+
+svg#SvgjsSvg1006{
+    width: 720px !important;
+}
+
+.apexcharts-xaxis-tick{
+    opacity: 0;
 }

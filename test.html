@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html
+        xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/md/css/mdb.min.css}">
+    <script th:src="@{/md/js/mdb.min.js}"></script>
+    <script th:src="@{/jquery-3.7.1.min.js}"></script>
+</head>
+<body class="container">
+<div th:insert="~{default/fragment::nav}"></div>
+
+<div class="input-group mb-3">
+    <button id="btnSearch" class="btn btn-primary dropdown-toggle" type="button" data-mdb-toggle="dropdown" aria-expanded="false">
+    </button>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" onclick="checkOptionSearch('all')">All</a></li>
+        <li><a class="dropdown-item" onclick="checkOptionSearch('draft')">Draft</a></li>
+        <li><a class="dropdown-item" onclick="checkOptionSearch('undraft')">Undraft</a></li>
+    </ul>
+    <input id="search" onkeyup="viewSearch()" type="text" class="form-control" aria-label="Text input with dropdown button" />
+</div>
+
+<table class="table align-middle mb-0 bg-white">
+    <thead class="bg-light">
+    <tr>
+        <th scope="col">Blog ID</th>
+        <th scope="col" style="width: 300px;">Blog title</th>
+        <th scope="col">Staff ID</th>
+        <th scope="col">Time</th>
+        <th scope="col">Thumbnail</th>
+        <th scope="col">View details</th>
+    </tr>
+    </thead>
+    <tbody id="view">
+<!--        <tr>-->
+<!--            <td>-->
+<!--                <span class="badge badge-success rounded-pill d-inline">Blog ID</span>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--               <p class="fw-normal mb-1">Blog title</p>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <p class="fw-normal mb-1">Sfaff ID</p>-->
+<!--            </td>-->
+<!--            <td><p class="fw-normal mb-1">Time</p></td>-->
+<!--            <td>-->
+<!--                <img id="" alt="" style="width: 70px; height: 70px" />-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <button type="button" onclick="getCusById('+ list[i].cusId +')" class="btn btn-link btn-sm btn-rounded" data-mdb-toggle="modal" data-mdb-target="#exampleModal2">Edit</button>-->
+<!--            </td>-->
+<!--        </tr>-->
+    </tbody>
+</table>
+<nav style="margin-left: 600px" aria-label="Page navigation example" id="pagination">
+</nav>
+
+<!--modal-->
+<div>
+
+
+
+    <!-- create a new blog -->
+    <div id="modal">
+        <!-- Button trigger modal -->
+        <button id="btnCreate" type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
+            Create a new blog
+        </button>
+        <!-- Modal create-->
+        <div class="modal fade model-xl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" style="width: 150%">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Interchange</h5>
+                        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" id="closeMainModal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <section style="background-color: #eee;">
+                            <div class="container h-100">
+                                <div class="row d-flex justify-content-center align-items-center h-100">
+                                    <div class="col-lg-12 col-xl-11">
+                                        <div class="card text-black" style="border-radius: 25px;">
+                                            <div class="card-body p-md-5">
+                                                <div id="blog" class="row justify-content-center">
+                                                    <h1>Create a new blog:</h1>
+                                                    <input type="text" id="blogId" hidden="hidden" value="0">
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Title: </label>
+                                                        <input id="blogTitle" type="text" class="form-control">
+                                                        <div class="error-message" id="title-error-message"></div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Content: </label>
+                                                        <textarea id="blogContent" type="text" class="form-control"></textarea>
+                                                        <div class="error-message" id="content-error-message"></div>
+                                                    </div>
+<!--                                                    <div class="mb-3 imgBlog">-->
+<!--                                                        <input checked="checked" type="radio" name="isThumbnailRadio" value="1">-->
+<!--                                                        <label class="form-label">Image 1: </label>-->
+<!--                                                        <input type="file" name="imgFile" multiple>-->
+<!--                                                        <button class="removeImageButton">Remove</button>-->
+<!--                                                        <div class="error-message" id="image-error-message1"></div>-->
+<!--                                                    </div>-->
+                                                    <button id="addImageButton">Add Image</button>
+                                                    <div style="margin-top: 20px" class="previewImage">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                    <div class="modal-footer">
+                        <!--<button type="button" class="btn btn-secondary" data-mdb-dismiss="modal" data-mdb-toggle="modal" data-mdb-target="#exampleModalCenter">Close</button>-->
+                        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal" onclick="checkEmptyInput()">Close</button>
+                        <button type="button" id="btnDelete" class="btn btn-danger" data-mdb-dismiss="modal" onclick="showDeleteModal()" hidden="">Delete</button>
+                        <button type="button" class="btn btn-primary" data-mdb-dismiss="modal" onclick="createBlog(false)" id="createUpdateBtn">Create</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- confirm to save draft -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Rời khỏi cập nhật?</h5>
+                    <button type="button" id="continueEditBtn" class="close" data-mdb-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Thay đổi chưa lưu của bạn sẽ bị mất nếu bạn rời khỏi trang.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal" onclick="createBlog(true)">Lưu bản nháp</button>
+                    <button type="button" class="btn btn-primary" data-mdb-dismiss="modal" onclick="reset()">Rời khỏi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- confirm to delete blog -->
+    <div class="modal fade" id="exampleModalDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalDeleteTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalDeleteTitle">Xóa blog này?</h5>
+                    <button type="button" id="continueEditBtn2" class="close" data-mdb-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Tất cả những thông tin liên quan của bài viết sẽ bị xóa!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-mdb-dismiss="modal" onclick="deleteBlog()">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script>
+
+    $(document).ready(function () {
+        viewSearch()
+    })
+
+    let optionSearch = 'all';
+    let search = ''
+    $('#btnSearch').text(optionSearch)
+    function checkOptionSearch(option) {
+        optionSearch = option
+        $('#btnSearch').text(optionSearch)
+        viewSearch()
+    }
+
+    let indexCurrentPage = 0
+    function viewSearch() {
+        indexCurrentPage = 0
+        search = $('#search').val()
+        $.ajax({
+            url: 'http://localhost:8080/api/blog/search?page=0&option=' + optionSearch + '&search=' + search,
+            method: 'GET',
+            contentType: 'application/json',
+            success: function (resp) {
+                view(resp.data.content)
+                pagingSearch()
+            }
+        })
+    }
+
+    function view(list) {
+        let view = $('#view');
+        //view.empty() loại bỏ tất cả các nội dung con
+        let str = '';
+        for (let i = 0; i < list.length; i++) {
+            str += '<tr>\n' +
+                '            <td>\n' +
+                '                <span class="badge badge-success rounded-pill d-inline">'+ list[i].blogId + '</span>\n' +
+                '            </td>\n' +
+                '            <td>\n' +
+                '               <p class="fw-normal mb-1"><h5 style="font-size: 17px; font-weight: bolder">' + list[i].blogTitle + '</h5></p>\n' +
+                '            </td>\n' +
+                '            <td>\n' +
+                '                <p class="fw-normal mb-1">' + list[i].staffId + '</p>\n' +
+                '            </td>\n' +
+                '            <td><p class="fw-normal mb-1">' + list[i].postTime + '</p></td>\n' +
+                '            <td>\n' +
+                // '                <img id="' + list[i].blogId + '" alt="" style="width: 150px; height: 70px" />\n' +
+                '                <img src="http://localhost:8080/api/blog/thumbnail?blogId='+ list[i].blogId +'" alt="" style="width: 150px; height: 70px" />\n' +
+                '            </td>\n' +
+                '            <td>\n' +
+                '                <button type="button" onclick="getBlogById('+ list[i].blogId +')" class="btn btn-link btn-sm btn-rounded" data-mdb-toggle="modal" data-mdb-target="#exampleModal">Edit</button>\n' +
+                '            </td>\n' +
+                '        </tr>'
+        }
+        view.html(str)
+    }
+
+    let indexGlobal = 0
+    function pagingSearch(callback) {
+        $.ajax({
+            url: 'http://localhost:8080/api/blog/search?page=0&option=' + optionSearch + '&search=' + search,
+            method: 'GET',
+            contentType: 'application/json',
+            success: function (resp) {
+                let pagination = $('#pagination');
+                let totalPage = resp.data.totalPages;
+                if ($('#blog h1').text() === 'Create a blog:') {
+                    indexGlobal = totalPage
+                } else indexGlobal = indexCurrentPage + 1
+                // Gọi callback nếu được chỉ định
+                if (typeof callback === 'function') {
+                    callback();
+                }
+                if(totalPage === 0) {
+                    pagination.empty();
+                    return;
+                }
+                let str = '';
+                str += '<ul class="pagination">\n' +
+                    '        <li class="page-item">\n' +
+                    '        </li>'
+                for (let i = 0; i < totalPage; i++) {
+                    str += '<li class="page-item"><a class="page-link" onclick="initSearch(' + i + ')">' + (i+1) +'</a></li>'
+                }
+                str += '<li class="page-item">\n' +
+                    '        </li>\n' +
+                    '    </ul>'
+                pagination.html(str)
+            }
+        })
+    }
+    function initSearch(index) {
+        indexCurrentPage = index;
+        $.ajax({
+            url: 'http://localhost:8080/api/blog/search?page=' + index + '&option=' + optionSearch + '&search=' + search,
+            method: 'GET',
+            contentType: 'application/json',
+            success: function (resp) {
+                view(resp.data.content)
+            }
+        })
+    }
+
+    // Biến đếm số lượng input type file
+    let fileCount = 0;
+
+    // Gắn sự kiện click cho nút "Add Image"
+    $('#addImageButton').click(function() {
+        // Tạo một phần tử div mới
+        var newDiv = $('<div class="mb-3 imgBlog">\n' +
+            '<input type="radio" name="isThumbnailRadio" value="'+ ($('input[type="radio"][name="isThumbnailRadio"]').length + 1) + '">' +
+            '<label class="form-label">Image ' + ($('input[type="radio"][name="isThumbnailRadio"]').length + 1) + ': </label>\n' +
+            '<input type="file" name="imgFile" id="imageId'+ ($('input[type="radio"][name="isThumbnailRadio"]').length + 1) +'" multiple>\n' +
+            '<button class="removeImageButton">Remove</button>\n' +
+            '<div class="error-message" id="image-error-message' + (fileCount+1) +'"></div>' +
+            '</div>');
+        fileCount++;
+        // Chèn phần tử div mới trước phần tử button
+        $(this).before(newDiv);
+
+        // Gắn sự kiện click cho nút "Remove" mới
+        newDiv.find('.removeImageButton').click(removeImage);
+
+        // Gắn sự kiện change cho tất cả các radio
+        $('input[type="radio"][name="isThumbnailRadio"]').change(defaultRadioAfterDelete);
+    });
+
+    // Hàm xử lý sự kiện khi click vào nút "Remove"
+    function removeImage() {
+        if(fileCount===1) return
+        deletePreviewImg($(this))
+        $(this).parent().remove();
+        defaultRadioAfterDelete();
+        updateRadioValues();
+        updateImageErrorMessage();
+        updateImageId();
+        updatePreviewId();
+        fileCount--;
+    }
+
+    //Mặc định chọn radio đầu tiên nếu radio đang được chọn bị xóa
+    function defaultRadioAfterDelete() {
+        // Lấy ra tất cả các radio
+        var radios = $('input[type="radio"][name="isThumbnailRadio"]');
+
+        // Kiểm tra xem có radio nào đang được chọn hay không
+        var checkedRadio = radios.filter(':checked');
+
+        // Nếu không có radio nào được chọn, chọn radio đầu tiên
+        if (checkedRadio.length === 0) {
+            radios.first().prop('checked', true);
+            $('[name=isThumbnailRadio]').trigger('change');
+        }
+    }
+
+    // Hàm cập nhật lại giá trị của thuộc tính "value" cho các phần tử input radio
+    function updateRadioValues() {
+        $('input[type="radio"][name="isThumbnailRadio"]').each(function(index) {
+            $(this).val(index + 1);
+            // Cập nhật lại nội dung của thẻ label dựa trên giá trị của input radio
+            var label = $(this).parent().find('label.form-label');
+            label.text('Image ' + $(this).val() + ': ');
+        });
+    }
+
+    function updateImageErrorMessage() {
+        let countImageErrorMessage = 1;
+        $('.error-message').slice(2).each(function() {
+            $(this).attr('id', 'image-error-message' + (countImageErrorMessage))
+            countImageErrorMessage++;
+        });
+    }
+
+    function updateImageId() {
+        $('input[type="file"][name="imgFile"]').each(function(index) {
+            id = 'imageId' + (index+1)
+            $(this).attr('id', id)
+        });
+    }
+
+    function updatePreviewId() {
+        $('.previewImage').find('img').each(function (index) {
+            id = 'preview' + (index+1)
+            $(this).attr('id', id)
+        })
+    }
+
+    function deletePreviewImg(removeImageButton) {
+        let divParent =  $(removeImageButton).closest('div');
+        let imgFile = divParent.find('input[type="file"][name="imgFile"]');
+        var id = $(imgFile).attr('id');
+        var index = parseInt(id.substring(7));
+        let preview = $('#preview' + index);
+        preview.remove()
+    }
+
+    // Lắng nghe sự kiện click vào nút "Tiếp tục chính sửa"
+    document.getElementById('continueEditBtn').addEventListener('click', function() {
+        // Hiển thị modal
+        var modal = new mdb.Modal(document.getElementById('exampleModal'));
+        modal.show();
+    });
+    // Lắng nghe sự kiện click vào nút "Tiếp tục chính sửa"
+    document.getElementById('continueEditBtn2').addEventListener('click', function() {
+        // Hiển thị modal
+        var modal = new mdb.Modal(document.getElementById('exampleModal'));
+        modal.show();
+    });
+
+    function reset() {
+        $('#blogId').val(0)
+        $('#blogTitle').val('')
+        $('#blogContent').val('')
+        $('input[name="isThumbnailRadio"]:checked').prop('checked', false);
+        $('input[type="file"][name="imgFile"]').val('');
+        // Xóa các phần tử div mới được tạo từ JavaScript
+        //$('.imgBlog:not(:first)').remove();
+        $('.imgBlog').remove();
+        $('.error-message').text('');
+        fileCount = 0;
+        $('.previewImage').empty()
+    }
+
+    $('#btnCreate').click(function() {
+        if($('#blog h1').text()==='Update a blog:') {
+            reset();
+            $('#addImageButton').trigger('click')
+            var radios = $('input[type="radio"][name="isThumbnailRadio"]')
+            radios.first().prop('checked', true);
+        }
+        if($('.imgBlog').length === 0) {
+            $('#addImageButton').trigger('click')
+            var radios = $('input[type="radio"][name="isThumbnailRadio"]')
+            radios.first().prop('checked', true);}
+        $('#blog h1').text('Create a blog:')
+        $('#createUpdateBtn').text('Create')
+        $('#btnDelete').attr('hidden', 'hidden');
+    });
+
+    function createBlog(isDraft) {
+        if(checkInput()===false) {
+            new mdb.Modal(document.getElementById('exampleModal')).show();
+            return
+        }
+        let formData = new FormData();
+        formData.append('blogId', $('#blogId').val());
+        formData.append('blogTitle', $('#blogTitle').val());
+        formData.append('blogContent', $('#blogContent').val());
+        formData.append('staffId', 'S7'); //tạm hard code
+        formData.append('isDraft', isDraft); //tạm hard code
+        formData.append('isThumbnailRadio', $('input[name="isThumbnailRadio"]:checked').val());
+        $('input[type="file"][name="imgFile"]').each(function() {
+            let files = $(this).prop('files');
+            for (let i = 0; i < files.length; i++) {
+                formData.append('multipartFiles', files[i]);
+            }
+        });
+        $.ajax({
+            url: 'http://localhost:8080/api/blog/save',
+            method: 'POST',
+            contentType: false,
+            processData: false,
+            data: formData,
+            success: function (resp) {
+                console.log(resp.data);
+                reset();
+                console.log($('#blog h1').text())
+                pagingSearch(function () {
+                    initSearch(indexGlobal - 1);
+                });
+            }, error:function (err) {
+                    console.log(err)
+                }
+        })
+    }
+
+    function checkInput() {
+        $('.error-message').text('');
+
+        let flag = true;
+
+        // Kiểm tra các trường input, textarea và file
+        let title = $('#blogTitle').val();
+        let content = $('#blogContent').val();
+
+        // Hiển thị thông báo lỗi nếu các trường không được nhập đầy đủ
+        if (title.trim() === '') {
+            $('#title-error-message').text('Please enter a title.').css('color', 'red');
+            flag = false;
+        }
+        if (content.trim() === '') {
+            $('#content-error-message').text('Please enter content.').css('color', 'red');
+            flag = false;
+        }
+        // Kiểm tra từng input type file
+        $('input[type="file"][name="imgFile"]').each(function(index) {
+            if ($(this).val() === '') {
+                let errorMessageId = '#image-error-message' + (index+1); // Lấy ID của thông báo lỗi tương ứng với input
+                $(errorMessageId).text('Please select an image.').css('color', 'red');
+                flag = false;
+            }
+        });
+        return flag
+    }
+
+    function checkEmptyInput() {
+        let flag = true;
+        let title = $('#blogTitle').val();
+        let content = $('#blogContent').val();
+        if (title.trim() !== '') {flag = false;}
+        if (content.trim() !== '') {flag = false;}
+        $('input[type="file"][name="imgFile"]').each(function() {
+            if ($(this).val() !== '') {
+                flag = false;
+            }
+        });
+        if(flag === false) {
+            $('#exampleModalCenter').modal('show'); // Hiển thị modal
+            return;
+        }
+        $('#title-error-message').text('')
+        $('#content-error-message').text('')
+        $('#image-error-message1').text('')
+        $('.imgBlog:not(:first)').remove();
+        fileCount = 0;
+    }
+
+    let currentBlogId = 0;
+    function getBlogById(blogId) {
+        reset()
+        $('#blog h1').text('Update a blog:')
+        $('#createUpdateBtn').text('Update')
+        $('#btnDelete').removeAttr('hidden');
+        currentBlogId = blogId;
+        $.ajax({
+            url: 'http://localhost:8080/api/blog/findById?blogId=' + blogId,
+            method: 'GET',
+            contentType: 'application/json',
+            success:function (resp) {
+                fillBlog(resp.data)
+            }
+        })
+    }
+    function fillBlog(blog) {
+        $('#blogId').val(blog.blogId)
+        $('#blogTitle').val(blog.blogTitle)
+        $('#blogContent').val(blog.blogContent)
+        $.ajax({
+            url: 'http://localhost:8080/api/blog/image?blogId=' + blog.blogId,
+            method: 'GET',
+            contentType: 'application/json',
+            success:function (resp) {
+                fillImageBlog(resp)
+                fillPreviewImage(resp)
+            }
+        })
+    }
+
+    function fillImageBlog(resp) {
+        for (let i = 0; i < resp.length; i++) {
+            const contentType = resp[i].headers['Content-Type'][0];
+            const imageURL = 'data:' + contentType + ';base64,' + resp[i].body;
+            const fileName = resp[i].headers['fileName'][0];
+
+            {$('#addImageButton').trigger('click');}
+            if(resp[i].headers['isThumbnail'][0]==='true') {
+                $('input[name="isThumbnailRadio"]').eq((i)).prop('checked', true);
+            }
+
+            // Tạo một đối tượng File từ URL của ảnh
+            fetch(imageURL)
+                .then(response => response.blob())
+                .then(blob => {
+                    const file = new File([blob], fileName, { type: contentType });
+
+                    // Gán đối tượng File vào input[type="file"]
+                    const inputElement = document.getElementsByName('imgFile')[i];
+                    const fileList = new DataTransfer();
+                    fileList.items.add(file);
+                    inputElement.files = fileList.files;
+                })
+                .catch(error => console.error('Error fetching image:', error));
+        }
+    }
+
+    function fillPreviewImage(resp) {
+        var previewImageDiv = $('.previewImage');
+        for (let i = 0; i < resp.length; i++) {
+            const contentType = resp[i].headers['Content-Type'][0];
+            const imageURL = 'data:' + contentType + ';base64,' + resp[i].body;
+            const fileName = resp[i].headers['fileName'][0];
+            const isThumbnail = resp[i].headers['isThumbnail'][0] === 'true';
+            // Tạo thẻ img mới
+            var imgTag = $('<img />', {
+                id: "preview" + (i+1),
+                src: imageURL,
+                alt: fileName,
+                style: isThumbnail ? 'width: 170px; height: 140px; margin-right: 5px; margin-top: 5px; border: 4px solid #fa5097' : 'width: 170px; height: 140px; margin-right: 5px; margin-top: 5px'
+            });
+            // Thêm thẻ img vào div 'previewImage'
+            previewImageDiv.append(imgTag);
+
+            if(isThumbnail===true) previousThumbnail = imgTag;
+        }
+    }
+
+    function showDeleteModal() {
+        $('#exampleModalDelete').modal('show'); // Hiển thị modal
+    }
+    function deleteBlog() {
+        $.ajax({
+            url: 'http://localhost:8080/api/blog/delete?blogId=' + currentBlogId,
+            method: 'POST',
+            contentType: 'application/json',
+            success: function (resp) {
+                console.log(resp.data)
+                window.location.href = 'http://localhost:8088/blog-management'
+            }, error:function (err) {
+                console.log(err)
+            }
+        })
+    }
+
+    $("#closeMainModal").click(function() {
+        // Kích hoạt hiển thị modal
+        if($('#blog h1').text()==='Update a blog:') {
+            $("#exampleModalCenter").modal("show");
+        }
+    });
+
+    // window.location.href = 'http://localhost:8088/post'
+
+    $(document).on('change', '[name=imgFile]', function () {
+        previewImage($(this));
+        highlightThumbnail();
+    })
+
+    function previewImage(imgFile) {
+        var input = imgFile.get(0); // hoặc event[0]
+        var id = $(imgFile).attr('id');
+        var index = parseInt(id.substring(7));
+
+        if($('#preview' + index).length === 0) {
+            //var imgCount = $('.previewImage img').length;
+            let str = '<img id="preview'+ (index) + '" src="" style="width: 170px; height: 140px; margin-right: 5px; margin-top: 5px"/>'
+            let previewImage = $('.previewImage')
+            previewImage.append(str)
+        }
+        var previewId = 'preview' + index;
+        var previewElement = $('#' + previewId);
+
+        sortPreviewImage();
+
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                previewElement.attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $(document).on('change', '[name=isThumbnailRadio]', function() {
+        highlightThumbnail()
+    });
+
+
+    let previousThumbnail;
+    function highlightThumbnail() {
+        var selectedValue = $('input[name="isThumbnailRadio"]:checked').val();
+        // Kiểm tra xem previousThumbnail đã được gán hay chưa
+        if (typeof previousThumbnail !== 'undefined') {
+            previousThumbnail.css({
+                'border': ''
+            });
+        }
+        let currentThumbnail = $('#preview' + selectedValue);
+        currentThumbnail.css({
+            'border': '4px solid #fa5097'
+        });
+        previousThumbnail = currentThumbnail;
+    }
+
+    function sortPreviewImage() {
+        // Lấy tất cả các phần tử img trong phần tử có class là previewImage
+        var images = $('.previewImage img');
+        // Sắp xếp các phần tử theo id tăng dần
+        images.sort(function(a, b) {
+              var idA = parseInt(a.id.replace('preview', ''));
+              var idB = parseInt(b.id.replace('preview', ''));
+              return idA - idB;
+        });
+        // Đặt lại thứ tự của các phần tử trong DOM
+        $('.previewImage').html(images);
+    }
+
+</script>
+
+</body>
+</html>

@@ -107,3 +107,23 @@
 .display-more-vert-menu div:hover{
     background-color: #f3f3f3;
 }
+.content-table thead tr .product-id,
+.content-table tbody tr .product-id{
+    width: 5%;
+    text-align: center;
+}
+.content-table thead tr .product-name,
+.content-table tbody tr .product-name{
+    width: 15%;
+    text-align: left;
+}
+.content-table thead tr .product-description,
+.content-table tbody tr .product-description{
+    width: 50%;
+
+}
+.content-table thead tr .supplier,
+.content-table tbody tr .supplier{
+    width: 20%;
+    text-align: center;
+}

@@ -1,36 +1,35 @@
 $(function () {
-
-
   // =====================================
-  // Profit
+  // Doanh thu tháng
   // =====================================
   var chart = {
     series: [
-      { name: "Earnings this month:", data: [355, 390, 300, 350, 390, 180, 355, 390] },
-      { name: "Expense this month:", data: [280, 250, 325, 215, 250, 310, 280, 250] },
+      {
+        name: "Doanh thu tháng",
+        data: [25, 50, 60, 82, 71, 99, 100, 29, 25, 50, 60, 82],
+      },
     ],
 
     chart: {
       type: "bar",
       height: 345,
+      width: 680,
       offsetX: -15,
-      toolbar: { show: true },
+      toolbar: { show: false },
       foreColor: "#adb0bb",
-      fontFamily: 'inherit',
+      fontFamily: "inherit",
       sparkline: { enabled: false },
     },
 
-
-    colors: ["#04364A", "#64CCC5"],
-
+    colors: ["#04364A"],
 
     plotOptions: {
       bar: {
         horizontal: false,
-        columnWidth: "35%",
-        borderRadius: [6],
-        borderRadiusApplication: 'end',
-        borderRadiusWhenStacked: 'all'
+        columnWidth: "40%",
+        borderRadius: [0],
+        borderRadiusApplication: "end",
+        borderRadiusWhenStacked: "all",
       },
     },
     markers: { size: 0 },
@@ -39,11 +38,9 @@ $(function () {
       enabled: false,
     },
 
-
     legend: {
       show: false,
     },
-
 
     grid: {
       borderColor: "rgba(0,0,0,0.1)",
@@ -57,21 +54,37 @@ $(function () {
 
     xaxis: {
       type: "category",
-      categories: ["16/08", "17/08", "18/08", "19/08", "20/08", "21/08", "22/08", "23/08"],
+      categories: [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "Month",
+      ],
       labels: {
         style: { cssClass: "grey--text lighten-2--text fill-color" },
       },
     },
 
-
     yaxis: {
       show: true,
       min: 0,
-      max: 400,
-      tickAmount: 4,
+      max: 125,
+      tickAmount: 5,
       labels: {
         style: {
           cssClass: "grey--text lighten-2--text fill-color",
+        },
+        formatter: function (value) {
+          return "$" + value;
         },
       },
     },
@@ -82,9 +95,7 @@ $(function () {
       colors: ["transparent"],
     },
 
-
-    tooltip: { theme: "light" },
-
+    tooltip: { theme: "light" }, 
     responsive: [
       {
         breakpoint: 600,
@@ -92,23 +103,71 @@ $(function () {
           plotOptions: {
             bar: {
               borderRadius: 3,
-            }
+            },
           },
-        }
-      }
-    ]
-
-
+        },
+      },
+    ],
   };
 
   var chart = new ApexCharts(document.querySelector("#chart"), chart);
   chart.render();
 
-
   // =====================================
   // Breakup
   // =====================================
-  var breakup = {
+  var breakup1 = {
+    color: "#adb5bd",
+    series: [35, 40, 10, 15],
+    labels: ["Đã xử lý", "Đang xử lý", "Chưa xử lý", "Đã hủy"],
+    chart: {
+      width: 180,
+      type: "donut",
+      fontFamily: "Plus Jakarta Sans', sans-serif",
+      foreColor: "#adb0bb",
+    },
+    plotOptions: {
+      pie: {
+        startAngle: 0,
+        endAngle: 360,
+        donut: {
+          size: "75%",
+        },
+      },
+    },
+    stroke: {
+      show: false,
+    },
+
+    dataLabels: {
+      enabled: false,
+    },
+
+    legend: {
+      show: false,
+    },
+    colors: ["#04364A", "#176B87", "rgba(236, 242, 255,1)", "#F9F9FD"],
+
+    responsive: [
+      {
+        breakpoint: 991,
+        options: {
+          chart: {
+            width: 200,
+          },
+        },
+      },
+    ],
+    tooltip: {
+      theme: "dark",
+      fillSeriesColor: false,
+    },
+  };
+
+  var chart = new ApexCharts(document.querySelector("#breakup1"), breakup1);
+  chart.render();
+
+  var breakup2 = {
     color: "#adb5bd",
     series: [38, 40, 25],
     labels: ["2022", "2021", "2020"],
@@ -123,7 +182,7 @@ $(function () {
         startAngle: 0,
         endAngle: 360,
         donut: {
-          size: '75%',
+          size: "75%",
         },
       },
     },
@@ -138,7 +197,7 @@ $(function () {
     legend: {
       show: false,
     },
-    colors: ["#04364A", "#ecf2ff", "#F9F9FD"],
+    colors: ["#04364A", "#176B87", "#F9F9FD"],
 
     responsive: [
       {
@@ -155,11 +214,8 @@ $(function () {
       fillSeriesColor: false,
     },
   };
-
-  var chart = new ApexCharts(document.querySelector("#breakup"), breakup);
+  var chart = new ApexCharts(document.querySelector("#breakup2"), breakup2);
   chart.render();
-
-
 
   // =====================================
   // Earning
@@ -208,4 +264,4 @@ $(function () {
     },
   };
   new ApexCharts(document.querySelector("#earning"), earning).render();
-})
+});

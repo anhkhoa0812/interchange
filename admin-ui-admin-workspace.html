@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./public/admin-css/styles.min.css" />
   <link rel="stylesheet" href="./public/admin-css/side-bar.css">
   <link rel="stylesheet" href="./public/admin-css/dashboard.css">
+  <link rel="stylesheet" href="./public/admin-css/table-for-list.css">
 </head>
 
 <body>
@@ -130,6 +131,70 @@
       <div class="container-fluid">
         <!--  Row 1 -->
         <div class="row">
+          <div class="col-lg-3">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card overflow-hidden">
+                  <div class="card-body p-4 quotation-status">
+                    <h5 class="card-title mb-9 fw-semibold warning status">Đang chờ phê duyệt</h5>
+                    <div class="row align-items-center">
+                      <div class="col-8 quotation-process">
+                        <h4 class="fw-semibold mb-3">120 báo giá</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card overflow-hidden">
+                  <div class="card-body p-4 quotation-status">
+                    <h5 class="card-title mb-9 fw-semibold in-process status">Đang xử lý yêu cầu</h5>
+                    <div class="row align-items-center">
+                      <div class="col-8 quotation-process">
+                        <h4 class="fw-semibold mb-3">120 báo giá</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card overflow-hidden">
+                  <div class="card-body p-4 quotation-status">
+                    <h5 class="card-title mb-9 fw-semibold done status">Đã hoàn thành</h5>
+                    <div class="row align-items-center">
+                      <div class="col-8 quotation-process">
+                        <h4 class="fw-semibold mb-3">120 báo giá</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card overflow-hidden">
+                  <div class="card-body p-4 quotation-status">
+                    <h5 class="card-title mb-9 fw-semibold danger status">Đã hủy</h5>
+                    <div class="row align-items-center">
+                      <div class="col-8 quotation-process">
+                        <h4 class="fw-semibold mb-3">120 báo giá</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="col-lg-8 d-flex align-items-strech">
             <div class="card w-100">
               <div class="card-body">
@@ -137,12 +202,12 @@
                   <div class="mb-3 mb-sm-0">
                     <h5 class="card-title fw-semibold">Tổng doanh thu hằng tháng</h5>
                   </div>
-                  <div>
+                  <div style="display: flex;">
+                    <button style="padding: 8px 16px; line-height: 1.5; background-size: 16px 12px;"
+                      class="btn btn-primary m-1">Xuất excel</button>
                     <select class="form-select">
-                      <option value="1">March 2023</option>
-                      <option value="2">April 2023</option>
-                      <option value="3">May 2023</option>
-                      <option value="4">June 2023</option>
+                      <option value="1">2023</option>
+                      <option value="2">2024</option>
                     </select>
                   </div>
                 </div>
@@ -156,32 +221,37 @@
                 <!-- Yearly Breakup -->
                 <div class="card overflow-hidden">
                   <div class="card-body p-4">
-                    <h5 class="card-title mb-9 fw-semibold">Tỉ lệ chấp nhận báo giá</h5>
+                    <h5 class="card-title mb-9 fw-semibold">Trạng thái báo giá</h5>
                     <div class="row align-items-center">
                       <div class="col-8">
-                        <h4 class="fw-semibold mb-3">40%</h4>
-                        <div class="d-flex align-items-center mb-3">
-                          <span
-                            class="me-1 rounded-circle bg-light-success round-20 d-flex align-items-center justify-content-center">
-                            <i class="ti ti-arrow-up-left text-success"></i>
-                          </span>
-                          <p class="text-dark me-1 fs-3 mb-0">+9%</p>
-                          <p class="fs-3 mb-0">last year</p>
-                        </div>
-                        <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center padding-space">
                           <div class="me-4">
-                            <span class="round-8 bg-primary rounded-circle me-2 d-inline-block"></span>
-                            <span class="fs-2">2023</span>
+                            <span class="round-8 done rounded-circle me-2 d-inline-block"></span>
+                            <span class="fs-3">Đã xử lý</span>
                           </div>
-                          <div>
+                        </div>
+                        <div class="d-flex align-items-center padding-space">
+                          <div class="me-4">
+                            <span class="round-8 in-process rounded-circle me-2 d-inline-block"></span>
+                            <span class="fs-3">Đang xử lý</span>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center padding-space">
+                          <div class="me-4">
                             <span class="round-8 bg-light-primary rounded-circle me-2 d-inline-block"></span>
-                            <span class="fs-2">2023</span>
+                            <span class="fs-3">Chưa xử lý</span>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center padding-space">
+                          <div class="me-4">
+                            <span class="round-8 warning-2 rounded-circle me-2 d-inline-block"></span>
+                            <span class="fs-3">Đã hủy</span>
                           </div>
                         </div>
                       </div>
                       <div class="col-4">
                         <div class="d-flex justify-content-center">
-                          <div id="breakup"></div>
+                          <div id="breakup1"></div>
                         </div>
                       </div>
                     </div>
@@ -192,30 +262,35 @@
                 <!-- Monthly Earnings -->
                 <div class="card">
                   <div class="card-body">
-                    <div class="row alig n-items-start">
+                    <h5 class="card-title mb-9 fw-semibold">Số lượng sản phẩm được nhập</h5>
+                    <div class="row align-items-center">
                       <div class="col-8">
-                        <h5 class="card-title mb-9 fw-semibold"> Lợi nhuận hằng năm </h5>
-                        <h4 class="fw-semibold mb-3">$6,820</h4>
-                        <div class="d-flex align-items-center pb-1">
-                          <span
-                            class="me-2 rounded-circle bg-light-danger round-20 d-flex align-items-center justify-content-center">
-                            <i class="ti ti-arrow-down-right text-danger"></i>
-                          </span>
-                          <p class="text-dark me-1 fs-3 mb-0">+9%</p>
-                          <p class="fs-3 mb-0">last year</p>
+                        <div class="d-flex align-items-center padding-space">
+                          <div class="me-4">
+                            <span class="round-8 bg-supplier-1 rounded-circle me-2 d-inline-block"></span>
+                            <span class="fs-3">An Cường</span>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center padding-space">
+                          <div class="me-4">
+                            <span class="round-8 bg-supplier-2 rounded-circle me-2 d-inline-block"></span>
+                            <span class="fs-3">Thanh Thủy</span>
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center padding-space">
+                          <div class="me-4">
+                            <span class="round-8 bg-light-primary rounded-circle me-2 d-inline-block"></span>
+                            <span class="fs-3">Mộc Phát</span>
+                          </div>
                         </div>
                       </div>
                       <div class="col-4">
-                        <div class="d-flex justify-content-end">
-                          <div
-                            class="text-white bg-secondary rounded-circle p-6 d-flex align-items-center justify-content-center">
-                            <i class="ti ti-currency-dollar fs-6"></i>
-                          </div>
+                        <div class="d-flex justify-content-center">
+                          <div id="breakup2"></div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div id="earning"></div>
                 </div>
               </div>
             </div>
@@ -223,176 +298,127 @@
         </div>
         <div class="row">
           <div class="favourite-design">
-            <h5 class="card-title mb-9 fw-semibold"> Thiết kế yêu thích </h5>
-            <div class="interior-design">
-              <div class="col-sm-6 col-xl-3">
-                <div class="card overflow-hidden rounded-2">
-                  <div class="position-relative">
-                    <a href="javascript:void(0)"><img src="./public/image/0007-2-450x320.jpg"
-                        class="card-img-top rounded-0" alt="..."></a>
-                  </div>
-                  <div class="card-body pt-3 p-4">
-                    <h6 class="fw-semibold fs-4">Phòng bếp hiện đại</h6>
-                    <div class="d-flex align-items-center justify-content-between">
-                      <ul class="list-unstyled d-flex align-items-center mb-0">
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      </ul>
+            <h5 class="card-title mb-9 fw-semibold fontsize-title"> Sản phẩm có doanh thu cao </h5>
+            <!-- <div class="interior-design">
+                <div class="col-sm-6 col-xl-4">
+                  <div class="card overflow-hidden rounded-2">
+                    <div class="position-relative">
+                      <a href="javascript:void(0)"><img src="./public/image/44-450x320.jpg"
+                          class="card-img-top rounded-0" alt="..."></a>
+                    </div>
+                    <div class="card-body pt-3 p-4">
+                      <h6 class="fw-semibold fs-4 padding-in-box">Tủ bếp</h6>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <ul class="list-unstyled d-flex align-items-center mb-0">
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
+                          <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-6 col-xl-3">
-                <div class="card overflow-hidden rounded-2">
-                  <div class="position-relative">
-                    <a href="javascript:void(0)"><img src="./public/image/0007-450x320.jpg" class="card-img-top rounded-0"
-                        alt="..."></a>
-                  </div>
-                  <div class="card-body pt-3 p-4">
-                    <h6 class="fw-semibold fs-4">Văn phòng làm việc nhỏ gọn</h6>
-                    <div class="d-flex align-items-center justify-content-between">
-                      <ul class="list-unstyled d-flex align-items-center mb-0">
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      </ul>
+                <div class="col-sm-6 col-xl-4">
+                  <div class="card overflow-hidden rounded-2">
+                    <div class="position-relative">
+                      <a href="javascript:void(0)"><img src="./public/image/18-450x320.jpg" class="card-img-top rounded-0"
+                          alt="..."></a>
+                    </div>
+                    <div class="card-body pt-3 p-4">
+                      <h6 class="fw-semibold fs-4 padding-in-box">Gạch ốp đá tự nhiên</h6>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <ul class="list-unstyled d-flex align-items-center mb-0">
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
+                          <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-6 col-xl-3">
-                <div class="card overflow-hidden rounded-2">
-                  <div class="position-relative">
-                    <a href="javascript:void(0)"><img src="./public/image/0007-450x320.jpg" class="card-img-top rounded-0"
-                        alt="..."></a>
-                  </div>
-                  <div class="card-body pt-3 p-4">
-                    <h6 class="fw-semibold fs-4">Nội thất văn phòng</h6>
-                    <div class="d-flex align-items-center justify-content-between">
-                      <ul class="list-unstyled d-flex align-items-center mb-0">
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      </ul>
+                <div class="col-sm-6 col-xl-4">
+                  <div class="card overflow-hidden rounded-2">
+                    <div class="position-relative">
+                      <a href="javascript:void(0)"><img src="./public/image/4-1-450x320.jpg" class="card-img-top rounded-0"
+                          alt="..."></a>
+                    </div>
+                    <div class="card-body pt-3 p-4">
+                      <h6 class="fw-semibold fs-4 padding-in-box">Sofa hiện đại</h6>
+                      <div class="d-flex align-items-center justify-content-between">
+                        
+                        <ul class="list-unstyled d-flex align-items-center mb-0">
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
+                          <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-6 col-xl-3">
-                <div class="card overflow-hidden rounded-2">
-                  <div class="position-relative">
-                    <a href="javascript:void(0)"><img src="./public/image/0007-450x320.jpg" class="card-img-top rounded-0"
-                        alt="..."></a>
-                  </div>
-                  <div class="card-body pt-3 p-4">
-                    <h6 class="fw-semibold fs-4">Phòng ngủ đơn giản</h6>
-                    <div class="d-flex align-items-center justify-content-between">
-                      
-                      <ul class="list-unstyled d-flex align-items-center mb-0">
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="favourite-design">
-            <h5 class="card-title mb-9 fw-semibold"> Sản phẩm có doanh thu cao </h5>
-            <div class="interior-design">
-              <div class="col-sm-6 col-xl-3">
-                <div class="card overflow-hidden rounded-2">
-                  <div class="position-relative">
-                    <a href="javascript:void(0)"><img src="./public/image/44-450x320.jpg"
-                        class="card-img-top rounded-0" alt="..."></a>
-                  </div>
-                  <div class="card-body pt-3 p-4">
-                    <h6 class="fw-semibold fs-4">Tủ bếp</h6>
-                    <div class="d-flex align-items-center justify-content-between">
-                      <ul class="list-unstyled d-flex align-items-center mb-0">
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-xl-3">
-                <div class="card overflow-hidden rounded-2">
-                  <div class="position-relative">
-                    <a href="javascript:void(0)"><img src="./public/image/18-450x320.jpg" class="card-img-top rounded-0"
-                        alt="..."></a>
-                  </div>
-                  <div class="card-body pt-3 p-4">
-                    <h6 class="fw-semibold fs-4">Gạch ốp đá tự nhiên</h6>
-                    <div class="d-flex align-items-center justify-content-between">
-                      <ul class="list-unstyled d-flex align-items-center mb-0">
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-xl-3">
-                <div class="card overflow-hidden rounded-2">
-                  <div class="position-relative">
-                    <a href="javascript:void(0)"><img src="./public/image/4-1-450x320.jpg" class="card-img-top rounded-0"
-                        alt="..."></a>
-                  </div>
-                  <div class="card-body pt-3 p-4">
-                    <h6 class="fw-semibold fs-4">Sofa hiện đại</h6>
-                    <div class="d-flex align-items-center justify-content-between">
-                      
-                      <ul class="list-unstyled d-flex align-items-center mb-0">
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-xl-3">
-                <div class="card overflow-hidden rounded-2">
-                  <div class="position-relative">
-                    <a href="javascript:void(0)"><img src="./public/image/BQ8730-450x320.jpg" class="card-img-top rounded-0"
-                        alt="..."></a>
-                  </div>
-                  <div class="card-body pt-3 p-4">
-                    <h6 class="fw-semibold fs-4">Gạch ốp nền vân trắng</h6>
-                    <div class="d-flex align-items-center justify-content-between">
-                      
-                      <ul class="list-unstyled d-flex align-items-center mb-0">
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                        <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </div> -->
+            <div class="card no-shadow">
+              <table class="content-table show-product" id="manage-product-table-1">
+                <thead>
+                  <tr>
+                    <th class="display-column product-id" rowspan="2">ID</th>
+                    <th class="display-column product-name" rowspan="2">Tên sản phẩm</th>
+                    <th class="display-column product-description" rowspan="2">Mô tả</th>
+                    <th class="supplier" rowspan="2">Nhà cung cấp</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="display-input-none-border">
+                    <td class="product-id">5 </td>
+                    <td class="product-name">Sofa Góc SG-202</td>
+                    <td class="product-description">Sofa góc hiện đại với khung kim loại và lớp đệm êm ái, tạo ra một
+                      không gian ngồi thoải mái cho
+                      gia đình hoặc khách của bạn. Bề mặt vải mềm mại và dễ vệ sinh.</td>
+                    <td class="supplier">An Cường</td>
+                  </tr>
+                  <tr class="display-input-none-border">
+                    <td class="product-id">6</td>
+                    <td class="product-name">Bàn Trà BT-404</td>
+                    <td class="product-description"> Bàn trà bằng gỗ sồi tự nhiên, có thiết kế đơn giản và thanh lịch.
+                      Bàn trà này là một điểm nhấn
+                      tuyệt vời cho phòng khách của bạn và cung cấp không gian lý tưởng để đặt đồ uống hoặc trang trí.
+                    </td>
+                    <td class="supplier">Thanh Thủy</td>
+                  </tr>
+                  <tr class="display-input-none-border">
+                    <td class="product-id">6</td>
+                    <td class="product-name">Bàn Trà BT-404</td>
+                    <td class="product-description"> Bàn trà bằng gỗ sồi tự nhiên, có thiết kế đơn giản và thanh lịch.
+                      Bàn trà này là một điểm nhấn
+                      tuyệt vời cho phòng khách của bạn và cung cấp không gian lý tưởng để đặt đồ uống hoặc trang trí.
+                    </td>
+                    <td class="supplier">Thanh Thủy</td>
+                  </tr>
+                  <tr class="display-input-none-border">
+                    <td class="product-id">6</td>
+                    <td class="product-name">Bàn Trà BT-404</td>
+                    <td class="product-description"> Bàn trà bằng gỗ sồi tự nhiên, có thiết kế đơn giản và thanh lịch.
+                      Bàn trà này là một điểm nhấn
+                      tuyệt vời cho phòng khách của bạn và cung cấp không gian lý tưởng để đặt đồ uống hoặc trang trí.
+                    </td>
+                    <td class="supplier">Thanh Thủy</td>
+                  </tr>
+                  <tr class="display-input-none-border">
+                    <td class="product-id">6</td>
+                    <td class="product-name">Bàn Trà BT-404</td>
+                    <td class="product-description"> Bàn trà bằng gỗ sồi tự nhiên, có thiết kế đơn giản và thanh lịch.
+                      Bàn trà này là một điểm nhấn
+                      tuyệt vời cho phòng khách của bạn và cung cấp không gian lý tưởng để đặt đồ uống hoặc trang trí.
+                    </td>
+                    <td class="supplier">Thanh Thủy</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

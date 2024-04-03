@@ -1,4 +1,49 @@
+.authentication-form{
+    background-color: aliceblue;
+    margin-bottom: 30px;
+    max-width: 550px;
+    box-shadow: 0 5px 100px 0 hsla(0, 0%, 0%, 0.1);
+    transition: all .5s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
 
-.authentication-bar{
-    
+.authentication-form .wpb_wrapper{
+    padding: 40px;
+}
+
+.authentication-form .wpb_wrapper .gform_wrapper{
+    margin-top: 30px;
+}
+
+.authentication-form .wpb_wrapper .gform_wrapper
+
+.authentication-form .wpb_wrapper .uvc-heading .uvc-main-heading{
+    font-size: 1.6em;
+}
+
+
+#gform_wrapper_1 input, #gform_wrapper_1 textarea, #gform_wrapper_3 #input-login, #gform_wrapper_3 textarea{
+    width: 100%;
+    min-width: 300px;
+}
+
+.gform_body .gform_fields .gfield:nth-child(odd){
+    margin-right: 100px;
+}
+
+.gform_wrapper .gform_footer{
+    padding: 16px 0 0 0 ;
+}
+.vc_column_container > .vc_column-inner{
+    padding: 0;
+}
+
+.vc_btn3.vc_btn3-size-lg{
+    padding: 15px 30px;
+}
+
+.gform_wrapper .top_label li.gfield.gf_left_half{
+    margin: 0 10px 8px 0;
+    width: 45%;
 }
